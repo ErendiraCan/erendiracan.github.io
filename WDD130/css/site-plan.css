@@ -46,8 +46,7 @@ header>h1 {
 
 p {
     font-family: var(--paragraph-font);
-    color: ;
-    padding: 1em
+    color: padding: 1em
 }
 
 .colors {
@@ -58,7 +57,7 @@ p {
 }
 
 .colors th {
-    background-color: #999
+    background-color:
 }
 
 .colors td {
