@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto+Condensed&display=swap');
+body {
+    background-color: rgb(168, 190, 214);
+    font-size: 16px;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(255, 198, 42);
+    color: rgb(13, 36, 59);
+    border: 3px solid rgb(255, 252, 95);
+    padding: 10px;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 5em;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+nav {
+    color: rgb(13, 36, 59);
+    font-size: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+main {
+    background-color: rgb(13, 36, 59);
+    color: rgb(255, 254, 174);
+    border: 3px solid rgb(255, 252, 95);
+    padding: 10px;
+}
+
+main section h2 {
+    font-size: 2.5em;
+    font-family: 'Bebas Neue', cursive;
+}
+
+main section p {
+    font-size: 1.1em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+footer {
+    background-color: rgb(255, 252, 95);
+    color: rgb(13, 36, 59);
+    border: 3px solid rgb(255, 252, 95);
+    padding: 10px;
+}
+
+footer p {
+    font-size: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
