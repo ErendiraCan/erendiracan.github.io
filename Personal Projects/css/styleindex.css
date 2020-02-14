@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Cormorant+Garamond|Gelasio|Homemade+Apple&display=swap');
+body {
+    background-color: rgb(206, 175, 194);
+    font-size: 16px;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 5em;
+    font-family: 'Homemade Apple', cursive;
+    margin-bottom: 0px;
+}
+
+.motto {
+    font-size: 1.5em;
+    font-family: 'Gelasio', serif;
+    margin-top: 0px;
+    letter-spacing: 1.5pt;
+    text-align: center;
+}
+
+main {
+    background-color: rgb(223, 213, 219);
+    padding: 10px;
+    border: 1px dashed;
+}
+
+main section h2 {
+    font-size: 2em;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+/* Timeline pics */
+
+.timeline {
+    font-size: 2em;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 800px;
+    justify-items: center;
+    grid-gap: 20px;
+}
