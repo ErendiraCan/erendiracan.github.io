@@ -1,123 +1,168 @@
-        @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Cormorant+Garamond|Gelasio|Homemade+Apple&display=swap');
-        body {
-            background-image: url(https://i.pinimg.com/originals/a4/01/5b/a4015b71edfd20bff420bc7ba1b61692.png);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            background-color: rgb(206, 175, 194);
-            font-size: 16px;
-        }
-        
-        header,
-        nav,
-        main,
-        footer {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        header {
-            padding: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 50px;
-        }
-        
-        header img {
-            border: 8px double;
-        }
-        
-        header h1 {
-            font-size: 5em;
-            font-family: 'Homemade Apple', cursive;
-            margin-bottom: 0px;
-        }
-        
-        .motto {
-            font-size: 1.5em;
-            font-family: 'Gelasio', serif;
-            margin-top: 0px;
-            margin-bottom: 40px;
-            letter-spacing: 1.5pt;
-            text-align: center;
-        }
-        
-        main {
-            background-color: rgb(223, 213, 219);
-            padding: 10px;
-            border: 1px dashed;
-        }
-        
-        main section h2 {
-            font-size: 2em;
-            font-family: 'Cormorant Garamond', serif;
-            text-align: center;
-        }
-        
-        main section p {
-            font-size: 1.1em;
-            font-family: 'Gelasio', serif;
-            text-align: center;
-        }
-        /* Timeline pics */
-        
-        main h2 {
-            font-size: 3em;
-            font-family: 'Cedarville Cursive', cursive;
-            margin-bottom: 20px;
-            margin-left: 20px;
-        }
-        
-        .content {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            max-width: 1000px;
-            height: 900px;
-            justify-items: center;
-            grid-gap: 30px;
-        }
-        
-        .pic1 {
-            width: 300px;
-            height: 365px;
-            background-color: rgb(131, 80, 104);
-            ;
-            margin-left: 20px;
-        }
-        
-        .pic2 {
-            width: 300px;
-            height: 365px;
-            background-color: rgb(131, 80, 104);
-        }
-        
-        .pic3 {
-            width: 300px;
-            height: 365px;
-            background-color: rgb(131, 80, 104);
-        }
-        
-        .pic4 {
-            width: 300px;
-            height: 365px;
-            background-color: rgb(131, 80, 104);
-        }
-        
-        .pic5 {
-            width: 300px;
-            height: 365px;
-            background-color: rgb(131, 80, 104);
-        }
-        
-        .pic6 {
-            width: 300px;
-            height: 365px;
-            background-color: rgb(131, 80, 104);
-        }
-        
-        footer p {
-            font-size: 3em;
-            font-family: 'Cedarville Cursive', cursive;
-            text-align: center;
-        }
+            @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Cormorant+Garamond|Gelasio|Homemade+Apple&display=swap');
+            body {
+                background-image: url(https://i.pinimg.com/originals/a4/01/5b/a4015b71edfd20bff420bc7ba1b61692.png);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-color: rgb(206, 175, 194);
+                font-size: 16px;
+            }
+            
+            header,
+            nav,
+            main,
+            footer {
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            
+            header {
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 50px;
+            }
+            
+            header img {
+                border: 8px double;
+            }
+            
+            header h1 {
+                font-size: 5em;
+                font-family: 'Homemade Apple', cursive;
+                margin-bottom: 0px;
+            }
+            
+            .motto {
+                font-size: 1.5em;
+                font-family: 'Gelasio', serif;
+                margin-top: 0px;
+                margin-bottom: 40px;
+                letter-spacing: 1.5pt;
+                text-align: center;
+            }
+            
+            main {
+                padding: 10px;
+            }
+            
+            main section {
+                background-color: white;
+                border: rgb(151, 90, 90) dashed 2px;
+            }
+            
+            main section h2 {
+                color: rgb(235, 125, 167);
+                font-size: 2.6em;
+                font-family: 'Cormorant Garamond', serif;
+                text-align: center;
+            }
+            
+            main section h2 img {
+                vertical-align: middle;
+                margin-left: 10px;
+                margin-bottom: 30px;
+            }
+            
+            main section p {
+                font-size: 1.4em;
+                font-family: 'Gelasio', serif;
+                color: rgb(235, 125, 167);
+                text-align: center;
+                margin-bottom: 50px;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            /* Timeline pics */
+            
+            main h2 {
+                font-size: 3em;
+                font-family: 'Cedarville Cursive', cursive;
+                margin-bottom: 20px;
+                margin-left: 20px;
+            }
+            
+            .content {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                max-width: 1000px;
+                height: 900px;
+                justify-items: center;
+                grid-gap: 30px;
+            }
+            
+            .pic1 {
+                width: 300px;
+                height: 365px;
+                background-color: rgb(131, 80, 104);
+                ;
+                margin-left: 20px;
+            }
+            
+            .pic2 {
+                width: 300px;
+                height: 365px;
+                background-color: rgb(131, 80, 104);
+            }
+            
+            .pic3 {
+                width: 300px;
+                height: 365px;
+                background-color: rgb(131, 80, 104);
+            }
+            
+            .pic4 {
+                width: 300px;
+                height: 365px;
+                background-color: rgb(131, 80, 104);
+            }
+            
+            .pic5 {
+                width: 300px;
+                height: 365px;
+                background-color: rgb(131, 80, 104);
+            }
+            
+            .pic6 {
+                width: 300px;
+                height: 365px;
+                background-color: rgb(131, 80, 104);
+            }
+            
+            .muffins h3 {
+                font-size: 2em;
+                font-family: 'Homemade Apple', cursive;
+                vertical-align: middle;
+            }
+            
+            .muffins img {
+                vertical-align: middle;
+            }
+            
+            .dates {
+                background-color: rgb(153, 78, 93);
+                border: white double 9px;
+                margin: 30px;
+                color: white;
+            }
+            
+            .dates h4 {
+                font-size: 2em;
+                font-family: 'Cormorant Garamond', serif;
+                margin-left: 20px;
+                margin-top: 10px;
+            }
+            
+            .dates p {
+                font-size: 1em;
+                font-family: 'Gelasio', serif;
+                margin-left: 20px;
+                margin-top: 10px;
+            }
+            
+            footer p {
+                font-size: 3em;
+                font-family: 'Cedarville Cursive', cursive;
+                text-align: center;
+            }
