@@ -169,6 +169,34 @@
                 margin-top: 10px;
             }
             
+            .cartoons {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                max-width: 1000px;
+                height: 800px;
+                justify-items: center;
+                grid-gap: 10px;
+            }
+            
+            .eren img,
+            .eric img {
+                border-radius: 50%;
+                width: 300px;
+                height: 300px;
+            }
+            
+            .eren1 {
+                width: 300px;
+                height: 365px;
+                background-color: rgb(131, 80, 104);
+            }
+            
+            .eric1 {
+                width: 300px;
+                height: 365px;
+                background-color: rgb(131, 80, 104);
+            }
+            
             footer p {
                 font-size: 3em;
                 font-family: 'Cedarville Cursive', cursive;
