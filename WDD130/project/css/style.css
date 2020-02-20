@@ -13,21 +13,44 @@
         }
         
         header {
+            background-color: rgb(255, 198, 42);
+            color: rgb(13, 36, 59);
+            border: 3px solid rgb(255, 252, 95);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        header img {
+            width: 150px;
+            height: auto;
+            margin-left: 20px;
+            border-radius: 50%;
+        }
+        
+        header h1 {
+            font-size: 4rem;
+            font-family: 'Bebas Neue', cursive, sans-serif;
+            text-align: center;
+            margin-left: 5px;
+            margin-bottom: auto;
+        }
+        
+        .motto {
+            font-family: 'Roboto Condensed', cursive, sans-serif;
+            font-style: italic;
+            font-size: 1rem;
+            letter-spacing: 1.5pt;
+            color: white
+        }
+        
+        nav {
             background-color: rgb(255, 252, 95);
             font-family: 'Roboto Condensed', cursive, sans-serif;
             border: 3px solid rgb(255, 252, 95);
             margin: auto;
             align-items: center;
-            padding: 10px;
-            display: grid;
-            justify-content: center;
-        }
-        
-        header img {
-            width: 120px;
-            height: auto;
-            margin-left: 20px;
-            border-radius: 50%;
         }
         
         nav ul {
@@ -46,25 +69,26 @@
         nav ul li a {
             text-decoration: none;
             color: rgb(13, 36, 59);
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             padding: 1rem;
         }
         
-        .top-part {
-            display: grid;
-            grid-template-columns: 50px 1fr;
-            grid-template-rows: 1fr;
+        .action {
+            grid-column: 1;
+            grid-row: 1;
+            background-color: rgb(239, 240, 190);
+            color: rgb(13, 36, 59);
+            margin: 1em 3em;
+            padding: 1em;
+            text-align: center;
         }
         
-        .header-img {
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
-        }
-        
-        .bar {
-            align-content: left;
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
+        .action button {
+            line-height: 2em;
+            width: 10em;
+            background-color: rgb(13, 36, 59);
+            color: rgb(239, 240, 190);
+            font-size: 1.2em;
         }
         
         a:link {
@@ -72,7 +96,7 @@
         }
         
         a:visited {
-            color: rgb(29, 99, 168);
+            color: rgb(247, 246, 181);
         }
         
         main {
@@ -93,9 +117,16 @@
             justify-items: center;
         }
         
+        .banner-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
         .banner-box img {
             width: 100%;
             height: auto;
+            grid-column: 1 / -1;
+            grid-row: 1;
         }
         
         .home-headline-1 {
@@ -123,13 +154,14 @@
         }
         
         .home-paragraph-2 {
-            text-align: left;
+            margin-right: 10px;
+            text-align: right;
             grid-column: 4 / 6;
             grid-row: 5 / 7;
         }
         
         .home-left-img {
-            margin-left: 60px;
+            margin-left: 40px;
             grid-column: 1 / 3;
             grid-row: 4 / 6;
         }
@@ -140,13 +172,23 @@
             grid-row: 7 / 8;
         }
         
+        .home-left-img,
+        .home-right-img {
+            width: 100%;
+            height: auto;
+            border: 10px solid #ccc;
+            box-shadow: 5px 5px 5px rgb(0, 0, 0);
+        }
+        
         main h2 {
-            font-size: 2rem;
+            border-top: 2px solid rgb(255, 254, 174);
+            border-bottom: 2px solid rgb(255, 254, 174);
+            font-size: 2.5rem;
             font-family: 'Bebas Neue', cursive, sans-serif;
         }
         
         main p {
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-family: 'Roboto Condensed', cursive, sans-serif;
         }
         
@@ -178,5 +220,3 @@
             font-size: 1rem;
             font-family: 'Roboto Condensed', cursive, sans-serif;
         }
-        /*grid-template-columns: 195px;
-            grid-template-rows: 130px; */
