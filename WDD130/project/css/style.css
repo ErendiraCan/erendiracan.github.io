@@ -97,7 +97,7 @@
         }
         
         a:visited {
-            color: rgb(247, 246, 181);
+            color: rgb(143, 191, 245);
         }
         
         main {
@@ -121,6 +121,7 @@
         .banner-box {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
         }
         
         .banner-box img {
