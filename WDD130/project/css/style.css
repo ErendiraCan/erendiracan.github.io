@@ -13,12 +13,13 @@
         }
         
         header {
-            background-color: rgb(255, 198, 42);
-            color: rgb(13, 36, 59);
+            background-color: rgb(255, 252, 95);
+            font-family: 'Roboto Condensed', cursive, sans-serif;
             border: 3px solid rgb(255, 252, 95);
-            padding: 10px;
-            display: flex;
+            margin: auto;
             align-items: center;
+            padding: 10px;
+            display: grid;
             justify-content: center;
         }
         
@@ -27,30 +28,6 @@
             height: auto;
             margin-left: 20px;
             border-radius: 50%;
-        }
-        
-        header h1 {
-            font-size: 4rem;
-            font-family: 'Bebas Neue', cursive, sans-serif;
-            text-align: center;
-            margin-left: 5px;
-            margin-bottom: auto;
-        }
-        
-        .motto {
-            font-family: 'Roboto Condensed', cursive, sans-serif;
-            font-style: italic;
-            font-size: 1rem;
-            letter-spacing: 1.5pt;
-            color: white
-        }
-        
-        nav {
-            background-color: rgb(255, 252, 95);
-            font-family: 'Roboto Condensed', cursive, sans-serif;
-            border: 3px solid rgb(255, 252, 95);
-            margin: auto;
-            align-items: center;
         }
         
         nav ul {
@@ -67,11 +44,26 @@
         }
         
         nav ul li a {
-            display: block;
             text-decoration: none;
             color: rgb(13, 36, 59);
             font-size: 1.2rem;
             padding: 1rem;
+        }
+        
+        .top-part {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+        
+        .header-img {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+        
+        .bar {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
         }
         
         a:link {
@@ -89,6 +81,15 @@
             padding: 10px;
         }
         
+        .home-grid {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 195px;
+            grid-template-rows: 130px;
+            max-width: 960px;
+            justify-items: center;
+        }
+        
         .banner-box img {
             width: 100%;
             height: auto;
@@ -99,9 +100,37 @@
             grid-row: 1 / 2;
         }
         
-        .home-headline-2 {
+        .home-paragraph-1 {
+            text-align: center;
             grid-column: 1 / 4;
-            grid-row: 1 / 2;
+            grid-row: 2 / 4;
+        }
+        
+        .home-right-img {
+            grid-column: 4 / 6;
+            grid-row: 1 / 3;
+        }
+        
+        .home-headline-2 {
+            grid-column: 3 / 6;
+            grid-row: 4 / 5;
+        }
+        
+        .home-paragraph-2 {
+            text-align: center;
+            grid-column: 4 / 6;
+            grid-row: 5 / 7;
+        }
+        
+        .home-left-img {
+            grid-column: 1 / 3;
+            grid-row: 4 / 6;
+        }
+        
+        .home-paragraph-3 {
+            text-align: center;
+            grid-column: 1 / 6;
+            grid-row: 7 / 8;
         }
         
         main h2 {
@@ -112,6 +141,23 @@
         main p {
             font-size: 1rem;
             font-family: 'Roboto Condensed', cursive, sans-serif;
+        }
+        
+        .social-media {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+        
+        .social-icons {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            text-align: right;
+        }
+        
+        .name {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
         }
         
         footer {
