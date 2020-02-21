@@ -74,6 +74,7 @@
         }
         
         .action {
+            float: left;
             grid-column: 1;
             grid-row: 1;
             background-color: rgb(239, 240, 190);
@@ -129,7 +130,6 @@
         .banner-box {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
         }
         
         .banner-box img {
