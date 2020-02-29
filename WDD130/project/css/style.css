@@ -22,7 +22,7 @@ header {
     justify-content: center;
 }
 
-header img {
+.heading-img {
     width: 150px;
     height: auto;
     margin-left: 20px;
@@ -237,6 +237,102 @@ footer {
 footer p {
     font-size: 1rem;
     font-family: 'Roboto Condensed', cursive, sans-serif;
+}
+
+
+/* Page 1*/
+
+.head1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    width: 960px;
+    height: 350px;
+    align-content: center;
+    justify-content: center;
+}
+
+.h1head1 {
+    width: 955px;
+    height: 85px;
+    background-color: rgb(13, 36, 59);
+    color: rgb(255, 198, 42);
+    grid-area: 1 / 1 / 2 / 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.imghead1 {
+    height: 90%;
+    width: auto;
+    grid-area: 2 / 1 / 3 / 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.phead1 {
+    font-size: 1.1rem;
+    font-family: 'Roboto Condensed', cursive, sans-serif;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.main1 {
+    width: 960px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+.main1 img {
+    width: 400px;
+    height: 300px;
+}
+
+.main1 h2 {
+    text-align: center;
+}
+
+.main1 p {
+    text-align: center;
+}
+
+.main1-sec1 {
+    width: 400px;
+    height: 550px;
+    grid-area: 1 / 1 / 2 / 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.main1-sec2 {
+    width: 400px;
+    height: 550px;
+    grid-area: 1 / 2 / 2 / 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.main1-sec3 {
+    width: 400px;
+    height: 550px;
+    grid-area: 2 / 1 / 3 / 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.main1-sec4 {
+    width: 400px;
+    height: 550px;
+    grid-area: 2 / 2 / 3 / 3;
+    align-self: center;
+    justify-self: center;
 }
 
 @media screen and (max-width: 550px) {
