@@ -1,0 +1,137 @@
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script|EB+Garamond&display=swap');
+    body {
+        max-width: 900px;
+        margin: 0 auto;
+        background-image: url(https://1.bp.blogspot.com/-UK2nwW3RRO0/Xkg3p_fXbNI/AAAAAAAAO0s/pPGoCmVkWNsrGqmjSQf0Qsi3YAU_wT3fQCLcBGAsYHQ/s1600/a4015b71edfd20bff420bc7ba1b61692.png);
+        background-attachment: fixed;
+        background-color: rgb(206, 175, 194);
+        padding: 1em;
+    }
+    
+    main {
+        background-color: #FFF1F9;
+        border: solid 10px #FFF1F9;
+        padding: 1.2em;
+        margin: 15px;
+    }
+    
+    img {
+        max-width: 100%;
+        border-radius: 30%;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Dancing Script', cursive;
+        background-color: #FFF1F9;
+        color: #8E1C5F;
+        border: solid 5px #FFF1F9;
+        font-size: 1.5rem;
+    }
+    
+    .signature {
+        font-family: 'Dancing Script', cursive;
+        color: #8E1C5F;
+        font-size: 1.5rem;
+    }
+    
+    header {
+        padding: 1em;
+        text-align: center;
+        color: #8E1C5F;
+        background-color: #FFF1F9;
+        border: solid 5px #FFF1F9;
+    }
+    
+    header>h1 {
+        color: #8E1C5F;
+        font-size: 3rem;
+    }
+    
+    p {
+        font-family: 'EB Garamond', serif;
+        color: #9B2940;
+        padding: 1em;
+        font-size: 1.1rem;
+    }
+    
+    li {
+        font-family: 'EB Garamond', serif;
+        color: #9B2940;
+        font-size: 1.1rem;
+    }
+    
+    .colors {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .colors th {
+        background-color: white;
+    }
+    
+    .colors td {
+        width: 15%;
+        height: 3em;
+    }
+    
+    .primary {
+        background-color: #FFF1F9;
+    }
+    
+    .secondary {
+        background-color: #8E1C5F;
+    }
+    
+    .accent1 {
+        background-color: #C4467F;
+    }
+    
+    .accent2 {
+        background-color: #FF91BD;
+    }
+    
+    .accent3 {
+        background-color: #9B2940;
+    }
+    
+    nav {
+        background-color: #9B2940;
+        line-height: 3em;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    
+    nav>ul {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    nav a {
+        padding: 1em;
+        min-width: 70px;
+    }
+    
+    nav a:link,
+    nav a:visited {
+        color: #FFF1F9;
+    }
+    
+    nav a:hover {
+        color: #FFF1F9;
+    }
+    
+    footer {
+        background-color: #FFF1F9;
+        border: solid 10px #FFF1F9;
+        padding: 1.2em;
+        margin: 15px;
+        font-family: 'EB Garamond', serif;
+        color: #9B2940;
+    }
