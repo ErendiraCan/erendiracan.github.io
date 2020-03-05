@@ -106,16 +106,26 @@
         line-height: 3em;
         text-align: center;
         font-size: 1.2em;
+        margin: auto;
     }
     
     nav>ul {
         list-style-type: none;
         display: flex;
+        margin: 0rem;
+        padding: 0rem;
+    }
+    
+    nav ul li {
+        list-style: none;
+        flex: 1 1 auto;
+        text-align: center;
     }
     
     nav a {
         padding: 1em;
         min-width: 70px;
+        font-size: 1.2rem;
     }
     
     nav a:link,
