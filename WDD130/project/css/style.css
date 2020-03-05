@@ -294,6 +294,8 @@ footer p {
 .main1 img {
     width: 400px;
     height: 300px;
+    border: 10px solid #ccc;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 .main1 h2 {
