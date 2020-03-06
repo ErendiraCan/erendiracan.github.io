@@ -126,79 +126,45 @@
                 height: 365px;
                 background-color: rgb(131, 80, 104);
             }
-            
-            .muffins {
-                width: 400px;
-                height: 400px;
-                background-color: rgb(235, 125, 167);
-                border: 1px;
-                border-radius: 50%;
-                line-height: 100px;
-                justify-content: center;
-                align-content: center;
-            }
-            
-            .muffins h3 {
-                font-size: 2em;
-                font-family: 'Homemade Apple', cursive;
-                text-align: center;
-            }
-            
-            .muffins img {
-                vertical-align: middle;
-            }
-            
-            .dates {
-                background-color: rgb(153, 78, 93);
-                border: white double 9px;
-                margin: 30px;
-                color: white;
-            }
-            
-            .dates h4 {
-                font-size: 2em;
-                font-family: 'Cormorant Garamond', serif;
-                margin-left: 20px;
-                margin-top: 10px;
-            }
-            
-            .dates p {
-                font-size: 1em;
-                font-family: 'Gelasio', serif;
-                margin-left: 20px;
-                margin-top: 10px;
-            }
-            
-            .cartoons {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                max-width: 1000px;
-                height: 800px;
-                justify-items: center;
-                grid-gap: 10px;
-            }
-            
-            .eren img,
-            .eric img {
-                border-radius: 50%;
-                width: 300px;
-                height: 300px;
-            }
-            
-            .eren1 {
-                width: 300px;
-                height: 365px;
-                background-color: rgb(131, 80, 104);
-            }
-            
-            .eric1 {
-                width: 300px;
-                height: 365px;
-                background-color: rgb(131, 80, 104);
-            }
+            /* -------------------------------- */
             
             footer p {
                 font-size: 3em;
                 font-family: 'Cedarville Cursive', cursive;
                 text-align: center;
+            }
+            /* Page1 */
+            
+            .main1 {
+                background: rgb(255, 214, 225);
+                width: 1000px;
+                border: solid white 5px;
+            }
+            
+            .main1 p {
+                margin: 100px;
+                padding: 15px;
+                color: rgb(66, 22, 35);
+                font-family: 'Gelasio', serif;
+                font-size: 1.5rem;
+                white-space: normal;
+                text-align: center;
+            }
+            
+            .main1 img {
+                border: solid 20px white;
+                align-self: center;
+                margin-left: 80px;
+                margin-bottom: 30px;
+            }
+            
+            .footer1 {
+                background-color: rgb(255, 214, 225);
+                border: solid 5px white;
+            }
+            
+            footer a {
+                font-family: 'Gelasio', serif;
+                font-size: 1.5rem;
+                text-align: right;
             }
