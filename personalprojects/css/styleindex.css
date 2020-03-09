@@ -82,15 +82,16 @@ main section p {
 main h2 {
     font-size: 3em;
     font-family: 'Julius Sans One', sans-serif;
-    margin-left: 20px;
     text-align: center;
+    margin-bottom: 0em;
 }
 
 .timeline p {
     font-size: 1.3em;
     font-family: 'Lusitana', serif;
     text-align: center;
-    margin-bottom: 50px;
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
 
 .content {
@@ -182,10 +183,18 @@ footer {
     padding: 15px;
 }
 
-footer p {
+footer h3 {
     font-size: 3em;
     font-family: 'Julius Sans One', sans-serif;
     text-align: center;
+    margin-bottom: 0em;
+}
+
+footer p {
+    font-size: 1.5em;
+    font-family: 'Lusitana', serif;
+    text-align: center;
+    margin-top: 0em;
 }
 
 
@@ -205,8 +214,9 @@ footer p {
 }
 
 .main1 img {
-    border: solid 20px white;
+    border: solid 15px white;
     align-self: center;
+    justify-self: center;
     margin-left: 80px;
     margin-bottom: 30px;
 }
@@ -239,5 +249,28 @@ a:active {
 
 .header2 img {
     margin-top: 50px;
+    margin-bottom: 50px;
     border: none;
+}
+
+.main2 {
+    width: 1000px;
+}
+
+.main2 p {
+    margin: 100px;
+    padding: 15px;
+    font-family: 'Lusitana', serif;
+    font-size: 1.5rem;
+    white-space: normal;
+    text-align: center;
+    margin-top: 0em;
+}
+
+.main2 img {
+    border: solid 15px white;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 10px;
+    margin-left: 85px;
 }
