@@ -96,46 +96,82 @@ main h2 {
 .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1000px;
+    max-width: 980px;
     height: 800px;
     justify-items: center;
-    grid-gap: 30px;
+    grid-gap: 20px;
 }
 
 .pic1 {
     width: 300px;
-    height: 365px;
-    background-color: #439135;
+    height: 300px;
+    align-self: center;
+    justify-self: center;
+}
+
+.pic1 img {
+    border-radius: 50%;
+    border: double black 10px;
 }
 
 .pic2 {
     width: 300px;
-    height: 365px;
-    background-color: #439135;
+    height: 300px;
+    align-self: center;
+    justify-self: center;
+}
+
+.pic2 img {
+    border-radius: 50%;
+    border: double black 10px;
 }
 
 .pic3 {
     width: 300px;
-    height: 365px;
-    background-color: #439135;
+    height: 300px;
+    align-self: center;
+    justify-self: center;
+}
+
+.pic3 img {
+    border-radius: 50%;
+    border: double black 10px;
 }
 
 .pic4 {
     width: 300px;
-    height: 365px;
-    background-color: #439135;
+    height: 300px;
+    align-self: center;
+    justify-self: center;
+}
+
+.pic4 img {
+    border-radius: 50%;
+    border: double black 10px;
 }
 
 .pic5 {
     width: 300px;
-    height: 365px;
-    background-color: #439135;
+    height: 300px;
+    align-self: center;
+    justify-self: center;
+}
+
+.pic5 img {
+    border-radius: 50%;
+    border: double black 10px;
 }
 
 .pic6 {
     width: 300px;
-    height: 365px;
-    background-color: #439135;
+    height: 300px;
+    align-self: center;
+    justify-self: center;
+}
+
+.pic6 img {
+    border-radius: 50%;
+    border: double black 10px;
 }
 
 
@@ -153,7 +189,7 @@ footer p {
 }
 
 
-/* Page1 */
+/* Page1,2,3,4,5,6 */
 
 .main1 {
     width: 1000px;
@@ -196,4 +232,12 @@ a:hover,
 a:active {
     color: white;
     text-decoration: none;
+}
+
+
+/* Aditional Page */
+
+.header2 img {
+    margin-top: 50px;
+    border: none;
 }
