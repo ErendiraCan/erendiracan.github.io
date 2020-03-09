@@ -265,12 +265,24 @@ a:active {
     white-space: normal;
     text-align: center;
     margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 .main2 img {
     border: solid 15px white;
     align-self: center;
     justify-self: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-left: 85px;
+}
+
+.babe {
+    text-align: center;
+    width: 980px;
+}
+
+.babe img {
+    border: none;
+    margin-left: 30px;
+    margin-top: 0em;
 }
