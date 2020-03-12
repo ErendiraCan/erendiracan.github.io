@@ -51,9 +51,8 @@ header h1 {
 
 main {
     background-color: #FFF1F9;
-    border: solid 10px #FFF1F9;
-    padding: 1.2em;
-    margin: 15px;
+    border: solid 3px #FFF1F9;
+    padding: 10px;
 }
 
 nav {
@@ -91,8 +90,42 @@ a:visited,
 a:hover,
 a:active {
     color: #FFF1F9;
-    ;
     text-decoration: none;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 900px;
+    height: 900px;
+}
+
+.cakes {
+    grid-area: 1 / 1 / 2 / 2;
+    border: double 5px #C4467F;
+}
+
+.cupcakes {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.donuts {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.cookies {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.brownies {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.pies {
+    grid-area: 2 / 3 / 3 / 4;
 }
 
 .social-media {
