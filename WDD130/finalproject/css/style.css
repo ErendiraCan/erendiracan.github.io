@@ -1,0 +1,125 @@
+                        @import url('https://fonts.googleapis.com/css?family=Dancing+Script|EB+Garamond&display=swap');
+                        body {
+                            max-width: 900px;
+                            margin: 0 auto;
+                            background-image: url(https://1.bp.blogspot.com/-UK2nwW3RRO0/Xkg3p_fXbNI/AAAAAAAAO0s/pPGoCmVkWNsrGqmjSQf0Qsi3YAU_wT3fQCLcBGAsYHQ/s1600/a4015b71edfd20bff420bc7ba1b61692.png);
+                            background-attachment: fixed;
+                            background-color: #FF91BD;
+                            padding: 1em;
+                        }
+                        
+                        header,
+                        nav,
+                        main,
+                        footer {
+                            max-width: 960px;
+                            margin: 0 auto;
+                        }
+                        
+                        header {
+                            background-color: #FFF1F9;
+                            color: #8E1C5F;
+                            border: solid 3px #FFF1F9;
+                            padding: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        
+                        .heading-img {
+                            width: 100%;
+                            height: auto;
+                            margin-right: 30px;
+                            border-radius: 40%;
+                        }
+                        
+                        header h1 {
+                            font-size: 3.8rem;
+                            font-family: 'Dancing Script', cursive;
+                            text-align: center;
+                            margin-bottom: auto;
+                        }
+                        
+                        .motto {
+                            font-family: 'EB Garamond', serif;
+                            font-style: italic;
+                            font-size: 1.3rem;
+                            letter-spacing: 1.5pt;
+                            text-align: center;
+                            color: #9B2940;
+                        }
+                        
+                        main {
+                            background-color: #FFF1F9;
+                            border: solid 10px #FFF1F9;
+                            padding: 1.2em;
+                            margin: 15px;
+                        }
+                        
+                        nav {
+                            background-color: #9B2940;
+                            font-family: 'EB Garamond', serif, sans-serif;
+                            border: solid 3px #9B2940;
+                            line-height: 3em;
+                            margin: auto;
+                            align-items: center;
+                        }
+                        
+                        nav ul {
+                            display: flex;
+                            flex-direction: row;
+                            margin: 0rem;
+                            padding: 0rem;
+                        }
+                        
+                        nav ul li {
+                            list-style: none;
+                            flex: 1 1 auto;
+                            text-align: center;
+                        }
+                        
+                        nav ul li a {
+                            text-decoration: none;
+                            color: #FFF1F9;
+                            font-size: 1.4rem;
+                            padding: 1em;
+                            min-width: 70px;
+                        }
+                        
+                        a:link,
+                        a:visited,
+                        a:hover,
+                        a:active {
+                            color: #FFF1F9;
+                            ;
+                            text-decoration: none;
+                        }
+                        
+                        .social-media {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-template-rows: 1fr;
+                        }
+                        
+                        .social-icons {
+                            grid-column: 2 / 3;
+                            grid-row: 1 / 2;
+                            text-align: right;
+                        }
+                        
+                        .name {
+                            grid-column: 1 / 2;
+                            grid-row: 1 / 2;
+                        }
+                        
+                        footer {
+                            background-color: #C4467F;
+                            color: #FFF1F9;
+                            border: 3px solid #C4467F;
+                            padding: 10px;
+                        }
+                        
+                        footer p {
+                            font-size: 1.1rem;
+                            font-family: 'EB Garamond', serif, sans-serif;
+                        }
