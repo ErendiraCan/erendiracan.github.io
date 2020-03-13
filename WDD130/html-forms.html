@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
+    <meta name="description" content="HTML Forms Activity for class WDD 130">
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
         body {
             max-width: 900px;
             margin: 0 auto;
             background-color: rgb(176, 206, 223);
-            padding: 1em
+            padding: 1em;
+            font-family: 'Roboto', sans-serif;
         }
         
         header {
@@ -100,26 +103,28 @@
     <header>
         <h1>HTML Forms</h1>
     </header>
-    <form action="/my-handling-form-page" method="post">
-        <ul>
-            <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name">
-            </li>
-            <li>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="user_mail">
-            </li>
-            <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-            </li>
-            <li class="button">
-                <button type="submit">Send your message</button>
-            </li>
-        </ul>
-    </form>
-    <div id="feedback"></div>
+    <main>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" reaquired size="40" placeholder="your name">
+                </li>
+                <li>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_mail" reaquired size="40" placeholder="your email">
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message" reaquired size="40" placeholder="your message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send your message</button>
+                </li>
+            </ul>
+        </form>
+        <div id="feedback"></div>
+    </main>
     <script>
         // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById('feedback');
@@ -131,7 +136,7 @@
             // stop the form from doing the default action
             e.preventDefault();
             // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
             // make the feedback element visible.
             feedbackElement.style.display = "block";
         });
