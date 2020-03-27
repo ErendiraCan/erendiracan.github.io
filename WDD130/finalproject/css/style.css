@@ -429,8 +429,9 @@ h2 {
 form {
     width: 400px;
     padding: 1em;
-    border: 1px solid #8E1C5F;
+    border: double 5px #C4467F;
     border-radius: 1em;
+    color: #8E1C5F;
 }
 
 ul {
@@ -454,7 +455,7 @@ textarea {
     font: 1em 'EB Garamond', serif, sans-serif;
     width: 300px;
     box-sizing: border-box;
-    border: 1px solid #8E1C5F;
+    border: solid 1px #C4467F;
     background-color: #FFF1F9;
 }
 
@@ -474,20 +475,19 @@ textarea {
 
 button {
     margin-left: .5em;
-    background-color: #8E1C5F;
+    border: solid 1px #C4467F;
+    background-color: #C4467F;
     color: #FFF1F9;
 }
 
 #feedback {
-    border: solid 1px #C4467F;
     margin: 5px;
     padding: 2px;
     text-align: center;
     font-family: 'EB Garamond', serif, sans-serif;
     font-size: 1.5rem;
     display: none;
-    color: #FFF1F9;
-    background-color: #8E1C5F;
+    color: #8E1C5F;
 }
 
 .contactus {
@@ -512,10 +512,17 @@ button {
 
 .banner-img {
     grid-area: 3 / 1 / 4 / 3;
+    width: 100%;
+    height: auto;
+    border: double 5px #C4467F;
 }
 
 .closetoyou {
     grid-area: 4 / 1 / 5 / 3;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #8E1C5F;
 }
 
 .description {
