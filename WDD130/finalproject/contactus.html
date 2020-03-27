@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Sweet Home</title>
+    <meta name="description" content="Sweet Sweet Home: Just like grandma did it!">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img class="heading-img" src="images/Logo.JPG" alt="Sweet Sweet Home Logo">
+        </picture>
+        <section class="heading">
+            <h1>Sweet Sweet Home</h1>
+            <div class="motto">Just like grandma did it!</div>
+        </section>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="whoarewe.html">Who are we?</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Contact Us!</h2>
+        <div class="contactus">
+            <div class="cont-img1">
+                <img src="images/doughnut.jpg" alt="Doughnut">
+            </div>
+            <div class="form">
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" size="40" placeholder="Your name">
+                        </li>
+                        <li>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" name="user_mail" size="40" placeholder="Your email">
+                        </li>
+                        <li>
+                            <label for="phonenumber">Phone Number:</label>
+                            <input type="number" id="phonenumber" name="user_phonenumber" size="40" placeholder="Your phone number">
+                        </li>
+                        <li>
+                            <label for="order">Write your order:</label>
+                            <textarea id="order" name="user_order" size="40" placeholder="Your order"></textarea>
+                        </li>
+                        <li class="button">
+                            <button type="submit">Send your Order</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div id="feedback"></div>
+            <div class="content">
+                <p>Our site is for everyone who loves desserts. All ages and different environments. No matter if you are young or older you can access to our website and choose what you want and buy it.</p>
+            </div>
+            <div class="banner-img">
+                <img src="images/dessert-table.jpg" alt="Dessert Table">
+            </div>
+            <div class="closetoyou">
+                <h3>Always close to you!</h2>
+            </div>
+            <div class="description">
+                <p>You can find us in the 26 D street in Brisas del Bosque 97144, close the Macroplaza.</p>
+            </div>
+            <div class="map" id="googleMap" style="width:100%;height:400px;">
+                <script>
+                    function myMap() {
+                        var mapProp = {
+                            center: new google.maps.LatLng(20.9866045, -89.5862466),
+                            zoom: 5,
+                        };
+                        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                    }
+                </script>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.150473823622!2d-89.58624663340102!3d20.98660449301067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5670d77a63ef69%3A0x321e8e677e7e267e!2sCalle%2026%20Diagonal%20541%2C%20Las%20Brisas%2C%2097144%20M%C3%A9rida%2C%20Yuc.!5e0!3m2!1ses!2smx!4v1585284665982!5m2!1ses!2smx"
+                    width="400" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+        </div>
+        </div>
+    </main>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form element so we can read what was entered in it.
+        const formElement = document.forms[0];
+
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your order. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+        });
+    </script>
+    <footer class="social-media">
+        <div class="social-icons">
+            <a href="https://es-la.facebook.com/"><img src="https://icons.iconarchive.com/icons/danleech/simple/256/facebook-icon.png" alt="Facebook" width="50"></a>
+            <a href="https://www.instagram.com/?hl=es-la"><img src="https://www.freepnglogos.com/uploads/download-instagram-png-logo-20.png" alt="instagram" width="50"></a>
+            <a href="https://twitter.com/login?lang=es"><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" alt="Twitter" width="50"></a>
+        </div>
+
+        <p class="name">© 2020 Sweet Sweet Home - Erendira Can Calderon - Yucatan</p>
+    </footer>
+</body>
+
+</html>
