@@ -453,6 +453,7 @@ textarea {
     box-sizing: border-box;
     border: solid 1px #C4467F;
     background-color: #FFF1F9;
+    padding: 0.5rem;
 }
 
 input:focus,
