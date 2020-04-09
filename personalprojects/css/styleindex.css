@@ -290,3 +290,8 @@ a:active {
     margin-left: 30px;
     margin-top: 0em;
 }
+
+.bebe img {
+    border: none;
+    text-align: center;
+}
