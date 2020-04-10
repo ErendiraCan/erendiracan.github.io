@@ -291,7 +291,20 @@ a:active {
     margin-top: 0em;
 }
 
+.bebe {
+    text-align: center;
+}
+
 .bebe img {
     border: none;
-    text-align: center;
+    margin-right: 70px;
+}
+
+.baby {
+    border: none;
+    background-color: transparent;
+}
+
+.baby img {
+    border: none;
 }
