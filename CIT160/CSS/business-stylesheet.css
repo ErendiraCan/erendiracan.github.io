@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Lora:ital@1&display=swap');
+body {
+    background-color: rgb(255, 213, 246);
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 2em;
+}
+
+p {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5em;
+}
