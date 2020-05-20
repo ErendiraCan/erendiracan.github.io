@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert tables</title>
+    <script>
+        function quartTolit() {
+            let text = document.getElementById('quartsInputBox').value;
+            let qt = parseFloat(text);
+            let l = qt / 1.0567;
+            document.getElementById('quartDiv').innerHTML = l;
+        }
+
+        function gasolineconsumed() {
+            let s = parseFloat(document.getElementById('StartingMileageInput').value);
+            let f = parseFloat(document.getElementById('FinalMileageInput').value);
+            let g = parseFloat(document.getElementById('FuelUsageInput').value);
+            let mpg = (f - s) / g;
+            document.getElementById('mpgDiv').innerHTML = mpg;
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Calculate Quarts to Liters</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Enter the quarts:</td>
+                <td><input type="text" id="quartsInputBox"></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="quartTolit()">Convert</button></td>
+                <td>
+                    <div id="quartDiv"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Calculate the Mileage in miles per Gallon</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Enter your starting mileage in miles:</td>
+                <td><input type="text" id="StartingMileageInput" size="5"></td>
+            </tr>
+            <tr>
+                <td>Enter your final mileage in miles:</td>
+                <td><input type="text" id="FinalMileageInput" size="5"></td>
+            </tr>
+            <tr>
+                <td>Enter your fuel usage in gallons:</td>
+                <td><input type="text" id="FuelUsageInput" size="5"></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="gasolineconsumed()">Miles per gallon.</button></td>
+                <td>
+                    <div id="mpgDiv"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
