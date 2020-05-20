@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam 1</title>
+    <script>
+        function rateofchange() {
+            let c = parseFloat(document.getElementById('currPriceInput').value);
+            let p = parseFloat(document.getElementById('prevPriceInput').value);
+            let roc = (c - p) / p;
+            document.getElementById('rocDiv').innerHTML = roc;
+        }
+    </script>
+</head>
+
+<body>
+    Current Price <input type="text" id="currPriceInput" size="5"><br> Previous Price <input type="text" id="prevPriceInput" size="5"><br>
+    <button type="button" onclick="rateofchange()">Rate of Change of price</button>
+    <div id="rocDiv"></div>
+</body>
+
+</html>
