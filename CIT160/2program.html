@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Programs with if Statements</title>
+    <script>
+        function dayweather() {
+            let weather = document.getElementById('weather').value;
+            let message;
+            if (weather == "hot") {
+                message = 'sandals';
+            } else if (weather == "rain") {
+                message = 'galoshes';
+            } else if (weather == "snow") {
+                message = 'boots';
+            } else {
+                message = 'shoes';
+            }
+            document.getElementById('shoes').innerHTML = message;
+        }
+
+        function childquiz() {
+            let x = parseFloat(document.getElementById("xInputBox").value);
+            let op = document.getElementById("opInputBox").value;
+            let y = parseFloat(document.getElementById("yInputBox").value);
+            let a = parseFloat(document.getElementById("aInputBox").value);
+            let answer;
+            let message;
+            if (op == "+") {
+                answer = x + y;
+                if (answer == a) {
+                    message = "Nice job!";
+                } else {
+                    message = "Try again!";
+                }
+
+            } else if (op == "-") {
+                answer = x - y;
+                if (answer == a) {
+                    message = "Nice job!";
+                } else {
+                    message = "Try again!";
+                }
+
+            } else if (op == "*") {
+                answer = x * y;
+                if (answer == a) {
+                    message = "Nice job!";
+                } else {
+                    message = "Try again!";
+                }
+            } else if (op == "/") {
+                answer = x / y;
+                if (answer == a) {
+                    message = "Nice job!";
+                } else {
+                    message = "Try again!";
+                }
+            }
+            document.getElementById('answer').innerHTML = message;
+        }
+    </script>
+</head>
+
+<body>
+    Please enter a kind of weather: <input type="text" id="weather">
+    <button type="button" onclick="dayweather()">You need to use:</button>
+    <div id="shoes"></div>
+
+    <input type="text" id="xInputBox" size="10" />
+    <input type="text" id="opInputBox" size="2" />
+    <input type="text" id="yInputBox" size="10" /> =
+    <input type="text" id="aInputBox" size="10" />
+    <button type="button" onclick="childquiz()">Check!</button>
+    <div id="answer"></div>
+</body>
+
+</html>
