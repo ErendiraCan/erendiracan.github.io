@@ -9,7 +9,6 @@
         function days() {
             var dayOfWeek = new Date().getDay();
             var subtotal = parseFloat(document.getElementById("subtotal").value);
-            var total;
             if (subtotal >= 50 && (dayOfWeek == 2 || dayOfWeek == 3)) {
                 var percent = subtotal * 0.1;
                 var tax = percent * 0.06;
