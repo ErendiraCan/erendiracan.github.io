@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Operators</title>
+    <script>
+        function days() {
+            var dayOfWeek = new Date().getDay();
+            var subtotal = parseFloat(document.getElementById("subtotal").value);
+            var total;
+            if (subtotal >= 50 && (dayOfWeek == 2 || dayOfWeek == 3)) {
+                var percent = subtotal * 0.1;
+                var tax = percent * 0.06;
+                var total = subtotal - percent + tax;
+            } else {
+                var tax = subtotal * 0.06;
+                var total = subtotal + tax;
+            }
+            document.getElementById("sales").innerHTML = total;
+        }
+
+        function sleepday() {
+            var now = new Date();
+            var month = now.getMonth();
+            var dayOfMonth = now.getDate();
+            var dayOfWeek = now.getDay();
+            var message;
+            if (dayOfWeek == 0 || dayOfWeek == 6) {
+                message == "Sleep in";
+            }
+            if (month == 0 && now == 1) {
+                message = "Sleep in";
+            } else if (month == 6 && now == 4) {
+                message = "Sleep in";
+            } else if (month == 11 && now == 25) {
+                message == "Sleep in";
+            } else {
+                message = "Get up!";
+            }
+            document.getElementById('answer').innerHTML = message;
+        }
+    </script>
+</head>
+
+<body>
+    Please enter the customer's subtotal:<input type="text" id="subtotal">
+    <button type="button" onclick="days()">Total</button><br> Total:
+    <div id="sales"></div>
+    <br>
+    <button type="button" onclick="sleepday()">What do I have to do today?</button><br>
+    <div id="answer"></div>
+</body>
+
+</html>
