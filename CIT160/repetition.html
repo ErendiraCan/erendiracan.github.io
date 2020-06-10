@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program with Repetition</title>
+    <script>
+        function sum() {
+            let n = parseFloat(document.getElementById('number').value);
+            let sum = 0;
+            for (let i = 1; i <= n; i += 2) {
+                sum += i;
+            }
+            document.getElementById('answer').innerHTML = sum;
+        }
+    </script>
+</head>
+
+<body>
+    Number: <input type='text' id='number'>
+    <button type='button' onClick='sum()'>Total:</button></br>
+    Total:
+    <div id='answer'></div>
+
+</body>
+
+</html>

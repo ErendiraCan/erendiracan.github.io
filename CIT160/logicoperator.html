@@ -10,11 +10,11 @@
             var dayOfWeek = new Date().getDay();
             var subtotal = parseFloat(document.getElementById("subtotal").value);
             if (subtotal >= 50 && (dayOfWeek == 2 || dayOfWeek == 3)) {
-                var percent = subtotal * 0.1;
-                var tax = percent * 0.06;
+                var percent = Math.round(subtotal * 0.1);
+                var tax = Math.round(subtotal * 0.06);
                 var total = subtotal - percent + tax;
             } else {
-                var tax = subtotal * 0.06;
+                var tax = Math.round(subtotal * 0.06);
                 var total = subtotal + tax;
             }
             document.getElementById("sales").innerHTML = total;
@@ -29,11 +29,11 @@
             if (dayOfWeek == 0 || dayOfWeek == 6) {
                 message == "Sleep in";
             }
-            if (month == 0 && now == 1) {
+            if (month == 0 && dayOfMonth == 1) {
                 message = "Sleep in";
-            } else if (month == 6 && now == 4) {
+            } else if (month == 6 && dayOfMonth == 4) {
                 message = "Sleep in";
-            } else if (month == 11 && now == 25) {
+            } else if (month == 11 && dayOfMonth == 25) {
                 message == "Sleep in";
             } else {
                 message = "Get up!";
