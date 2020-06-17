@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two More Programs with Repetition: 5 Times Table</title>
+    <script type="text/javascript">
+        function fivetimestable() {
+            let output = "";
+            for (i = 1; i <= 12; i++) {
+                let n = 5;
+                let result = i * 5;
+                output += n + " x " + i + " = " + result + "<br>";
+            }
+            document.getElementById("table").innerHTML = output;
+        }
+    </script>
+</head>
+
+<body>
+    Five Times Table
+    <button type="button" onclick="fivetimestable()">Check!</button>
+    <div id="table"></div>
+</body>
+
+</html>
