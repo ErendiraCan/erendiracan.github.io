@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <script>
+        /* Input:
+         * Processing:
+         * Output:
+         */
+        function integers() {
+            let start = parseFloat(document.getElementById('start').value);
+            let end = parseFloat(document.getElementById('end').value);
+            let divisor = parseFloat(document.getElementById('divisor').value);
+            let output = "";
+            for (let i = start; i <= end; i++) {
+                if (i % divisor == 0) {
+                    output += i + " ";
+                }
+            }
+            document.getElementById('output').innerHTML = output;
+        }
+    </script>
+</head>
+
+<body>
+    Start: <input type="text" id="start" size="5"><br> End: <input type="text" id="end" size="5"><br> Divisor: <input type="text" id="divisor" size="5"><br>
+    <button type="button" onclick=" integers()">Click</button>
+    <div id="output"></div>
+</body>
+
+</html>
