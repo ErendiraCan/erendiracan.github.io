@@ -10,15 +10,12 @@
             let temperature = parseInt(document.getElementById('temperature').value);
             let windspeed = parseInt(document.getElementById('windspeed').value);
             let factor = windchill(temperature, windspeed);
-            document.getElementById('outputDiv').innerHTML = factor;
+            document.getElementById('outputDiv').innerHTML = "Wind Chill: " +
+                factor.toFixed(2);
         }
 
         function windchill(tempF, speed) {
-            let p = Math.pow(speed, 0.16);
-            let x = 0.6215 * tempF;
-            let y = 35.75 * p;
-            let z = 0.4275 * tempF * p;
-            let f = 35.74 + x - y + z;
+            let f = 35.74 + (0.6215 * tempF) - 35.75 * (Math.pow(speed, 0.16)) + ((0.4275 * tempF) * (Math.pow(speed, 0.16)));
             return f;
         }
     </script>
