@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program with Repetition 1</title>
+</head>
+<script>
+    function doPayment() {
+        let borrowed = parseInt(document.getElementById('borrowed').value);
+        let annualrate = parseInt(document.getElementById('annual').value);
+        let yearsnum = parseInt(document.getElementById('year').value);
+        let periodyears = parseInt(document.getElementById('period').value);
+        let payment = computePayment(borrowed, annualrate, yearsnum, periodyears);
+        document.getElementById('payment').innerHTML = payment;
+    }
+
+    function doBalance() {}
+
+    function computePayment(principal, annualRate, years, periodsPerYear) {
+        let periodrate = annualRate / periodsPerYear;
+        let interest = principal * periodrate;
+        let sum = interest + 1;
+        let totalperiods = years * periodsPerYear;
+        let power = Math.pow(sum, -(totalperiods));
+        let rest = 1 - power;
+        let p = principal * interest / rest;
+        return p;
+    }
+
+    function computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate) {}
+</script>
+
+<body>
+    Amount borrowed(principal): <input type="text" id="borrowed"><br> Annual interest rate (example 0.065): <input type="text" id="annual"><br> Number of years: <input type="text" id="year"><br> Payments per year: <input type="text" id="period"><br>
+    <button type="button" onclick="doPayment()">Compute payment: </button>
+    <div id="payment"></div>
+    Number of payments paid to date: <input type="text" id="principal"><br>
+    <button type="button" onclick="doBalance()">Compute payoff amount: </button>
+    <div id="outputDiv"></div>
+</body>
+
+</html>
