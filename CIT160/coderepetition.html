@@ -4,23 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Program with Repetition 1</title>
-</head>
-<script>
-    function doFV() {
-        var principal = parseFloat(document.getElementById('principal').value);
-        var annualRate = parseFloat(document.getElementById('annualRate').value);
-        var years = parseFloat(document.getElementById('years').value);
-        var periodsPerYear = parseFloat(document.getElementById('periodsPerYear').value);
-        var futurevalue = computeFutureValue(principal, annualRate, years, periodsPerYear);
-        document.getElementById('outputDiv').innerHTML = '$' + futurevalue;
-    }
+    <title>Program with Repetition: Investment Calculator</title>
+    <script>
+        function doFV() {
+            var principal = parseFloat(document.getElementById('principal').value);
+            var annualRate = parseFloat(document.getElementById('annualRate').value);
+            var years = parseFloat(document.getElementById('years').value);
+            var periodsPerYear = parseFloat(document.getElementById('periodsPerYear').value);
+            var futurevalue = computeFutureValue(principal, annualRate, years, periodsPerYear);
+            document.getElementById('outputDiv').innerHTML = '$' + futurevalue;
+        }
 
-    function computeFutureValue(principal, annualRate, years, periodsPerYear) {
-        var f = principal * Math.pow(1 + annualRate / periodsPerYear, (years * periodsPerYear));
-        return f.toFixed(2);
-    }
-</script>
+        function computeFutureValue(principal, annualRate, years, periodsPerYear) {
+            var f = principal * Math.pow(1 + annualRate / periodsPerYear, (years * periodsPerYear));
+            return f.toFixed(2);
+        }
+    </script>
+</head>
 
 <body>
     Amount invested (principal): <input type="text" id="principal"><br> Annual Rate (example 0.08): <input type="text" id="annualRate"><br> Number of years: <input type="text" id="years"><br> Periods per year: <input type="text" id="periodsPerYear"><br>
