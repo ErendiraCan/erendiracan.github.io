@@ -69,11 +69,6 @@ main {
     text-align: center;
 }
 
-main img {
-    float: none;
-    max-width: 300px;
-}
-
 li {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
