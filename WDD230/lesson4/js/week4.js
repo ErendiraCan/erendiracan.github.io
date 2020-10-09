@@ -12,8 +12,6 @@ window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('
   classList property - https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
   */
 
- window.onload = function date () {
+
     const options = {weekday: 'long', day: 'numeric', month: 'long', year:'numeric'};
     document.getElementById('currentday').textContent = new Date().toLocaleDateString('en-US', options)
-
-}
