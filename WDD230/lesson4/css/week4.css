@@ -72,6 +72,7 @@ nav {
 	padding: 0.75rem;
 	text-align: left;
 	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
 	color: white;
 	font-weight: 700;
 }
@@ -79,6 +80,7 @@ nav {
 .navigation a:hover {
 	color: white;
 	background-color: rgb(11, 100, 37);
+	border-radius: 5px;
 }
 
 .responsive li {
@@ -99,8 +101,10 @@ footer {
     flex-flow: column;
     padding: 1.2rem;
     font-family: 'Roboto', sans-serif;
-    text-align: center;
+	text-align: center;
+	color: white;
 }
+/* Larger Screens */
 
 @media only screen and (min-width: 32.5em) {
     header img {
