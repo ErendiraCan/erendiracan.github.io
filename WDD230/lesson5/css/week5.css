@@ -1,0 +1,141 @@
+header,
+footer {
+	background-color: #1985A1;
+    display: flex;
+	align-items:center;
+	justify-content:center;
+	padding: 10px;
+}
+
+header,
+nav,
+main,
+footer {
+	max-width: 767px;
+    margin: 0px auto;
+    border-radius: 5px;
+}
+
+header img {
+	width: 50px;
+	height: auto;
+}
+
+h1 {
+    color: #091925;
+    font-size: 1.6rem;
+	font-family: 'Oswald', sans-serif;
+    margin: 0 0 0 17px;
+}
+
+.motto {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    margin-left: 20px;
+	font-size: .9rem;
+    letter-spacing: 1pt;
+    color: #091925;
+}
+
+.headings {
+    display: flex;
+	flex-direction: column;
+}
+
+h2 {
+    color: #091925;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: #091925;
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	font-weight: 700;
+}
+
+.navigation a:hover {
+	background-color: #bbb;
+	color: #36454f;
+	border-radius: 5px;
+}
+
+.responsive li {
+	display: block;
+}
+
+.contentbox {
+    border: 1px dashed black;
+    background-color: #bbb;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    flex-flow: column;
+    padding: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	color: white;
+}
+/* Larger Screens */
+
+@media only screen and (min-width: 32.5em) {
+    header img {
+		width: auto;
+	}
+
+	.headings h1 {
+		font-size: 3rem;
+	}
+
+	.motto {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+	}
+    
+	.navigation {
+		display: flex;
+    }
+    
+	.navigation li {
+		display: block;
+		flex: 1 1 auto;
+    }
+    
+	.navigation a {
+		text-align: center;
+    }
+    
+	.navigation li:first-child {
+		display: none;
+	}
+}
+
