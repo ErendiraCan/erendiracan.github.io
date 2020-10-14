@@ -1,3 +1,7 @@
+body {
+	background-color: #46494C;
+}
+
 header,
 footer {
 	background-color: #1985A1;
@@ -14,6 +18,12 @@ footer {
 	max-width: 767px;
     margin: 0px auto;
     border-radius: 5px;
+}
+
+main {
+	background-color: #C5C3C6;
+	border: 1px solid #bbb;
+    padding: 1rem;
 }
 
 header img {
@@ -89,7 +99,7 @@ nav {
 
 .contentbox {
     border: 1px dashed black;
-    background-color: #bbb;
+    background-color: #DCDCDD;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     margin: 10px;
