@@ -1,6 +1,6 @@
 header,
 footer {
-	background-color: rgb(11, 100, 37);
+	background-color: #1985A1;
     display: flex;
 	align-items:center;
 	justify-content:center;
@@ -17,14 +17,14 @@ footer {
 }
 
 header img {
-	width: 80px;
+	width: 50px;
 	height: auto;
 }
 
 h1 {
-    color: white;
+    color: #091925;
     font-size: 1.6rem;
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Oswald', sans-serif;
     margin: 0 0 0 17px;
 }
 
@@ -34,7 +34,7 @@ h1 {
     margin-left: 20px;
 	font-size: .9rem;
     letter-spacing: 1pt;
-    color: rgb(185, 236, 164);
+    color: #091925;
 }
 
 .headings {
@@ -43,15 +43,15 @@ h1 {
 }
 
 h2 {
-    color: #000000;
-    font-family: 'Roboto', sans-serif;
+    color: #091925;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
 nav {
 	margin: 0 auto;
 	max-width: 760px;
-	background-color: rgb(1, 39, 0);
+	background-color: #091925;
 }
 
 .navigation {
@@ -72,14 +72,14 @@ nav {
 	padding: 0.75rem;
 	text-align: left;
 	text-decoration: none;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	color: white;
 	font-weight: 700;
 }
 
 .navigation a:hover {
-	color: white;
-	background-color: rgb(11, 100, 37);
+	background-color: #bbb;
+	color: #36454f;
 	border-radius: 5px;
 }
 
@@ -90,7 +90,7 @@ nav {
 .contentbox {
     border: 1px dashed black;
     background-color: #bbb;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     margin: 10px;
     padding: 10px;
@@ -100,7 +100,7 @@ nav {
 footer {
     flex-flow: column;
     padding: 1.2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	color: white;
 }
