@@ -1,0 +1,66 @@
+@media only screen and (min-width: 45.45em) {
+
+    .navigation {
+        display: flex;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    button {
+        display: none;
+    }
+
+    #hero_container img {
+        margin-bottom: 0;
+    }
+
+    #weather_summary {
+        position: absolute;
+    }
+
+    #ws {
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: .5em;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    #article {
+        display: flex;
+    }
+
+    #article_img {
+        height: auto;
+        float: bottom;
+    }
+
+    #contact_box {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    #contact {
+        margin-left: 0;
+    }
+
+    .social {
+        max-width: 50px;
+        height: auto;
+    }
+
+    #contact_img {
+        max-width: 40vw;
+        height: auto;
+        margin: 1em;
+    }
+}

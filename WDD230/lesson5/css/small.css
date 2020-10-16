@@ -1,0 +1,308 @@
+body {
+    background-color: #C5C3C6;
+    font-family: 'Montserrat', sans-serif;
+    color: #091925;
+}
+
+.message {
+    display: none;
+    padding: 1em;
+    background-color: #4C5C68;
+    color: #ffffff;
+}
+
+.message p {
+    max-width: 960px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header,
+footer {
+	background-color: #1985A1;
+    display: flex;
+	align-items:center;
+	justify-content:center;
+    padding: 10px;
+}
+
+.motto {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    margin-left: 20px;
+	font-size: .9rem;
+    letter-spacing: 1pt;
+    color: #091925;
+}
+
+.headings {
+    display: flex;
+	flex-direction: column;
+}
+
+h1 {
+    color: #091925;
+    font-size: 1.6rem;
+	font-family: 'Oswald', sans-serif;
+    margin: 0 0 0 17px;
+}
+
+header img {
+    width: 80px;
+	height: auto;
+}
+
+#hamburger{
+    background-color: #1985A1;
+    color:#ffffff;
+    border: none;
+    font-weight: 600px;
+    font-size: 25px;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+nav {
+    background-color: #091925;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    padding: 1em;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+	color: #36454f;
+	border-radius: 5px;
+}
+
+.responsive li {
+    display: block;
+}
+
+#hero_container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+#hero_container img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#weather_summary {
+	top: 10px;
+	left: 10px;
+	box-shadow: 0 0 30px black;
+	background: #46494C;
+	padding: 1.5rem;
+	opacity: 0.8;
+	border-radius: 10px;
+}
+
+#weather_summary h3 {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	border-bottom: 1px solid white;
+    padding: 5px;
+    text-align: center;
+}
+
+#weather_summary p {
+	color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    border: 1em;
+    padding-bottom: 2em;
+}
+
+table tr td {
+    height: 1.5em;
+    color: #ffffff;
+}
+
+td {
+    text-align: left;
+}
+
+td:first-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+#town_container {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+#town {
+    padding-left: 2.25em;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: .96em;
+    padding-bottom: .96em;
+    text-align: center;
+}
+
+.forecast_title {
+    text-align: center;
+}
+
+#forecast_container {
+    display: flex;
+    flex-flow: wrap;
+    border-right: 1px solid #444444;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.forecast {
+    flex: 1 1 auto;
+    color: #36454f;
+    background-color: #C5C3C6;
+    border-bottom: 1px solid #444444;
+    text-align: center;
+    border-left: 1px solid #444444;
+}
+
+.day {
+    display: block;
+    color:  #091925;
+    background-color: #1985A1;
+    border-top: 1px solid #444444;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.icon {
+    border-radius: 100px;
+    padding: .25rem;
+    max-width: 10vw;
+    height: auto;
+}
+
+.temp {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: .9rem;
+}
+
+#article_container {
+    background-color:#46494C;
+    color: #ffffff;
+    max-width: 960px;
+    margin: 1.2em auto;
+    overflow: hidden;
+}
+
+#article_content {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+#article_content a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#article_author {
+    font-style:italic;
+	color: #46494C;
+}
+
+#article_img {
+    max-width: 100%;
+    height: auto;
+}
+
+#clear {
+    clear: both;
+}
+
+footer {
+    background-color: #1985A1;
+    color:#ffff;
+    margin-top: 1.2em;
+}
+
+footer h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+#footer_container {
+    line-height: 1em;
+}
+
+#contact {
+    padding: 1em;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#contact_img {
+    max-width: 100%;
+    height: auto;
+}
+
+.social {
+    padding: .5em;
+    max-width: 10vw;
+    height: auto;
+}
+
+.social:hover {
+    opacity: 0.75;
+}
+
+#footer_bar {
+    background-color:#091925;
+    text-align: center;
+    color: #ffffff;
+    padding: 0.5em 1.5em 1.5em 1.5em;
+}
+
+#footer_bar a {
+    color: #ffffff;
+}
+
+#today_is {
+    font-size: .9em;
+    color: #ffffff;
+}
