@@ -42,7 +42,25 @@
             <h2 class="main" id="town">Preston, Idaho</h2>
         </div>
         <div id="hero_container">
-            <img src="images/riverimage.jpg" alt="River Hero Image">
+            <picture>
+                <source
+                  srcset="images/heroimage3.jpg"
+                  media="(max-width:320px)"
+                />
+                <source
+                  srcset="images/heroimage2.jpg"
+                  media="(max-width:480px)"
+                />
+                <source
+                  srcset="images/heroimage3.jpg"
+                  media="(max-width:768px)"
+                />
+                <img
+                  class="hero-ph"
+                  src="images/heroimage0.jpg"
+                  alt="Mountain picture"
+                />
+              </picture>
             <section id="weather_summary">
                 <h3 class="main" id="ws">Weather Summary</h3>
                 <table>
@@ -52,12 +70,12 @@
                             <td class="">Sunny</td>
                         </tr>
                         <tr>
-                            <td class="">High:</td>
-                            <td class="">76 °F</td>
+                            <td class="">Temp:</td>
+                            <td class=""><span id="temp"></span>°F</td>
                         </tr>
                         <tr>
                             <td class="">Wind Chill:</td>
-                            <td class="">°F</td>
+                            <td class=""><span id="output"></span></td>
                         </tr>
                         <tr>
                             <td class="">Humidity:</td>
@@ -65,7 +83,7 @@
                         </tr>
                         <tr>
                             <td class="">Wind Speed:</td>
-                            <td class="">5 mph</td>
+                            <td class=""><span id="wind"></span>mph</td>
                         </tr>
                     </tbody>
                 </table>
@@ -138,6 +156,7 @@
         </div>
     </footer>
     <script src="js/week6.js"></script>
+    <script src="js/windchill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 </body>
 </html>
