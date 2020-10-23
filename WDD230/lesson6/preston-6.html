@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Erendira Can Calderon | Assignment: Preston Town Page</title>
+        <meta name="description" content="This is the assignment for my class of WDD 230 at BYU Idaho">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+<body>
+    <div class="message">
+        <p id="message-text">Saturday is Preston Pancakes in the Park! 9:00 a.m. at the city park pavilion.</p>
+    </div>
+        <header>
+            <img src="images/thesouthcloud.png" alt="The Logo of the Weather Site">
+            <section class="headings">
+            <h1>The South  Cloud</h1>
+            <div class="motto">The most accurate information for you!</div>
+            </section>
+            <span>
+                <button class="ham" id="hamburger">☰</button>
+            </span>
+        </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="town_container">
+            <h2 class="main" id="town">Preston, Idaho</h2>
+        </div>
+        <div id="hero_container">
+            <img src="images/riverimage.jpg" alt="River Hero Image">
+            <section id="weather_summary">
+                <h3 class="main" id="ws">Weather Summary</h3>
+                <table>
+                    <tbody id="ws_table">
+                        <tr>
+                            <td class="">Currently:</td>
+                            <td class="">Sunny</td>
+                        </tr>
+                        <tr>
+                            <td class="">High:</td>
+                            <td class="">76 °F</td>
+                        </tr>
+                        <tr>
+                            <td class="">Wind Chill:</td>
+                            <td class="">°F</td>
+                        </tr>
+                        <tr>
+                            <td class="">Humidity:</td>
+                            <td class="">69%</td>
+                        </tr>
+                        <tr>
+                            <td class="">Wind Speed:</td>
+                            <td class="">5 mph</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <h2 class="forecast_title">Five Day Forecast</h2>
+        <div id="forecast_container">
+            <div class="forecast">
+                <span class="day">Wed</span>
+                <img class="icon" src="images/cloud.png" alt="sun icon">
+                <span class= "temp">89°F</span>
+            </div>
+            <div class="forecast">
+                <span class="day">Thu</span>
+                <img class="icon" src="images/cloud.png" alt="sun icon">
+                <span class= "temp">87°F</span>
+            </div>
+            <div class="forecast">
+                <span class="day">Fri</span>
+                <img class="icon" src="images/sun&cloud.png" alt="cloud icon">
+                <span class= "temp">78°F</span>
+            </div>
+            <div class="forecast">
+                <span class="day">Sat</span>
+                <img class="icon" src="images/sun&cloud.png" alt="cloud icon">
+                <span class= "temp">75°F</span>
+            </div>
+            <div class="forecast">
+                <span class="day">Sun</span>
+                <img class="icon" src="images/sun.png" alt="rain icon">
+                <span class= "temp">72°F</span>
+            </div>
+        </div>
+        <div id="article_container">
+            <div id="article_box">
+                <section id="article_content">
+                    <h3 id="article_title">Article Title</h3>
+                    <p id="article_author">By: Author Name</p>
+                    <p id="article_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="#">Read More...</a>
+                </section>
+                <img id="article_img" src="images/forest.jpg" alt="Forest Article Image">
+                </div>
+            <div id="clear"></div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer_container">
+            <div id="contact_box">
+                <section id="contact">
+                    <h3>Contact Information</h3>
+                    <p>5555 Address St. Preston, ID</p>
+                    <p>email@email.com</p>
+                    <p>(555) 555-5555</p>
+                    <a href="facebook.com" target="_blank"><img class="social" src="images/facebookicon.png" alt="Facebook Icon Image"></a>
+                    <a href="instagram.com" target="_blank"><img class="social" src="images/instagramicon.png" alt="Instagram Icon Image"></a>
+                    <a href="youtube.com" target="_blank"><img class="social" src="images/youtubeicon.png" alt="Youtube Icon Image"></a>
+                    <a href="twitter.com" target="_blank"><img class="social" src="images/twittericon.png" alt="Twitter Icon Image"></a>
+                </section>
+                <img id="contact_img" src="images/map.png" alt="Map Image of Preston, Idaho and other cities">
+            </div>
+            <div id="footer_bar">
+                <p>&copy; <span id="currentyear"></span> The South Cloud | Attributions | Erendira Can</p>
+                <div id="today_is">Today's Date: <span id="currentday"></span></div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/week6.js"></script>
+</body>
+</html>
