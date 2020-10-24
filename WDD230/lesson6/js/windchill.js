@@ -1,10 +1,12 @@
-window.onload = function windChill() {
-  let t = parseFloat(document.getElementById('temp').textContent);
-  let s= parseFloat(document.getElementById('wind').textContent); 
-  let output = "N/A";
-  if (t<= 50 && s>=3){
-  let f = (35.74 + (0.6215*t)) - (35.75 * (Math.pow(s, 0.16))) + (0.4275*(t*(Math.pow(s , 0.16))));
-  output = Math.round(f);
-  }
-  document.getElementById("output").innerHTML = output + " &#8457;";
+var temp = document.getElementById("temp").innerHTML;
+console.log(temp);
+var windSpeed = document.getElementById("wind").innerHTML;
+console.log(windSpeed);
+var speed = Math.pow(windSpeed, 0.16);
+var windChill = Math.round(35.74 + (0.6215 * temp) - (35.75 * speed) + (0.4275 * temp * speed));
+
+if (temp <= 50 && windSpeed >= 3) {
+    document.getElementById("wind-chill").innerHTML = windChill;
+} else {
+    document.getElementById("wind-chill").innerHTML = "N/A";
 }

@@ -51,6 +51,10 @@ nav {
 	background-color: #091925;
 }
 
+ul {
+	margin: 0;
+}
+
 .navigation {
 	list-style: none;
 }
