@@ -5,7 +5,7 @@
     }
 
     .headings h1 {
-		font-size: 3rem;
+		font-size: 3.2rem;
 	}
 
 	.motto {
@@ -47,11 +47,11 @@
         width: 90%;
     }
 
-    #article {
+    article {
         display: flex;
     }
 
-    #article_img {
+    article img {
         height: auto;
         float: bottom;
     }
@@ -63,7 +63,7 @@
         margin: 0 auto;
     }
 
-    #contact {
+    footer section {
         margin-left: 0;
     }
 
@@ -72,7 +72,7 @@
         height: auto;
     }
 
-    #contact_img {
+    footer img {
         max-width: 40vw;
         height: auto;
         margin: 1em;
