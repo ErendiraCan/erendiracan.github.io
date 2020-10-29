@@ -21,7 +21,7 @@ body {
 
 header,
 footer {
-	background-color: #1985A1;
+	background-color: #074757;
     display: flex;
 	align-items:center;
 	justify-content:center;
@@ -55,10 +55,10 @@ header img {
 }
 
 #hamburger{
-    background-color: #1985A1;
+    background-color: #074757;
     color:#ffffff;
     border: none;
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 25px;
     padding: 5px;
     margin-left: 20px;
@@ -198,7 +198,7 @@ td:first-child {
 .day {
     display: block;
     color: white;
-    background-color: #1985A1;
+    background-color: #074757;
     border-top: 1px solid #444444;
     padding: 5px;
     font-weight: bold;
@@ -251,7 +251,7 @@ td:first-child {
 }
 
 footer {
-    background-color: #1985A1;
+    background-color: #074757;
     color:#ffff;
     margin-top: 1.2em;
 }
