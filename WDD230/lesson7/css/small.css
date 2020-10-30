@@ -108,9 +108,39 @@ nav ul {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    grid-gap: 20px;
+    grid-gap: 10px;
     align-items: center;
+    justify-items: center;
     padding: 3% 0;
+}
+
+main h2 {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 2em;
+}
+
+main p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    background: white;
+    color: black;
+    padding: 8px;
+    margin: 0;
+}
+
+main picture {
+    margin: 0;
+}
+
+main img[data-src] {
+    filter: blur(0.2em);
+}
+
+main img {
+    filter: blur(0em);
+    transition: filter 0.5s;
 }
 
 footer {
