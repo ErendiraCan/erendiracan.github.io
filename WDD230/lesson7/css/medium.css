@@ -31,7 +31,11 @@
 
     .gallery {
         grid-template-columns: 1fr 1fr;
-    }    
+    }   
+    
+    .gallery figure:hover {
+        box-shadow: 5px 5px 20px;
+    }
 
     #contact_box {
         display: flex;

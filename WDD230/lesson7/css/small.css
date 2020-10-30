@@ -120,7 +120,7 @@ main h2 {
     font-size: 2em;
 }
 
-main p {
+main figcaption {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     text-align: center;
@@ -130,7 +130,7 @@ main p {
     margin: 0;
 }
 
-main picture {
+main figure {
     margin: 0;
 }
 
@@ -195,4 +195,10 @@ footer img {
 #today_is {
     font-size: .9em;
     color: #ffffff;
+}
+
+.clearfix::before {
+    content: "";
+    display: grid;
+    clear: both;
 }
