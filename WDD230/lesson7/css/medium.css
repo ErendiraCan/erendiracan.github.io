@@ -1,0 +1,57 @@
+@media only screen and (min-width: 45.45em) {
+
+    header img {
+		width: auto;
+    }
+
+    .headings h1 {
+		font-size: 3.2rem;
+	}
+
+	.motto {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+	}
+    
+    .navigation {
+        display: flex;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    button {
+        display: none;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }    
+
+    #contact_box {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    footer section {
+        margin-left: 0;
+    }
+
+    .social {
+        max-width: 50px;
+        height: auto;
+    }
+
+    footer img {
+        max-width: 40vw;
+        height: auto;
+        margin: 1em;
+    }
+}

@@ -1,0 +1,168 @@
+body {
+    background-color: #C5C3C6;
+    font-family: 'Montserrat', sans-serif;
+    color: #091925;
+}
+
+.message {
+    display: none;
+    padding: 1em;
+    background-color: #4C5C68;
+    color: #ffffff;
+}
+
+.message p {
+    max-width: 960px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header,
+footer {
+	background-color: #074757;
+    display: flex;
+	align-items:center;
+	justify-content:center;
+    padding: 10px;
+}
+
+.motto {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    margin-left: 20px;
+	font-size: 1rem;
+    letter-spacing: 1pt;
+    color: white;
+}
+
+.headings {
+    display: flex;
+	flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-size: 2rem;
+	font-family: 'Oswald', sans-serif;
+    margin: 0 0 0 17px;
+}
+
+header img {
+    width: 90px;
+	height: auto;
+}
+
+#hamburger{
+    background-color: #074757;
+    color:#ffffff;
+    border: none;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+nav {
+    background-color: #091925;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    padding: 1em;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+	color: #36454f;
+	border-radius: 5px;
+}
+
+.responsive li {
+    display: block;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-gap: 20px;
+    align-items: center;
+    padding: 3% 0;
+}
+
+footer {
+    background-color: #074757;
+    color:#ffff;
+    margin-top: 1.2em;
+    line-height: 1em;
+}
+
+footer h4 {
+    font-weight: bold;
+    text-align: center;
+}
+
+footer section {
+    padding: 1em;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer section p {
+    text-align: center;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.social {
+    margin: 5px;
+    max-width: 10vw;
+    height: auto;
+}
+
+.social:hover {
+    opacity: 0.75;
+}
+
+#footer_bar {
+    background-color:#091925;
+    text-align: center;
+    color: #ffffff;
+    padding: 0.5em 1.5em 1.5em 1.5em;
+}
+
+#footer_bar a {
+    color: #ffffff;
+}
+
+#today_is {
+    font-size: .9em;
+    color: #ffffff;
+}
