@@ -132,6 +132,7 @@ nav ul {
 	border-bottom: 1px solid white;
     padding: 5px;
     text-align: center;
+    margin-top: 0;
 }
 
 #weather_summary p {
@@ -143,7 +144,6 @@ nav ul {
 table {
     width: 80%;
     border: 1em;
-    padding-bottom: 2em;
 }
 
 table tr td {
