@@ -6,7 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Erendira Can Calderon | Assignment: Preston Town Page</title>
         <meta name="description" content="This is the assignment for my class of WDD 230 at BYU Idaho">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Oswald:wght@500&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" href="css/small.css">
@@ -51,14 +50,17 @@
             <fieldset>
                 <legend> Storm Information </legend>
                 <label class="top">Storm Date<input type="date" id="date" name="stormDate"></label>
-                <label class="top">Storm Type: <input list="stormtype" name="stormtype"></label>
-                <datalist id="stormtype">
+                <div>Storm Type</div>
+                <label class="top">
+                <select name="stormtype">
+                    <option value="">Select Type &#9662;</option>
                     <option value="flashFlood">Flash Flood</option>
                     <option value="hail">Hail</option>
                     <option value="hurricane">Hurricane</option>
                     <option value="thunderstorm">Thunderstorm</option>
                     <option value="tornado">Tornado</option>
-                </datalist>
+                </select>
+                </label>
                 <label class="sbs">Storm Severity: Range 1-10 &nbsp; &nbsp;<input type="range" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="ratingvalue"> &nbsp;5</span></label>
                 <datalist id="rating">
@@ -116,7 +118,6 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/gallery.js"></script>
-    <script src="js/imagehandler.js" defer></script>
+    <script src="js/stormcenter.js"></script>
 </body>
 </html>

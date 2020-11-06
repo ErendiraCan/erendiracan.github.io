@@ -29,6 +29,11 @@
         display: none;
     }
 
+    main {
+        max-width: 35rem;
+        margin: auto;
+    }
+
     form label.sbs {
         padding: .4rem;
     }
