@@ -105,6 +105,12 @@ nav ul {
     display: block;
 }
 
+main {
+    max-width: auto;
+}
+
+/* Preston Home Page */
+
 #hero_container {
     position: relative;
     margin: 0 auto;
@@ -317,7 +323,7 @@ main h2 {
     font-size: 2em;
 }
 
-main figcaption {
+.gallery figcaption {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     text-align: center;
@@ -327,15 +333,16 @@ main figcaption {
     margin: 0;
 }
 
-main figure {
+.gallery figure {
     margin: 0;
 }
 
-main img[data-src] {
+.gallery img[data-src] {
     filter: blur(0.2em);
 }
 
-main img {
+.gallery figure img {
     filter: blur(0em);
     transition: filter 0.5s;
+    width: 100%;
 }
