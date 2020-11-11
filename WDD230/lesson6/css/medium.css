@@ -77,4 +77,10 @@
         height: auto;
         margin: 1em;
     }
+
+    /* Image Gallery */
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }   
 }

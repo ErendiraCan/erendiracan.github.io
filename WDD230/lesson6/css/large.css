@@ -1,1 +1,10 @@
-@media only screen and (min-width: 72em) {}
+@media only screen and (min-width: 72em) {
+    /* Image Gallery */
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .gallery figure:hover {
+        box-shadow: 5px 5px 20px;
+    }
+}
