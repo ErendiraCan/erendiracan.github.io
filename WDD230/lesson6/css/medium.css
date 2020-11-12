@@ -82,5 +82,15 @@
 
     .gallery {
         grid-template-columns: 1fr 1fr;
-    }   
+    }
+    
+    /* Cards Section */
+    div.cards section:nth-child(odd) img {
+        float:left;
+        margin-left: auto;
+        margin-right: auto;
+     } 
+    div.cards section{
+        padding: 3rem;
+    }
 }

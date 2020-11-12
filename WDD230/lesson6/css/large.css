@@ -7,4 +7,16 @@
     .gallery figure:hover {
         box-shadow: 5px 5px 20px;
     }
-}
+
+    /* Cards Section */
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+    
+    div.cards section:nth-child(even) img,
+    div.cards section:nth-child(odd) img {
+        float: none;
+     } 
+    }
