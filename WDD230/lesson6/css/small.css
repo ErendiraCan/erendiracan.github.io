@@ -349,10 +349,15 @@ main h2 {
 
 /* Cards Section */
 
+.cards {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 div.cards section{
     background-color:#F9F4F5;
-    color: #3D3A4B;
-    text-align:center;
+    color: #091925;
+    text-align: center;
     padding: 1rem;
     margin: 1.5rem;
     max-width: 100%;
@@ -362,6 +367,4 @@ div.cards img {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    width: auto;
-    height: auto;
 }
