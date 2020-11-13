@@ -86,7 +86,7 @@
     
     /* Cards Section */
     
-    div.cards section:nth-child(odd) img {
+    div.cards img {
         float:left;
         margin-left: auto;
         margin-right: auto;
