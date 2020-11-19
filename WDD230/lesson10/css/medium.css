@@ -78,6 +78,12 @@
         margin: 1em;
     }
 
+    /* Form */
+    
+    form label.sbs {
+        padding: .4rem;
+    }
+
     /* Image Gallery */
 
     .gallery {
