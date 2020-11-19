@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Erendira Can Calderon | Assignment: Preston Town Page</title>
+        <meta name="description" content="This is the assignment for my class of WDD 230 at BYU Idaho">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="../lesson6/css/small.css">
+        <link rel="stylesheet" href="../lesson6/css/medium.css">
+        <link rel="stylesheet" href="../lesson6/css/large.css">
+    </head>
+<body>
+    <div class="message">
+        <p id="message-text">Saturday is Preston Pancakes in the Park! 9:00 a.m. at the city park pavilion.</p>
+    </div>
+        <header>
+            <img src="images/thesouthcloud.png" alt="The Logo of the Weather Site">
+            <section class="headings">
+            <h1>The South  Cloud</h1>
+            <div class="motto">The most accurate information for you!</div>
+            </section>
+            <span>
+                <button class="ham" id="hamburger">☰</button>
+            </span>
+        </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2 class="main" id="town">Preston, Idaho</h2>
+        </section>
+        <div id="hero_container">
+            <picture>
+                <source
+                  srcset="images/heroimage3.jpg"
+                  media="(max-width:320px)"
+                />
+                <source
+                  srcset="images/heroimage2.jpg"
+                  media="(max-width:480px)"
+                />
+                <source
+                  srcset="images/heroimage1.jpg"
+                  media="(max-width:768px)"
+                />
+                <img
+                  class="hero-ph"
+                  src="images/heroimage0.jpg"
+                  alt="Mountain picture"
+                />
+              </picture>
+            <section id="weather_summary">
+                <h3 class="main" id="ws">Weather Summary</h3>
+                <table>
+                    <tbody id="ws_table">
+                        <tr>
+                            <td>Currently:</td>
+                            <td>Sunny</td>
+                        </tr>
+                        <tr>
+                            <td>Temp:</td>
+                            <td><span id="temp">45</span> &#8457;</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill:</td>
+                            <td><span id="wind-chill"></span> &#8457;</td>
+                        </tr>
+                        <tr>
+                            <td>Humidity:</td>
+                            <td>69%</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Speed:</td>
+                            <td><span id="wind">5</span>mph</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <div class="cards"></div>
+        <article>
+            <div id="article_container">
+                    <h4>Article Title</h4>
+                    <p id="article_author">By: Author Name</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="#">Read More...</a>
+                <img src="images/forest.jpg" alt="Forest Article Image">
+            <div id="clear"></div>
+        </div>
+        </article>
+    </main>
+    <footer>
+        <div id="footer_container">
+            <div id="contact_box">
+                <section>
+                    <h4>Contact Information</h4>
+                    <p>5555 Address St. Preston, ID</p>
+                    <p>email@email.com</p>
+                    <p>(555) 555-5555</p>
+                    <a href="facebook.com" target="_blank"><img class="social" src="images/facebookicon.png" alt="Facebook Icon Image"></a>
+                    <a href="instagram.com" target="_blank"><img class="social" src="images/instagramicon.png" alt="Instagram Icon Image"></a>
+                    <a href="youtube.com" target="_blank"><img class="social" src="images/youtubeicon.png" alt="Youtube Icon Image"></a>
+                    <a href="twitter.com" target="_blank"><img class="social" src="images/twittericon.png" alt="Twitter Icon Image"></a>
+                </section>
+                <img src="images/map.jpg" alt="Map Image of Preston, Idaho and other cities">
+            </div>
+            <div id="footer_bar">
+                <p>&copy; <span id="currentyear"></span> The South Cloud | Attributions | Erendira Can | <a href="home-wireframes.html">Wireframes</a></p>
+                <div id="today_is">Today's Date: <span id="currentday"></span></div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/cards.js"></script>
+    <script src="js/index.js"></script>
+    <script src="../lesson6/js/windchill.js"></script>
+</body>
+</html>
