@@ -142,7 +142,7 @@ main {
     margin-top: 0;
 }
 
-#weather_summary p {
+#weather_summary td {
 	color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
