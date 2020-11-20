@@ -205,7 +205,7 @@ main section {
 .day {
     display: block;
     color: white;
-    background-color: #1985A1;
+    background-color: #074757;
     border-top: 1px solid #444444;
     padding: 5px;
     font-weight: bold;
@@ -216,12 +216,14 @@ main section {
     padding: .25rem;
     max-width: 10vw;
     height: auto;
+    align-items: center;
 }
 
 .temp {
     display: block;
     padding: 0 5px 5px;
     font-size: .9rem;
+    text-align: center;
 }
 
 article {
@@ -242,12 +244,13 @@ article a {
 
 #article_author {
     font-style:italic;
-	color: #46494C;
+	color: #a3d1ff;
 }
 
 article img {
     max-width: 100%;
     height: auto;
+    padding-top: 6px;
 }
 
 #clear {
