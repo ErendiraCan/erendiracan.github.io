@@ -18,23 +18,22 @@ fetch(forecast)
                 today++;
             }
         }
-
-        let forecastTemp = document.getElementsByClassName('forecastTemp');
-        for (let i = 0; i < forecastTemp.length; i++) {
-            forecastTemp[i].innerHTML = newDays[i].main.temp;
-        }
-        
-
-        let weatherIcon = document.getElementsByClassName("forcastimg");
-        for (let i = 0; i < weatherIcon.length; i++) {
-            weatherIcon[i].setAttribute("src", `http://openweathermap.org/img/wn/${newDays[i].weather[0].icon}@2x.png`);
-            weatherIcon[i].setAttribute("alt", `Icon representing ${newDays[i].weather[0].description}`);
-        }
-        
         
         let weatherDay = document.getElementsByClassName('day');
         for (let i = 0; i < weatherDay.length; i++) {
             let longDate = new Date(newDays[i].dt_txt);
             weatherDay[i].textContent = longDate.toLocaleString("en-us",{weekday:"long"});
         }
+
+        let weatherIcon = document.getElementsByClassName("forcastimg");
+        for (let i = 0; i < weatherIcon.length; i++) {
+            weatherIcon[i].setAttribute("src", `http://openweathermap.org/img/wn/${newDays[i].weather[0].icon}@2x.png`);
+            weatherIcon[i].setAttribute("alt", `Icon representing ${newDays[i].weather[0].description}`);
+        }
+
+        let forecastTemp = document.getElementsByClassName('forecastTemp');
+        for (let i = 0; i < forecastTemp.length; i++) {
+            forecastTemp[i].innerHTML = newDays[i].main.temp;
+        }
+
     });
