@@ -1,0 +1,454 @@
+body {
+    background-color: #C5C3C6;
+    font-family: 'Montserrat', sans-serif;
+    color: #091925;
+}
+
+.message {
+    display: none;
+    padding: 1em;
+    background-color: #4C5C68;
+    color: #ffffff;
+}
+
+.message p {
+    max-width: 960px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header,
+footer {
+	background-color: #074757;
+    display: flex;
+	align-items:center;
+	justify-content:center;
+    padding: 10px;
+}
+
+.motto {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    margin-left: 20px;
+	font-size: 1rem;
+    letter-spacing: 1pt;
+    color: white;
+}
+
+.headings {
+    display: flex;
+	flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-size: 2rem;
+	font-family: 'Oswald', sans-serif;
+    margin: 0 0 0 17px;
+}
+
+header img {
+    width: 80px;
+	height: auto;
+}
+
+#hamburger{
+    background-color: #074757;
+    color:#ffffff;
+    border: none;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+nav {
+    background-color: #091925;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    padding: 1em;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+	color: #36454f;
+	border-radius: 5px;
+}
+
+.responsive li {
+    display: block;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Preston Home Page */
+
+#hero_container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+#hero_container img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#weather_summary {
+	top: 10px;
+	left: 10px;
+	box-shadow: 0 0 30px black;
+	background: #46494C;
+	padding: 1.5rem;
+	opacity: 0.8;
+	border-radius: 10px;
+}
+
+#weather_summary h3 {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	border-bottom: 1px solid white;
+    padding: 5px;
+    text-align: center;
+    margin-top: 0;
+}
+
+#weather_summary td {
+	color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    border: 1em;
+}
+
+table tr td {
+    height: 1.5em;
+    color: #ffffff;
+}
+
+td {
+    text-align: left;
+}
+
+td:first-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+main section {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+#town {
+    padding-left: 2.25em;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: .96em;
+    padding-bottom: .96em;
+    text-align: center;
+}
+
+.forecast_title {
+    text-align: center;
+}
+
+#forecast_container {
+    display: flex;
+    flex-flow: wrap;
+    border-right: 1px solid #444444;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.forecast {
+    flex: 1 1 auto;
+    color: #36454f;
+    background-color: #C5C3C6;
+    border-bottom: 1px solid #444444;
+    text-align: center;
+    border-left: 1px solid #444444;
+}
+
+.day {
+    display: block;
+    color: white;
+    background-color: #074757;
+    border-top: 1px solid #444444;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.icon {
+    border-radius: 100px;
+    padding: .25rem;
+    max-width: 10vw;
+    height: auto;
+    align-items: center;
+}
+
+.temp {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: .9rem;
+    text-align: center;
+}
+
+article {
+    background-color:#2c2d2e;
+    color: #ffffff;
+    max-width: 960px;
+    margin: 1.2em auto;
+    overflow: hidden;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+article a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#article_author {
+    font-style:italic;
+	color: #a3d1ff;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 6px;
+}
+
+#clear {
+    clear: both;
+}
+
+footer {
+    background-color: #074757;
+    color:#ffff;
+    margin-top: 1.2em;
+}
+
+footer h4 {
+    font-weight: bold;
+    text-align: center;
+}
+
+footer section {
+    padding: 1em;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer section p {
+    text-align: center;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.social {
+    padding: .5em;
+    max-width: 10vw;
+    height: auto;
+    margin: 0;
+}
+
+.social:hover {
+    opacity: 0.75;
+}
+
+#footer_bar {
+    background-color:#091925;
+    text-align: center;
+    color: #ffffff;
+    padding: 0.5em 1.5em 1.5em 1.5em;
+}
+
+#footer_bar a {
+    color: #ffffff;
+}
+
+#today_is {
+    font-size: .9em;
+    color: #ffffff;
+}
+
+/* Form */
+
+.formtitle {
+    padding-top: 10px;
+    padding-bottom: 0;
+    color: #074757;
+    font-size: 2rem;
+    text-align: center;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 2px solid #074757;
+    color: #074757;
+    padding: 1rem 2%;
+    font-size: 1.2rem;
+}
+
+form legend {
+    color: #074757;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+form label.top,
+label.comments,
+form div {
+    display: block;
+    Color: #074757;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+}
+
+form label.top input,
+form label.top select,
+textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #074757;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #3D3A4B;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #ffff;
+    margin-top: 5px;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #ffff;
+    color: #074757;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #074757;
+
+}
+
+textarea {
+    resize: none;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+/* Images Gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    padding: 3% 0;
+}
+
+main h2 {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.gallery figcaption {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    background: white;
+    color: black;
+    padding: 8px;
+    margin: 0;
+}
+
+.gallery figure {
+    margin: 0;
+}
+
+.gallery img[data-src] {
+    filter: blur(0.2em);
+}
+
+.gallery figure img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    width: 100%;
+}
+
+/* Cards Section */
+
+.cards {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+div.cards section{
+    background-color:#F9F4F5;
+    color: #091925;
+    text-align: center;
+    padding: 1rem;
+    margin: 1.5rem;
+    max-width: 100%;
+}
+
+div.cards img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
