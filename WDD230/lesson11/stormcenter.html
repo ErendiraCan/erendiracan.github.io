@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Erendira Can Calderon | Storm Center</title>
+        <meta name="description" content="This is the assignment for my class of WDD 230 at BYU Idaho">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+<body>
+    <div class="message">
+        <p id="message-text">Saturday is Preston Pancakes in the Park! 9:00 a.m. at the city park pavilion.</p>
+    </div>
+        <header>
+            <img src="images/thesouthcloud.png" alt="The Logo of the Weather Site">
+            <section class="headings">
+            <h1>The South  Cloud</h1>
+            <div class="motto">The most accurate information for you!</div>
+            </section>
+            <span>
+                <button class="ham" id="hamburger">☰</button>
+            </span>
+        </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 id="formtitle">Storm Center Report </h2>
+        <form method="get" action="#">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fName" class="top">First Name*<input type="text" id="fName" name="fName" pattern="[a-zA-Z]+" minlength="5" required></label>
+                <label class="top">Last Name*<input type="text" id="lName" name="lName" pattern="[a-zA-Z]+" minlength="5" required></label>
+                <label class="top">Email<input type="text" id="email" name="email" placeholder="someone@email.com"></label>    
+                <label class="top">Phone Number*<input type="tel" id="Phone" name="Phone" placeholder="3554567" required></label>
+                <label class="top">Area Code*<input type="number" id="areaCode" name="areaCode" placeholder="879" required></label>
+            </fieldset>
+            <fieldset>
+                <legend> Storm Information </legend>
+                <label class="top">Storm Date<input type="date" id="date" name="stormDate"></label>
+                <div>Storm Type</div>
+                <label class="top">
+                <select name="stormtype">
+                    <option value="">Select Type &#9662;</option>
+                    <option value="flashFlood">Flash Flood</option>
+                    <option value="hail">Hail</option>
+                    <option value="hurricane">Hurricane</option>
+                    <option value="thunderstorm">Thunderstorm</option>
+                    <option value="tornado">Tornado</option>
+                </select>
+                </label>
+                <label class="sbs">Storm Severity: Range 1-10 &nbsp; &nbsp;<input type="range" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue"> &nbsp;5</span></label>
+                <datalist id="rating">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+                <div>Storm Region</div>
+                <label class="top">
+                    <select name="region">
+                        <option value="">Select Region &#9662;</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </label>
+                <div>Do you feel in Danger?</div>
+                    <label class="sbs"> <input type="radio" name="danger" value="Maybe">Maybe </label>
+                    <label class="sbs"> <input type="radio" name="danger" value="No">No </label> 
+                    <label class="sbs"> <input type="radio" name="danger" value="yes">Yes </label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label class="comments">Comments<textarea rows="10" cols="40" placeholder="Comments"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Send my Storm Report" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <div id="footer_container">
+            <div id="contact_box">
+                <section>
+                    <h4>Contact Information</h4>
+                    <p>5555 Address St. Preston, ID</p>
+                    <p>email@email.com</p>
+                    <p>(555) 555-5555</p>
+                    <a href="facebook.com" target="_blank"><img class="social" src="images/facebookicon.png" alt="Facebook Icon Image"></a>
+                    <a href="instagram.com" target="_blank"><img class="social" src="images/instagramicon.png" alt="Instagram Icon Image"></a>
+                    <a href="youtube.com" target="_blank"><img class="social" src="images/youtubeicon.png" alt="Youtube Icon Image"></a>
+                    <a href="twitter.com" target="_blank"><img class="social" src="images/twittericon.png" alt="Twitter Icon Image"></a>
+                </section>
+                <img src="images/map.jpg" alt="Map Image of Preston, Idaho and other cities">
+            </div>
+            <div id="footer_bar">
+                <p>&copy; <span id="currentyear"></span> The South Cloud | Attributions | Erendira Can</p>
+                <div id="today_is">Today's Date: <span id="currentday"></span></div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/week11.js"></script>
+</body>
+</html>

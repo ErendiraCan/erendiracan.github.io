@@ -21,3 +21,8 @@ document.getElementById('currentday').textContent = new Date().toLocaleDateStrin
 
 //Web Font Loader
 WebFont.load({ google: {families: ['Oswald', 'Montserrat', ]}});
+
+//Form
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
