@@ -30,7 +30,7 @@ if (document.getElementById("preston")) {
     forecastURL = fishhavenForecast;
 }
 
-// Weather functions
+// Weather Functions
 fetch(weatherURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -38,7 +38,7 @@ fetch(weatherURL)
         let s = parseFloat(jsObject.wind.speed);
         let output = "N/A";
         const desc = jsObject.weather[0].description; // reference the weather array
-        //gettin' the stuff!
+        //Comment Space Needed to Fix an Error Message
         document.getElementById('currently').innerHTML = jsObject.weather[0].description;
         document.getElementById('current-temp').innerHTML = Math.round(t) + "&#8457;";
         if (t <= 50 && s >= 3) {
@@ -51,7 +51,7 @@ fetch(weatherURL)
         document.getElementById('humidity').innerHTML = jsObject.main.humidity;
         document.getElementById('windSpeedMPH').innerHTML = Math.round(s) + " MPH";
     });
-    //5-day forecast
+    //Forecast Function
 fetch(forecastURL)
     .then((response) => response.json())
     .then((forecastObject) => {
