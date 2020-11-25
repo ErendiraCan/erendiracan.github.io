@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
     </head>
-<body>
+<body id="sodasprings">
     <div class="message">
         <p id="message-text">Saturday is Preston Pancakes in the Park! 9:00 a.m. at the city park pavilion.</p>
     </div>
@@ -70,15 +70,15 @@
                         </tr>
                         <tr>
                             <td>High Temp:</td>
-                            <td><span id="highTemp"></span> &#176;F</td>
+                            <td><span id="highTemp"></span></td>
                         </tr>
                         <tr>
                             <td>Temp:</td>
-                            <td><span id="current-temp"></span> &#176;F</td>
+                            <td><span id="current-temp"></span></td>
                         </tr>
                         <tr>
                             <td>Wind Chill:</td>
-                            <td><span id="wind-chill"></span></td>
+                            <td><span id="windChill"></span></td>
                         </tr>
                         <tr>
                             <td>Humidity:</td>
@@ -86,7 +86,7 @@
                         </tr>
                         <tr>
                             <td>Wind Speed:</td>
-                            <td><span id="windSpeedMPH"></span>mph</td>
+                            <td><span id="windSpeedMPH"></span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -95,27 +95,27 @@
         <h3 class="forecast_title">Five Day Forecast</h3>
         <div id="forecast_container">
             <div class="forecast">
-                <span class="day"></span>
+                <span class="days"></span>
                 <img class="forcastimg" src="images/cloud.png" alt="weather icon">
                 <p><span class="forecastTemp"></span>&#176;F</p>
             </div>
             <div class="forecast">
-                <span class="day"></span>
+                <span class="days"></span>
                 <img class="forcastimg" src="images/cloud.png" alt="weather icon">
                 <p><span class="forecastTemp"></span>&#176;F</p>
             </div>
             <div class="forecast">
-                <span class="day"></span>
+                <span class="days"></span>
                 <img class="forcastimg" src="images/sun&cloud.png" alt="weather icon">
                 <p><span class="forecastTemp"></span>&#176;F</p>
             </div>
             <div class="forecast">
-                <span class="day"></span>
+                <span class="days"></span>
                 <img class="forcastimg" src="images/sun&cloud.png" alt="weather icon">
                 <p><span class="forecastTemp"></span>&#176;F</p>
             </div>
             <div class="forecast">
-                <span class="day"></span>
+                <span class="days"></span>
                 <img class="forcastimg" src="images/sun.png" alt="weather icon">
                 <p><span class="forecastTemp"></span>&#176;F</p>
             </div>
@@ -153,9 +153,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/prestonapi.js"></script>
-    <script src="js/forecast.js"></script>
+    <script src="js/weatherapi.js"></script>
     <script src="js/week11.js"></script>
-    <script src="js/windchill.js"></script>
 </body>
 </html>
