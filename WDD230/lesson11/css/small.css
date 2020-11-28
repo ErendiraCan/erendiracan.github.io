@@ -307,6 +307,7 @@ footer img {
 
 #footer_bar a {
     color: #ffffff;
+    text-decoration: none;
 }
 
 #today_is {
