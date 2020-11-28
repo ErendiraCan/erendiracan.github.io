@@ -452,3 +452,13 @@ div.cards img {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Events */
+
+.events {
+    text-align: center;
+    background-color: white;
+    border: 10px double #074757;
+    margin-top: 20px;
+    color: #074757;
+}
