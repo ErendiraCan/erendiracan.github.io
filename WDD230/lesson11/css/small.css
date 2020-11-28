@@ -173,7 +173,6 @@ main section {
 }
 
 #town {
-    padding-left: 2.25em;
     max-width: 960px;
     margin: 0 auto;
     padding-top: .96em;
@@ -235,6 +234,10 @@ article {
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 1em;
+}
+
+article h4 {
+    font-size: 22px;
 }
 
 article a {
