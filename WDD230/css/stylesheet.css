@@ -1,0 +1,73 @@
+header,
+main,
+footer {
+    max-width: 750px;
+    margin: auto;
+}
+
+header {
+    background-color:black;
+    border-radius: 20px;
+}
+
+header img {
+    float: right;
+    max-height: 150px;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+main {
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    color: white;
+    padding: 15px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: 'Playfair Display', serif;
+    margin: 20px;
+    border-bottom: solid 1px gray;
+    padding-bottom: 10px;
+}
+
+ul {
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px;
+}
+
+ul a:link  {
+    text-decoration: none;
+    color: black;
+}
+
+ul a:visited{
+    color: black;
+}
+
+footer {
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background: black;
+    border-radius: 20px;
+    color: white;
+}
+
+footer a:link  {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:visited{
+    color: gray;
+}
