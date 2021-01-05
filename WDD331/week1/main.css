@@ -1,0 +1,56 @@
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+header {
+    width: 200px;
+    height: 100%;
+    padding: 30px 0px;
+    position: fixed;
+    background: #6495ED;
+    color: white;
+}
+
+h1 {
+    border-bottom: solid 1px #FAEBD7;
+}
+
+header ul {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header a{
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    text-align: right;
+    color: #FAEBD7;
+}
+
+header a:visited {
+    color: #FAEBD7;
+}
+
+header a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+header a.active {
+    color: #DEB887;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+}
+
+main {
+    max-width: 750px;
+    margin: auto;
+    background: #FAEBD7;
+}
+
+article {
+    background: white;
+}
