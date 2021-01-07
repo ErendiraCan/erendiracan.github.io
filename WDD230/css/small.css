@@ -46,11 +46,13 @@ ul {
 
 ul a:link  {
     text-decoration: none;
-    color: rgb(73, 0, 0);
+    color: rgb(70, 53, 0);
+    font-weight: bold;
 }
 
 ul a:visited{
-    color: rgb(66, 70, 1);
+    color: rgb(70, 1, 1);
+    font-weight: bold;
 }
 
 footer {
