@@ -7,11 +7,12 @@ footer {
 
 header {
     background-color:black;
-    border-radius: 20px;
+    text-align: center;
 }
 
 header img {
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
     max-height: 150px;
     margin: 15px;
     border-radius: 20px;
@@ -22,15 +23,15 @@ main {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 1.8em;
     font-family: 'Playfair Display', serif;
-    text-align: left;
+    text-align: center;
     color: white;
     padding: 15px;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'Playfair Display', serif;
     margin: 20px;
     border-bottom: solid 1px gray;
@@ -38,36 +39,35 @@ h2 {
 }
 
 ul {
-    font-size: 1.2em;
+    font-size: 0.8em;
     font-family: 'Open Sans', sans-serif;
     margin: 20px;
 }
 
 ul a:link  {
     text-decoration: none;
-    color: black;
+    color: rgb(73, 0, 0);
 }
 
 ul a:visited{
-    color: black;
+    color: rgb(66, 70, 1);
 }
 
 footer {
     margin-top: 15px;
     padding: 5px;
-    font-size: 1.2em;
+    font-size: 0.8em;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     background: black;
-    border-radius: 20px;
     color: white;
 }
 
 footer a:link  {
     text-decoration: none;
-    color: white;
+    color: rgb(226, 241, 191);
 }
 
 footer a:visited{
-    color: gray;
+    color: rgb(241, 224, 191);
 }
