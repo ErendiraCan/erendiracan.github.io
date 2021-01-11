@@ -1,0 +1,114 @@
+/* phone or baseline views **************************/
+body {
+    background-color: #D8E2DC;
+}
+
+header,
+footer {
+    color: #69474e;
+	background-color: #FFE5D9;
+    display: flex;
+    flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header,
+nav,
+main,
+footer {
+	max-width: 700px;
+    margin: 0px auto;
+}
+h1 {
+    color: #69474e;
+    font-size: 3rem;
+    font-family: 'Clicker Script', cursive;
+}
+h2 {
+    color: #69474e;
+    font-family: 'Bodoni Moda', serif;
+}
+
+nav {
+	background-color: #FFCAD4;
+    text-align: center;
+    color: #69474e;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+    color: #9D8189;
+	display: block;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Bodoni Moda', serif;
+}
+nav a:hover {
+    border: white dashed 3px;
+}
+.active {
+	color: #69474e;
+}
+main {
+    color: #69474e;
+    max-width: 700px;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 1rem;
+    background-color:white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+main a{
+    text-decoration: none;
+    color: #69474e;
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+li {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+}
+footer {
+    padding: 0.8rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #69474e;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	
+    nav ul { display: flex; }
+    nav ul li { flex: 1 1 100%; }
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	nav a {
+		font-size: 1.1rem;
+    }
+}
