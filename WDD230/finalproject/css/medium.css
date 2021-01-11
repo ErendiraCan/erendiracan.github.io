@@ -1,15 +1,23 @@
 @media only screen and (min-width: 45.45em) {
 
+    button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    nav li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    
     h1 {
         font-size: 5.5em;
         text-align: center;
-        color: crimson;
-        text-shadow: -3px -3px 0px rgba(255, 177, 74, 0.94);
-        -webkit-transform: rotate(-11deg);
-        -moz-transform: rotate(-11deg);
-        -ms-transform: rotate(-11deg);
-        -o-transform: rotate(-11deg);
-        transform: rotate(-11deg);
         margin-bottom: 0;
     }
 
