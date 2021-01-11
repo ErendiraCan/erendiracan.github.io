@@ -1,0 +1,49 @@
+body {
+    background-color: #f8f4eb;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+.motto {
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+	font-size: 1rem;
+    letter-spacing: -0.5pt;
+    color: #09025f;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 22px;
+    color: #060420;
+    padding: 1em;
+}
+
+
+/*
+font-family: 'Hind Madurai', sans-serif; Titles
+font-family: 'Pacifico', cursive; Soots
+font-family: 'Roboto Condensed', sans-serif; text
+*/

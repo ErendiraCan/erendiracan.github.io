@@ -1,0 +1,10 @@
+@media only screen and (min-width: 72em) {
+
+    h1 {
+        font-size: 7.5em;
+    }
+
+    .motto {
+        font-size: 2em;
+    }
+}
