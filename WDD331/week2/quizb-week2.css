@@ -1,0 +1,16 @@
+fieldset[title=fieldset2] > p + p {
+    color:red;
+}
+
+/*fieldset p:nth-of-type(2) {
+    display: none;
+}*/
+
+.help::before {
+    content: '(';
+   }
+
+   .help::after {
+    content: ')';
+   }
+
