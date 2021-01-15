@@ -34,7 +34,6 @@ h1 {
 nav {
 	background-color: #FFCAD4;
     text-align: center;
-    color: #69474e;
     margin: 0 auto;
 }
 nav ul {
@@ -55,7 +54,7 @@ nav ul {
 	display: none;
 }
 .navigation a {
-    color: #9D8189;
+    color: #69474e;
 	display: block;
 	text-align: center;
 	padding: 0.75rem;
@@ -63,8 +62,8 @@ nav ul {
     font-size: 1rem;
     font-family: 'Bodoni Moda', serif;
 }
-.active {
-	color: #69474e;
+#active a {
+    color: #9D8189;
 }
 .navigation a:hover {
     border: white dashed 3px;
@@ -74,10 +73,6 @@ nav ul {
 }
 
 /* Main Section */
-h2 {
-    color: #69474e;
-    font-family: 'Bodoni Moda', serif;
-}
 main {
     max-width: 900px;
     margin: 0px auto;
@@ -100,6 +95,10 @@ main a:hover {
 main ul {
     color: #69474e;
     font-family: 'Source Sans Pro', sans-serif;
+}
+h2 {
+    color: #69474e;
+    font-family: 'Bodoni Moda', serif;
 }
 .contentbox {
     border-top: 1px solid #69474e;
