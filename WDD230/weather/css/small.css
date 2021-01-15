@@ -1,45 +1,41 @@
-/* phone or baseline views **************************/
+/********** phone or baseline views **************************/
 body {
     background-color: #D8E2DC;
 }
-
 header,
 footer {
     color: #69474e;
 	background-color: #FFE5D9;
     display: flex;
-    flex-flow: column;
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
 }
 
-header,
-nav,
-footer {
-    margin: 0px auto;
+header img {
+	width: 50px;
+	height: auto;
 }
-
-main {
-	max-width: 700px;
-    margin: 0px auto;
-}
-
 h1 {
     color: #69474e;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Clicker Script', cursive;
-    margin-bottom: 0;
+    margin: 0 0 0 17px;
 }
-h2 {
-    color: #69474e;
+.motto {
     font-family: 'Bodoni Moda', serif;
+    margin-left: 20px;
+	font-size: 0.8rem;
+    letter-spacing: 1pt;
+    color: #69474e;
 }
 
+/*Navigation Menu and Hamburger Buttom*/
 nav {
 	background-color: #FFCAD4;
     text-align: center;
     color: #69474e;
+    margin: 0 auto;
 }
 nav ul {
 	list-style-type: none;
@@ -47,7 +43,18 @@ nav ul {
 	padding: 0;
 	overflow: hidden;
 }
-nav ul li a {
+.navigation{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
     color: #9D8189;
 	display: block;
 	text-align: center;
@@ -56,15 +63,25 @@ nav ul li a {
     font-size: 1rem;
     font-family: 'Bodoni Moda', serif;
 }
-nav a:hover {
-    border: white dashed 3px;
-}
 .active {
 	color: #69474e;
 }
-main {
+.navigation a:hover {
+    border: white dashed 3px;
+}
+.responsive li {
+    display: block;
+}
+
+/* Main Section */
+h2 {
     color: #69474e;
-    max-width: 700px;
+    font-family: 'Bodoni Moda', serif;
+}
+main {
+    max-width: 900px;
+    margin: 0px auto;
+    color: #69474e;
     font-size: 18px;
     font-family: 'Source Sans Pro', sans-serif;
     padding: 1rem;
@@ -72,31 +89,35 @@ main {
     box-sizing: border-box;
     text-align: center;
 }
-
 main a{
     text-decoration: none;
     color: #69474e;
     font-weight: bold;
 }
-
 main a:hover {
     text-decoration: underline;
 }
-
 main ul {
     color: #69474e;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
-li {
+.contentbox {
+    border-top: 1px solid #69474e;
     font-size: 16px;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: left;
+    margin: 10px;
+    padding: 10px;
 }
+
+/* Footer Section */
 footer {
+    flex-flow: column;
     padding: 0.8rem;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
+}
+
+footer p {
+    margin: 5px;
 }
 
 footer a{
@@ -108,118 +129,3 @@ footer a{
 footer a:hover {
     text-decoration: underline;
 }
-
-
-
-
-/*
-header,
-footer {
-	background-color: #1985A1;
-    display: flex;
-	align-items:center;
-	justify-content:center;
-	margin: 0px auto;
-}
-
-main {
-	max-width: 767px;
-    margin: 0px auto;
-    border-radius: 5px;
-}
-
-header img {
-	width: 50px;
-	height: auto;
-}
-
-h1 {
-    color: white;
-    font-size: 1.6rem;
-	font-family: 'Oswald', sans-serif;
-	margin: 0 0 0 17px;
-}
-
-.motto {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    margin-left: 20px;
-	font-size: .9rem;
-    letter-spacing: 1pt;
-    color: white;
-}
-
-.headings {
-    display: flex;
-	flex-direction: column;
-	margin: 5px;
-}
-
-h2 {
-    color: #091925;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-}
-
-nav {
-	margin: 0 auto;
-	background-color: #091925;
-}
-
-ul {
-	margin: 0;
-}
-
-.navigation {
-	list-style: none;
-}
-
-.navigation li:first-child {
-	display: block;
-}
-
-.navigation li {
-	display: none;
-}
-
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	font-family: 'Oswald', sans-serif;
-	color: white;
-}
-
-.navigation a:hover {
-	background-color: #bbb;
-	color: #36454f;
-	border-radius: 5px;
-}
-
-.responsive li {
-	display: block;
-}
-
-.contentbox {
-    border: 1px dashed black;
-    background-color: #bbb;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-footer {
-    flex-flow: column;
-    padding: 1.2rem;
-}
-
-footer p {
-	font-family: 'Montserrat', sans-serif;
-	text-align: center;
-	color: white;
-	padding: 0;
-}
-
