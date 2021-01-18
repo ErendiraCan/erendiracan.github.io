@@ -26,4 +26,18 @@
         display: block;
         flex: 1 1 100%;
     }
+
+    /* Hero image - Weather Summary section */
+    .weathersum {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        opacity: 0.8;
+	    border-radius: 10px;
+    }
+
+    /* 5 Days Forecast Section*/
+    table {
+        width: 90%;
+    }
 }
