@@ -31,6 +31,15 @@ h1 {
 }
 
 /*Navigation Menu and Hamburger Buttom*/
+#hamburger{
+    background-color: #FFE5D9;
+    color: #69474e;
+    border: none;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 5px;
+    margin-left: 20px;
+}
 nav {
 	background-color: #FFCAD4;
     text-align: center;
@@ -46,9 +55,6 @@ nav ul {
     list-style: none;
     text-align: center;
     padding: 0;
-}
-.navigation li:first-child {
-    display: block;
 }
 .navigation li {
 	display: none;
@@ -74,7 +80,7 @@ nav ul {
 
 /* Main Section */
 main {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0px auto;
     color: #69474e;
     font-size: 18px;
