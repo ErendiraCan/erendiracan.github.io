@@ -130,6 +130,10 @@ h2 {
     margin: 0 auto;
     max-width: 1088px;
 }
+.herobox img {
+    max-width: 100%;
+    height: auto;
+}
 .weathersum {
     background: #69474e;
     color: white;
@@ -180,24 +184,62 @@ td:first-child {
     font-size: 1rem;
 }
 
+/* Article section */
+article {
+    background-color: #69474e;
+    color: white;
+    max-width: 1070px;
+    overflow: hidden;
+    margin: 1.2em auto;
+}
+article p {
+    margin: 20px;
+}
+article a {
+    color: #FFCAD4;
+}
+#author {
+    font-style:italic;
+	color: #FFCAD4;
+}
+article img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 15px;
+}
+
 /* Footer Section */
 footer {
-    flex-flow: column;
     padding: 0.8rem;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
-
+footer h4 {
+    font-weight: bold;
+}
+footer img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
 footer p {
     margin: 5px;
 }
-
 footer a{
     text-decoration: none;
     color: #69474e;
     font-weight: bold;
 }
-
 footer a:hover {
     text-decoration: underline;
+}
+.social {
+    margin: 5px;
+    max-width: 10vw;
+    height: auto;
+}
+.social:hover {
+    opacity: 0.75;
 }

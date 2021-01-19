@@ -36,8 +36,23 @@
 	    border-radius: 10px;
     }
 
-    /* 5 Days Forecast Section*/
-    table {
-        width: 90%;
+    /* Article section */
+    article {
+        display: flex;
+    }
+    #articlebox {
+        margin: 20px;
+    }
+
+    /* footer Section */
+    #contactbox {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1088px;
+        margin: 0 auto;
+    }
+    footer img {
+        margin-right: 20px;
+        margin-bottom: 20px;;
     }
 }
