@@ -39,7 +39,24 @@
     <main>
         <h2>Preston, Idaho</h2>
         <div class="herobox">
-            <img src="images/forest.jpg" alt="Forest Hero Image">
+            <picture>
+                <source
+                  srcset="images/heroimage3.jpg"
+                  media="(max-width:320px)"
+                />
+                <source
+                  srcset="images/heroimage2.jpg"
+                  media="(max-width:480px)"
+                />
+                <source
+                  srcset="images/heroimage1.jpg"
+                  media="(max-width:768px)"
+                />
+                <img
+                  src="images/heroimage0.jpg"
+                  alt="Mountain picture"
+                />
+              </picture>
             <section class="weathersum">
                 <h3>Weather Summary</h3>
                 <table>
@@ -49,12 +66,12 @@
                             <td>Sunny</td>
                         </tr>
                         <tr>
-                            <td>High:</td>
-                            <td>76 °F</td>
+                            <td>Temp:</td>
+                            <td><span id="temp">45</span>°F</td>
                         </tr>
                         <tr>
                             <td>Wind Chill:</td>
-                            <td>°F</td>
+                            <td><span id="windChill"></span>°F</td>
                         </tr>
                         <tr>
                             <td>Humidity:</td>
@@ -62,7 +79,7 @@
                         </tr>
                         <tr>
                             <td>Wind Speed:</td>
-                            <td>5 mph</td>
+                            <td><span id="speed">5</span>mph</td>
                         </tr>
                     </tbody>
                 </table>
@@ -128,5 +145,6 @@
         <p><span id="currentday"></span></p>
     </footer>
     <script src="js/preston.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>
