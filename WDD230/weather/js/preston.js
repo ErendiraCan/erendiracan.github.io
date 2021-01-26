@@ -6,7 +6,6 @@ if (new Date().getDay() == 5) {
     message.style.display = "block";
 };
 
-
 //---------------Getting the current date
 const options = {weekday: 'long', day: 'numeric', month: 'long', year:'numeric'};
 document.getElementById('currentday').textContent = new Date().toLocaleDateString('en-US', options);
