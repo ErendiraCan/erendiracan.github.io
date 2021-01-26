@@ -1,1 +1,74 @@
 /********** phone or baseline views **************************/
+body {
+    background-color: #f8f4eb;
+}
+header {
+    display: flex;
+	align-items:center;
+    justify-content:center;
+    padding: 10px;
+}
+
+header img {
+	width: 70px;
+    height: auto;
+    margin-left: 20px;
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    color: #2c2c2c;
+    text-shadow: 
+    4px 4px 0px #f8f4eb, 
+    7px 7px 0px rgba(0, 0, 0, 0.2);
+    margin: 0 0 0 17px;
+}
+
+/*Navigation Menu and Hamburger Buttom*/
+#hamburger{
+    background-color: #f8f4eb;
+    color: #2c2c2c;
+    border: none;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 5px;
+    margin-left: 20px;
+}
+nav {
+    background-color: #FF9F1C;
+    text-align: center;
+    margin: 0 auto;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.navigation{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+    color: #f8f4eb;
+	display: block;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+.active a {
+    border-top: 5px solid #2c2c2c;
+}
+.navigation a:hover {
+    background-color: #FFBF69;
+    color: #2c2c2c;
+}
+.responsive li {
+    display: block;
+}
