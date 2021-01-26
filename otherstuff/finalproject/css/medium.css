@@ -1,0 +1,52 @@
+@media only screen and (min-width: 45.45em) {
+
+    /******* Navigation *******/
+        button {
+            display: none;
+        }
+        nav li {
+            display: block;
+            flex: 1 1 auto;
+        }
+        nav {
+            background-color:  #f8f4eb;
+            margin: 50px;
+        }
+        .navigation {
+            display: flex;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .navigation li {
+            display: block;
+            flex: 1 1 auto;
+        }
+        .navigation a {
+            font-size: 22px;
+            color: #09025f;
+            padding: 10px;
+        }
+        .navigation a:hover {
+            background-color:  #f8f4eb;
+            -webkit-transform: rotate(-11deg);
+            -moz-transform: rotate(-11deg);
+            -ms-transform: rotate(-11deg);
+            -o-transform: rotate(-11deg);
+            transform: rotate(-11deg);
+        }
+    
+    /******** Header ********/
+        header {
+            display: block;
+        }
+        h1 {
+            font-size: 5.5em;
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .motto {
+            text-align: center;
+            font-size: 1.5em;
+        }
+    }
