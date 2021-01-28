@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery</title>
+    <meta name="description" content="This is the Preston Town Page assignment for my WDD 230 class at BYU Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Clicker+Script&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <div class="message">
+        <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>
+        <img src="images/sugarcloud.png" alt="Our logo">
+        <section>
+            <h1>Sugar Cloud</h1>
+            <div class="motto">The most accurate information for you!</div>
+        </section>
+        <span>
+            <button class="ham" id="hamburger">☰</button>
+        </span>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="../weather/preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li id="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Storm Center Report</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend> Contact Information </legend>
+                <label class="top">Full Name*<input type="text" name="fname" pattern="[a-zA-Z]+" minlength="5" required></label>
+                <label class="top">Email<input type="text" name="email" placeholder="someone@email.com"></label>    
+                <label class="top">Phone Number*<input type="tel" name="phone" placeholder="355-234-4567" required></label>
+                <label class="top">Zip Code*<input type="number" name="zipcode" placeholder="879" required></label>
+            </fieldset>
+            <fieldset>
+                <legend> Storm Information </legend>
+                <label class="top">Storm Date<input type="date" name="stormdate"></label>
+                <div>Storm Type</div>
+                <label class="top">
+                <select name="stormtype">
+                    <option value="" disabled selected>Select Type:</option>
+                    <option value="flashFlood">Flash Flood</option>
+                    <option value="hail">Hail</option>
+                    <option value="hurricane">Hurricane</option>
+                    <option value="thunderstorm">Thunderstorm</option>
+                    <option value="tornado">Tornado</option>
+                </select>
+                </label>
+                <label class="sd">Storm Severity (10 the worst) &nbsp; &nbsp;<input type="range" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span></label>
+                <datalist id="rating">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+                <div>Storm Region</div>
+                <label class="top">
+                    <select name="region">
+                        <option value="" disabled selected>Select Region:</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </label>
+                <div>Do you feel in Danger?</div>
+                    <label class="sd"> <input type="radio" name="danger" value="No"> No </label>
+                    <label class="sd"> <input type="radio" name="danger" value="Maybe"> Maybe </label>
+                    <label class="sd"> <input type="radio" name="danger" value="yes"> Yes </label>
+            </fieldset>
+            <fieldset>
+                <legend> Additional Information </legend>
+                <label class="comments"><textarea rows="10" cols="40" placeholder="Comments:"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Send My Storm Report" class="sbutton">
+        </form>
+    </main>
+    <footer>
+        <div id="contactbox">
+            <section>
+                <h4>Contact Information</h4>
+                <p>5555 Address St. Preston, ID</p>
+                <p>email@email.com</p>
+                <p>(555) 555-5555</p>
+                <a href="facebook.com" target="_blank"><img class="social" src="images/facebook.png" alt="Facebook Icon Image"></a>
+                <a href="instagram.com" target="_blank"><img class="social" src="images/instagram.png" alt="Instagram Icon Image"></a>
+                <a href="youtube.com" target="_blank"><img class="social" src="images/youtube.png" alt="Youtube Icon Image"></a>
+                <a href="twitter.com" target="_blank"><img class="social" src="images/twitter.png" alt="Twitter Icon Image"></a>
+            </section>
+            <img src="images/map.png" alt="Map Image of Preston, Idaho and other cities">
+        </div>
+        <p>&copy;Sugar Cloud <span id="currentyear"></span> | Attributions | <a href="../index.html">Erendira Can</a></p>
+        <p><span id="currentday"></span></p>
+    </footer>
+    <script src="../weather/js/preston.js"></script>
+    <script src="js/imagehandling.js" defer></script>
+</body>
+</html>
