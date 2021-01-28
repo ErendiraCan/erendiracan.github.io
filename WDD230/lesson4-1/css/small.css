@@ -256,13 +256,13 @@ footer a:hover {
 .gallery figcaption {
     font-size: 1em;
     text-align: center;
-    background: #FFCAD4;
     color: #69474e;
     padding: 8px;
     margin: 0;
 }
 .gallery figure {
     margin: 0;
+    background-color: #FFCAD4;
 }
 .gallery img[data-src] {
     filter: blur(0.2em);
