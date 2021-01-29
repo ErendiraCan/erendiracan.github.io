@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gallery</title>
+    <title>Storm Center</title>
     <meta name="description" content="This is the Preston Town Page assignment for my WDD 230 class at BYU Idaho">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Clicker+Script&family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -37,12 +37,13 @@
         </ul>
     </nav>
     <main>
+        <!-- Code based on https://codepen.io/blazzard-jason/pen/oMRdJg -->
         <h2>Storm Center Report</h2>
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend> Contact Information </legend>
                 <label class="top">Full Name*<input type="text" name="fname" pattern="[a-zA-Z]+" minlength="5" required></label>
-                <label class="top">Email<input type="text" name="email" placeholder="someone@email.com"></label>    
+                <label class="top">Email<input type="email" name="email" placeholder="someone@email.com"></label>    
                 <label class="top">Phone Number*<input type="tel" name="phone" placeholder="355-234-4567" required></label>
                 <label class="top">Zip Code*<input type="number" name="zipcode" placeholder="879" required></label>
             </fieldset>
@@ -113,6 +114,6 @@
         <p><span id="currentday"></span></p>
     </footer>
     <script src="../weather/js/preston.js"></script>
-    <script src="js/imagehandling.js" defer></script>
+    <script src="js/stormcenter.js"></script>
 </body>
 </html>

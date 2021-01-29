@@ -60,9 +60,4 @@
     .gallery {
         grid-template-columns: 1fr 1fr;
     }
-
-    /*************Form*************/
-    form label.sbs {
-        padding: .4rem;
-    }
 }
