@@ -336,8 +336,6 @@ form label input:focus {
 
 /********Town Cards Section**********/
 div.towncard {
-    display: flex;
-    flex-wrap: wrap;
     margin: 0 auto;
     max-width: 1100px;
 }
@@ -346,14 +344,10 @@ div.towncard section{
     color: #69474e;
     text-align: center;
     margin: 15px;
-    max-width: auto;
-}
-div.towncard section:not(img) {
-    display: block;
     padding: 10px;
 }
 div.towncard img {
-    width: 300px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }

@@ -62,15 +62,26 @@
     }
 
     /********Town Cards Section**********/
-    .towncard section{
-        display: flex;
-	    flex-direction: row;
+    div.towncard section {
+        padding: 3rem;
+        position: relative;
     }
-    .towncard section:nth-child(2) {
-        flex-direction: row-reverse;
+    div.towncard section:nth-child(even){
+        text-align: left;
     }
-    div.towncard section:not(img) {
-        display: flex;
-        flex-direction:unset;
+    div.towncard section:nth-child(even) img {  
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        width: 260px;
+    }
+    div.towncard section:nth-child(odd){
+        text-align: right;
+    }
+    div.towncard section:nth-child(odd) img {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        width: 260px;
     }
 }

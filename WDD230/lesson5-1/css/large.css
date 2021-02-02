@@ -26,11 +26,21 @@
     }
 
     /********Town Cards Section**********/
-    div.towncard section{
-        max-width: 400px;
+    div.towncard {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
     }
-    div.towncard section:not(img) {
-        display: block;
-        padding: 10px;
+    div.towncard section:nth-child(even) img,
+    div.towncard section:nth-child(odd) img {
+      float: none;
+      position:unset;
     }
+    div.towncard section:nth-child(even),
+    div.towncard section:nth-child(odd) {
+      text-align: center;
+    }
+     div.towncard section {
+      padding: 10px;
+     }
   }
