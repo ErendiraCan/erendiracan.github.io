@@ -1,0 +1,36 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 72em) {
+    header img {
+      width: 128px;
+      height: auto;
+    }
+  
+    h1 {
+      font-size: 3rem;
+      }
+  
+    .motto {
+      font-size: 1.3rem;
+    }
+  
+    nav a {
+          font-size: 1.1rem;
+    }
+
+    /************Gallery************/
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery figure:hover {
+        box-shadow: 5px 5px 13px -1px;
+    }
+
+    /********Town Cards Section**********/
+    div.towncard section{
+        max-width: 400px;
+    }
+    div.towncard section:not(img) {
+        display: block;
+        padding: 10px;
+    }
+  }

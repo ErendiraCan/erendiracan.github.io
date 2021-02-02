@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <meta name="description" content="This is the Preston Town Page assignment for my WDD 230 class at BYU Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Clicker+Script&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <div class="message">
+        <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>
+        <img src="images/sugarcloud.png" alt="Our logo">
+        <section>
+            <h1>Sugar Cloud</h1>
+            <div class="motto">The most accurate information for you!</div>
+        </section>
+        <span>
+            <button class="ham" id="hamburger">☰</button>
+        </span>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li id="active"><a href="index.html">Home</a></li>
+            <li><a href="../weather/preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson4-2/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson4-1/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Welcome!</h2>
+            <picture>
+                <source
+                  srcset="images/heroimage3.jpg"
+                  media="(max-width:320px)"
+                />
+                <source
+                  srcset="images/heroimage2.jpg"
+                  media="(max-width:480px)"
+                />
+                <source
+                  srcset="images/heroimage1.jpg"
+                  media="(max-width:768px)"
+                />
+                <img
+                  src="images/heroimage0.jpg"
+                  alt="Mountain picture"
+                />
+              </picture>
+        <div class="towncard"></div>
+        <article>
+            <div id="articlebox">
+                    <h4>Perennial delight: A Dutch master’s touch on a South African canvas</h4>
+                    <p id="author">By: Megan Mackenzie</p>
+                    <p>The Netherlands is a garden and flower lover’s delight. It might be a small country of just more than 17 million people, 
+                        but it’s the world leader in cut-flower production. It’s also home to the prettiest bulb garden and the great gardener Piet Oudolf. 
+                        For more than 200 years Holland has been the centre of the global trade in cut flowers, through auction company Royal FloraHolland in Aalsmeer. 
+                        Flowers from all around the world are flown into Amsterdam daily to be auctioned off at about 5am and then shipped around Europe in planes and trucks. 
+                        It is a testament to the love of things beautiful and a “perfect market”, and a huge nod to Dutch efficiency.
+                    </p>
+                    <a href="https://www.dailymaverick.co.za/article/2021-01-25-perennial-delight-a-dutch-masters-touch-on-a-south-african-canvas/">Read More...</a>
+                <img src="images/flowerfield.jpg" alt="FLower field Article Image">
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div id="contactbox">
+            <section>
+                <h4>Contact Information</h4>
+                <p>5555 Address St. Preston, ID</p>
+                <p>email@email.com</p>
+                <p>(555) 555-5555</p>
+                <a href="facebook.com" target="_blank"><img class="social" src="images/facebook.png" alt="Facebook Icon Image"></a>
+                <a href="instagram.com" target="_blank"><img class="social" src="images/instagram.png" alt="Instagram Icon Image"></a>
+                <a href="youtube.com" target="_blank"><img class="social" src="images/youtube.png" alt="Youtube Icon Image"></a>
+                <a href="twitter.com" target="_blank"><img class="social" src="images/twitter.png" alt="Twitter Icon Image"></a>
+            </section>
+            <img src="images/map.png" alt="Map Image of Preston, Idaho and other cities">
+        </div>
+        <p>&copy;Sugar Cloud <span id="currentyear"></span> | Attributions | <a href="../index.html">Erendira Can</a></p>
+        <p><span id="currentday"></span></p>
+    </footer>
+    <script src="js/towns.js"></script>
+    <script src="../weather/js/preston.js"></script>
+</body>
+</html>
