@@ -345,9 +345,11 @@ div.towncard section{
     text-align: center;
     margin: 15px;
     padding: 10px;
+    border-radius: 5px;
 }
 div.towncard img {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
 }
