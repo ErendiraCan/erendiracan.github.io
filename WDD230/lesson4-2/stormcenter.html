@@ -42,7 +42,7 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend> Contact Information </legend>
-                <label class="top">Full Name*<input type="text" name="fname" pattern="[a-zA-Z]+" minlength="5" required></label>
+                <label class="top">Full Name*<input type="text" name="fname" pattern="[a-zA-Z0-9]+[a-zA-Z0-9 ]+" minlength="5" required></label>
                 <label class="top">Email<input type="email" name="email" placeholder="someone@email.com"></label>    
                 <label class="top">Phone Number*<input type="tel" name="phone" placeholder="355-234-4567" required></label>
                 <label class="top">Zip Code*<input type="number" name="zipcode" placeholder="879" required></label>
@@ -61,7 +61,7 @@
                     <option value="tornado">Tornado</option>
                 </select>
                 </label>
-                <label class="sd">Storm Severity (10 the worst) &nbsp; &nbsp;<input type="range" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <label class="sd">Storm Severity (10 the worst) &nbsp; &nbsp;<input type="range" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="ratingvalue">5</span></label>
                 <datalist id="rating">
                     <option value="1">

@@ -333,6 +333,10 @@ form label input:focus {
     background-color: #D8E2DC;
     border: 1px solid #D8E2DC;
 }
+/* -----Thanks----- */
+.thanks img {
+    max-width: 100%;
+}
 
 /********Town Cards Section**********/
 div.towncard {
