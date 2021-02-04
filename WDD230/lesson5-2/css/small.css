@@ -1,0 +1,359 @@
+/********** phone or baseline views **************************/
+body {
+    background-color: #D8E2DC;
+}
+header,
+footer {
+    color: #69474e;
+	background-color: #FFE5D9;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header img {
+	width: 50px;
+	height: auto;
+}
+h1 {
+    color: #69474e;
+    font-size: 2rem;
+    font-family: 'Clicker Script', cursive;
+    margin: 0 0 0 17px;
+}
+.motto {
+    font-family: 'Bodoni Moda', serif;
+    margin-left: 20px;
+	font-size: 0.8rem;
+    letter-spacing: 1pt;
+    color: #69474e;
+}
+
+/****** Message Section *********/
+.message {
+    display: none;
+    padding: 1em;
+    background-color: #69474e;
+    color: #ffffff;
+}
+
+.message p {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+}
+
+/*Navigation Menu and Hamburger Buttom*/
+#hamburger{
+    background-color: #FFE5D9;
+    color: #69474e;
+    border: none;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 5px;
+    margin-left: 20px;
+}
+nav {
+	background-color: #FFCAD4;
+    text-align: center;
+    margin: 0 auto;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.navigation{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+    color: #69474e;
+	display: block;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Bodoni Moda', serif;
+}
+#active a {
+    color: #9D8189;
+}
+.navigation a:hover {
+    border: white dashed 3px;
+}
+.responsive li {
+    display: block;
+}
+
+/* Main Section */
+main {
+    max-width: 1200px;
+    margin: 0px auto;
+    color: #69474e;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 1rem;
+    background-color:white;
+    box-sizing: border-box;
+    text-align: center;
+}
+main a{
+    text-decoration: none;
+    color: #69474e;
+    font-weight: bold;
+}
+main a:hover {
+    text-decoration: underline;
+}
+main ul {
+    color: #69474e;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h2 {
+    color: #69474e;
+    font-family: 'Bodoni Moda', serif;
+}
+
+/* Hero image - Weather Summary section */
+.herobox {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1088px;
+}
+.herobox img {
+    max-width: 100%;
+    height: auto;
+}
+.weathersum {
+    background: #69474e;
+    color: white;
+	padding: 1.5rem;
+}
+.weathersum h3 {
+    border-bottom: solid 1px white;
+    padding-bottom: 10px;
+}
+table {
+    width: 80%;
+}
+td {
+    text-align: left;
+}
+td:first-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* 5 Days Forecast Section*/
+#forecastbox {
+    display: flex;
+    flex-flow: wrap;
+    margin: 0 auto;
+    max-width: 1088px;
+    border-right: 1px solid #69474e;
+}
+.forecast {
+    flex: 1 1 auto;
+    text-align: center;
+    border-bottom: 1px solid #69474e;
+    border-left: 1px solid #69474e;
+}
+.day {
+    display: block;
+    background-color: #FFCAD4;
+    border-top: 1px solid #69474e;
+    padding: 5px;
+    font-weight: bold;
+}
+.icon {
+    padding: .25rem;
+}
+.temp {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 1rem;
+}
+
+/* Article section */
+article {
+    background-color: #69474e;
+    color: white;
+    max-width: 1088px;
+    overflow: hidden;
+    margin: 1.2em auto;
+}
+article p {
+    margin: 20px;
+}
+article a {
+    color: #FFCAD4;
+}
+#author {
+    font-style:italic;
+	color: #FFCAD4;
+}
+article img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 15px;
+}
+
+/* Footer Section */
+footer {
+    padding: 0.8rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+footer h4 {
+    font-weight: bold;
+}
+footer img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+footer p {
+    margin: 5px;
+}
+footer a{
+    text-decoration: none;
+    color: #69474e;
+    font-weight: bold;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.social {
+    margin: 5px;
+    max-width: 10vw;
+    height: auto;
+}
+.social:hover {
+    opacity: 0.75;
+}
+
+/**********Gallery************/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    grid-gap: 15px;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+}
+.gallery figcaption {
+    font-size: 1em;
+    text-align: center;
+    color: #69474e;
+    padding: 8px;
+    margin: 0;
+}
+.gallery figure {
+    margin: 0;
+    background-color: #FFCAD4;
+}
+.gallery img[data-src] {
+    filter: blur(0.2em);
+}
+.gallery figure img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    width: 100%;
+}
+
+/**************Form*****************/
+form fieldset {
+    margin: 10px;
+    border: 1px solid #D8E2DC;
+    font-size: 1rem;
+}
+form legend {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+form label.top,
+label.comments,
+form div {
+    display: block;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin: 5px;
+}
+form label.top input,
+form label.top select,
+textarea {
+    background-color: #ffff;
+    border: solid 1px #D8E2DC;
+    color: #69474e;
+    border-radius: 4px;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.sbutton {
+    border: none;
+    background-color: #D8E2DC;
+    color: #69474e;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    max-width: 20rem;
+}
+form label.sd {
+    display: block;
+    padding: 8px;
+}
+form div{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+form label.top {
+    padding-top: 0;
+}
+form label input:invalid {
+	background-color: #FFCAD4;
+}
+form label input:focus {
+    background-color: #D8E2DC;
+    border: 1px solid #D8E2DC;
+}
+/* -----Thanks----- */
+.thanks img {
+    max-width: 100%;
+}
+
+/********Town Cards Section**********/
+div.towncard {
+    margin: 0 auto;
+    max-width: 1088px;
+}
+div.towncard section{
+    background-color: #FFCAD4;
+    color: #69474e;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+div.towncard img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}

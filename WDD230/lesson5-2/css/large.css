@@ -1,0 +1,46 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 72em) {
+    header img {
+      width: 128px;
+      height: auto;
+    }
+  
+    h1 {
+      font-size: 3rem;
+      }
+  
+    .motto {
+      font-size: 1.3rem;
+    }
+  
+    nav a {
+          font-size: 1.1rem;
+    }
+
+    /************Gallery************/
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery figure:hover {
+        box-shadow: 5px 5px 13px -1px;
+    }
+
+    /********Town Cards Section**********/
+    div.towncard {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+    div.towncard section:nth-child(even) img,
+    div.towncard section:nth-child(odd) img {
+      float: none;
+      position:unset;
+    }
+    div.towncard section:nth-child(even),
+    div.towncard section:nth-child(odd) {
+      text-align: center;
+    }
+     div.towncard section {
+      padding: 10px;
+     }
+  }
