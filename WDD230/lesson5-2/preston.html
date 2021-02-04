@@ -28,7 +28,7 @@
     </header>
     <nav>
         <ul class="navigation">
-            <li><a href="#">Home</a></li>
+            <li><a href="../lesson5-1/index.html">Home</a></li>
             <li id="active"><a href="preston.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
@@ -41,19 +41,19 @@
         <div class="herobox">
             <picture>
                 <source
-                  srcset="images/heroimage3.jpg"
+                  srcset="images/hero-mountain3.jpg"
                   media="(max-width:320px)"
                 />
                 <source
-                  srcset="images/heroimage2.jpg"
+                  srcset="images/hero-mountain2.jpg"
                   media="(max-width:480px)"
                 />
                 <source
-                  srcset="images/heroimage1.jpg"
+                  srcset="images/hero-mountain1.jpg"
                   media="(max-width:768px)"
                 />
                 <img
-                  src="images/heroimage0.jpg"
+                  src="images/hero-mountain.jpg"
                   alt="Mountain picture"
                 />
               </picture>
@@ -115,15 +115,16 @@
         </div>
         <article>
             <div id="articlebox">
-                    <h4>Article Title</h4>
-                    <p id="author">By: Author Name</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <a href="#">Read More...</a>
-                <img src="images/flowerfield.jpg" alt="FLower field Article Image">
+                    <h4>Preston and Lancashire snow and ice warning scaled back by Met Office in updated weather forecast</h4>
+                    <p id="author">By: Rachel Smith</p>
+                    <p>Preston and Lancashire is being warned to brace for a freezing start to February.
+                        The Met Office has updated its warning for snow and ice.
+                        From midnight on Tuesday (2 February) the city and the county is expected to see temperatures drop once again.
+                        Difficult driving conditions are expected and forecasters say “snow, with a risk of widespread ice, 
+                        is likely to push slowly northeast during Tuesday, bringing difficult travel conditions.”
+                    </p>
+                    <a href="https://www.blogpreston.co.uk/2021/01/preston-and-lancashire-snow-and-ice-warning-scaled-back-by-met-office-in-updated-weather-forecast/">Read More...</a>
+                <img src="images/snowfield.jpg" alt="Snowy field Article Image">
             </div>
         </article>
     </main>
@@ -141,10 +142,10 @@
             </section>
             <img src="images/map.png" alt="Map Image of Preston, Idaho and other cities">
         </div>
-        <p>&copy;Sugar Cloud <span id="currentyear"></span> | Attributions | <a href="../index.html">Erendira Can</a></p>
+        <p>&copy;Sugar Cloud <span id="currentyear"></span> | Attributions: <a href="https://openweathermap.org/">OpenWeather</a> | <a href="../index.html">Erendira Can</a></p>
         <p><span id="currentday"></span></p>
     </footer>
-    <script src="js/preston.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="../weather/js/preston.js"></script>
+    <script src="../weather/js/windchill.js"></script>
 </body>
 </html>
