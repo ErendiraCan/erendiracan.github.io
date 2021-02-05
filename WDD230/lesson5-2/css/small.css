@@ -155,7 +155,7 @@ td:first-child {
 }
 
 /* 5 Days Forecast Section*/
-#forecastbox {
+.forecastbox {
     display: flex;
     flex-flow: wrap;
     margin: 0 auto;
