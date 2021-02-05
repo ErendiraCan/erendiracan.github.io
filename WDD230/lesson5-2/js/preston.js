@@ -13,4 +13,5 @@ document.getElementById('temp').textContent = jsObject.main.temp;
 document.getElementById('humidity').textContent = jsObject.main.humidity;
 document.getElementById('speed').textContent = jsObject.wind.speed;
 
+getWindChill();
 });

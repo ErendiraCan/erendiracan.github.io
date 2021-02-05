@@ -1,5 +1,6 @@
 // Getting Wind Chill >>Based on this code: https://codepen.io/mintnerknown/pen/aQbORY
 
+function getWindChill() {
 // 1 Getting the variables values: Input
 var temp = document.getElementById("temp").textContent;
 var windspeed = document.getElementById("speed").textContent;
@@ -15,4 +16,5 @@ if (temp <= 50 && windspeed >= 3) {
     document.getElementById("windChill").textContent = windChill;
 } else {
     document.getElementById("windChill").innerHTML = "N/A";
+}
 }
