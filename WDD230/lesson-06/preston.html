@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston</title>
+    <meta name="description" content="This is the Preston Town Page assignment for my WDD 230 class at BYU Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Clicker+Script&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body id="preston">
+    <div class="message">
+        <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>
+        <img src="images/sugarcloud.png" alt="Our logo">
+        <section>
+            <h1>Sugar Cloud</h1>
+            <div class="motto">The most accurate information for you!</div>
+        </section>
+        <span>
+            <button class="ham" id="hamburger">☰</button>
+        </span>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li id="active"><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston, Idaho</h2>
+        <div class="herobox">
+            <picture>
+                <source
+                  srcset="images/hero-mountain3.jpg"
+                  media="(max-width:320px)"
+                />
+                <source
+                  srcset="images/hero-mountain2.jpg"
+                  media="(max-width:480px)"
+                />
+                <source
+                  srcset="images/hero-mountain1.jpg"
+                  media="(max-width:768px)"
+                />
+                <img
+                  src="images/hero-mountain.jpg"
+                  alt="Mountain picture"
+                />
+              </picture>
+            <section class="weathersum">
+                <h3>Weather Summary</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Currently:</td>
+                            <td><span id="description"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Temp:</td>
+                            <td><span id="temp"></span>°F</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill:</td>
+                            <td><span id="windChill"></span>°F</td>
+                        </tr>
+                        <tr>
+                            <td>Humidity:</td>
+                            <td><span id="humidity"></span>%</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Speed:</td>
+                            <td><span id="speed"></span>mph</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <h3>Five Day Forecast</h3>
+        <div class="forecastbox"></div>
+        <article>
+            <div id="articlebox">
+                    <h4>Preston and Lancashire snow and ice warning scaled back by Met Office in updated weather forecast</h4>
+                    <p id="author">By: Rachel Smith</p>
+                    <p>Preston and Lancashire is being warned to brace for a freezing start to February.
+                        The Met Office has updated its warning for snow and ice.
+                        From midnight on Tuesday (2 February) the city and the county is expected to see temperatures drop once again.
+                        Difficult driving conditions are expected and forecasters say “snow, with a risk of widespread ice, 
+                        is likely to push slowly northeast during Tuesday, bringing difficult travel conditions.”
+                    </p>
+                    <a href="https://www.blogpreston.co.uk/2021/01/preston-and-lancashire-snow-and-ice-warning-scaled-back-by-met-office-in-updated-weather-forecast/">Read More...</a>
+                <img src="images/snowfield.jpg" alt="Snowy field Article Image">
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div id="contactbox">
+            <section>
+                <h4>Contact Information</h4>
+                <p>5555 Address St. Preston, ID</p>
+                <p>email@email.com</p>
+                <p>(555) 555-5555</p>
+                <a href="facebook.com" target="_blank"><img class="social" src="images/facebook.png" alt="Facebook Icon Image"></a>
+                <a href="instagram.com" target="_blank"><img class="social" src="images/instagram.png" alt="Instagram Icon Image"></a>
+                <a href="youtube.com" target="_blank"><img class="social" src="images/youtube.png" alt="Youtube Icon Image"></a>
+                <a href="twitter.com" target="_blank"><img class="social" src="images/twitter.png" alt="Twitter Icon Image"></a>
+            </section>
+            <img src="images/map.jpg" alt="Map Image of Preston, Idaho and other cities">
+        </div>
+        <p>&copy;Sugar Cloud <span id="currentyear"></span> | Attributions: <a href="https://openweathermap.org/">OpenWeather</a> | <a href="../index.html">Erendira Can</a></p>
+        <p><span id="currentday"></span></p>
+    </footer>
+    <script src="js/principal.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/forecast.js"></script>
+</body>
+</html>
