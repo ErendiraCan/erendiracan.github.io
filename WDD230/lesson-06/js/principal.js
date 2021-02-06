@@ -23,3 +23,8 @@ hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive'
 
 //To solve the mid resizing issue with responsive class on (button section)
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
+
+//---------------Making the form range works
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
