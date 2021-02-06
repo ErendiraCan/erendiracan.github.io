@@ -1,7 +1,13 @@
 //Selecting city
 if (document.getElementById("preston")) {
     forecast = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=49a941896ac322f17786b22ffb8b1fec&units=imperial';
+
+} else if (document.getElementById("sodasprings")) {
+      forecast = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=49a941896ac322f17786b22ffb8b1fec&units=imperial';
+} else if (document.getElementById("fishhaven")) {
+  forecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=42.0380399&lon=-111.4048681&appid=49a941896ac322f17786b22ffb8b1fec&units=imperial';
 }
+
 
 //Usign fetch to feed the argument
 fetch(forecast)
