@@ -1,0 +1,87 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+    header img {
+        width: 80px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .motto {
+        font-size: 1rem;
+    }
+
+    /*Navigation Section*/
+    .navigation {
+        display: flex;
+    }
+    
+    button {
+        display: none;
+    }
+
+    .navigation li{
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    /* Hero image - Weather Summary section */
+    .weathersum {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        opacity: 0.8;
+	    border-radius: 10px;
+    }
+
+    /* Article section */
+    article {
+        display: flex;
+    }
+    #articlebox {
+        margin: 20px;
+    }
+
+    /* footer Section */
+    #contactbox {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1088px;
+        margin: 0 auto;
+    }
+    footer img {
+        margin-right: 20px;
+        margin-bottom: 20px;;
+    }
+
+    /***********Gallery************/
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /********Town Cards Section**********/
+    div.towncard section {
+        padding: 3rem;
+        position: relative;
+    }
+    div.towncard section:nth-child(even){
+        text-align: left;
+    }
+    div.towncard section:nth-child(even) img {  
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        width: 260px;
+    }
+    div.towncard section:nth-child(odd){
+        text-align: right;
+    }
+    div.towncard section:nth-child(odd) img {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        width: 260px;
+    }
+}

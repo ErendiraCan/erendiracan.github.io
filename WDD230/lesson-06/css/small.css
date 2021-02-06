@@ -154,7 +154,7 @@ td:first-child {
     font-weight: bold;
 }
 
-/*******5 Days Forecast Section*******/
+/************5 Days Forecast Section*****************/
 #forecastbox {
     display: flex;
     flex-flow: wrap;
