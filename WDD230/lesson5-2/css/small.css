@@ -155,33 +155,35 @@ td:first-child {
 }
 
 /* 5 Days Forecast Section*/
-.forecastbox {
+div.forecastbox{
     display: flex;
     flex-flow: wrap;
     margin: 0 auto;
     max-width: 1088px;
     border-right: 1px solid #69474e;
 }
-.forecast {
+.forecastbox div {
     flex: 1 1 auto;
     text-align: center;
     border-bottom: 1px solid #69474e;
     border-left: 1px solid #69474e;
 }
-.day {
+.forecastbox div span {
     display: block;
     background-color: #FFCAD4;
     border-top: 1px solid #69474e;
     padding: 5px;
     font-weight: bold;
 }
-.icon {
+.forecastbox div img {
     padding: .25rem;
 }
-.temp {
+.forecastbox div span:last-child {
     display: block;
     padding: 0 5px 5px;
     font-size: 1rem;
+    background-color: white;
+    border-top: none;
 }
 
 /* Article section */
