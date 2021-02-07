@@ -359,3 +359,23 @@ div.towncard img {
     margin-right: auto;
     border-radius: 20px;
 }
+
+/********Events Section**********/
+div.events {
+    margin: 0 auto;
+    max-width: 1088px;
+}
+div.events section{
+    background-color: #FFCAD4;
+    color: #69474e;
+    border: 20px solid #69474e;
+    box-shadow: 5px 5px 18px 0px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+}
+div.events h3 {
+    border-bottom: 1px solid #69474e;
+    padding-bottom: 10px;
+}
