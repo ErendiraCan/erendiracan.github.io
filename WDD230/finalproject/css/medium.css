@@ -20,7 +20,7 @@
         flex: 1 1 auto;
     }
     nav {
-        background-color:  #f8f4eb;
+        background-color: #F4F1DE;
         margin: 50px;
     }
     .navigation {
@@ -34,16 +34,41 @@
     }
     .navigation a {
         font-size: 22px;
-        color: #09025f;
+        color: #3D405B;
         padding: 10px;
     }
     .navigation a:hover {
         border: none;
-        background-color:  #f8f4eb;
+        color: #3D405B;
+        background-color: #F4F1DE;
         -webkit-transform: rotate(-11deg);
         -moz-transform: rotate(-11deg);
         -ms-transform: rotate(-11deg);
         -o-transform: rotate(-11deg);
         transform: rotate(-11deg);
+    }
+
+    /*************Slider Section**************/
+    .text {
+        font-size: 20px;
+      }
+
+    /*************Text under the Slider***************/
+    h2 {
+        font-size: 30px;
+    }
+    .textSlide p, .textSlide a {
+        font-size: 20px;
+    }
+
+    /*************Our information Section***************/
+    h3 {
+        font-size: 22px;
+    }
+    div.ourInfo p {
+        font-size: 20px;
+    }
+    div.ourInfo img {
+    width: 900px;
     }
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoots</title>
     <meta name="description" content="This is an assignment for my WDD 230 class at BYU Idaho">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -21,11 +21,88 @@
     <nav>
         <ul class="navigation">
             <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">Rental</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Tours</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Page1</a></li>
-            <li><a href="#">Page2</a></li>
         </ul>
     </nav>
+    <main>
+        <!--Slide section created in base of https://www.w3schools.com/howto/howto_js_slideshow.asp code-->
+        <h2>Discover our Island!</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/beach.jpg" style="width:100%" alt="Slider image of a beach">
+                <div class="text">Our amazing Beaches!</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="images/turtle.jpg" style="width:100%" alt="Slider image of a turtle swimming">
+                <div class="text">Our wonderful Sea!</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="images/sea.jpg" style="width:100%" alt="Slider image of a woman with her dog in the shore">
+                <div class="text">Our marvelous Shores!</div>
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div class="slideDot" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <section class="textSlide">
+            <h2>Enjoy the Beauty of Cozumel!</h2>
+            <p>The Caribbean sea is completely fascinating. 
+                The turquoise of its waters and its transparency will make you fall in love of this scene. 
+                If you are thinking about visiting the Riviera Maya, you definitely have to enjoy a few days in Cozumel. 
+                To get there you will have to take a flight to Cancún and then, take the ferry to this enchanted place.
+                The island has incomparable views, in and outside the water. 
+                It is one of the favorite destinations for doing snorkel thanks to the fact that it is 
+                part of the second largest reef barrier in the world.</p>
+            <a href="https://www.visitmexico.com/en/quintana-roo/cozumel">Discover Cozumel!</a>
+        </section>
+        <div class="ourInfo">
+            <h3>Met Us!</h3>
+            <p>We love the beach! And our principal purpose is let you have the best experience in our beautiful beaches. 
+                We are a company compromised to guarantee you security in our vehicles and lots of fun! We have 15 years 
+                of experience, our services are the best in all Cozumel. Let us give you the best experice ever in our 
+                little paradise!
+            </p>
+            <img src="images/beachscooter.jpg" alt="Girl in a Schooter near to the beach">
+        </div>
+        <div>
+            <h3>Our latest clients reviews</h3>
+            <div class="reviewBox">
+                <p class="name">Jenna Smith</p>
+                <img>
+                <p class="feedback">The vehicles works perfectly. I didn't have any problem during my rent time.
+                    I liked the way the employees treated me. Next time I come to Cozumel I know where to
+                    rent my scooter!
+                </p>
+            </div>
+            <div>
+                <p class="name">Luka Rossi</p>
+                <img>
+                <p class="feedback">My spanish are so bad, but the employees are bilingual and so well prepared.
+                    I rent a ATV and I really enjoyed my time in Cozumel, my family and I recommend Scoots!
+                </p>
+            </div>
+            <div>
+                <p class="name">Alan Dominguez</p>
+                <img>
+                <p class="feedback">I'm from the north of Mexico, and I was looking for good prices and definitely
+                    Scoots have the best prices. If you really want to save money and have a good time, your first option 
+                    needs to be this company! Excellent service!
+                </p>
+            </div>
+        </div>
+    </main>
     <script src="js/index.js"></script>
 </body>
 </html>
