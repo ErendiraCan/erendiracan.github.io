@@ -197,6 +197,10 @@ nav ul {
     margin: 20px auto;
     padding: 30px;
   }
+  div.ourInfo h3 {
+    padding: 5px;
+    margin: 5px;
+  }
   div.ourInfo a {
     color: #3D405B;
     font-size: smaller;
@@ -243,4 +247,69 @@ h3 {
   padding: 5px 15px 20px 15px;
   color: #3D405B;
   font-size: smaller;
+}
+/***************Call to action***************/
+div.buttonContainer {
+  background-image: url(https://1.bp.blogspot.com/-4Fr0dQ57iiM/YCL6G6LUa6I/AAAAAAAAS8o/77_l4z_fdLYXKw9gG4g52unOj9H03sTUACLcBGAsYHQ/s2048/guacamayas.jpg);
+  margin: 30px auto;
+  padding: 30px;
+  text-align: center;
+  color: #3D405B;
+}
+div.buttonContainer section {
+  background-color: #E07A5F;
+  opacity: 0.8;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+}
+div.buttonContainer h3 {
+  color: #ffff;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  font-size: smaller;
+}
+section button.callAct {
+  background-color: #F2CC8F;
+  color: #3D405B;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+section button.callAct:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+/***************Footer***************/
+footer {
+  background-color: #3D405B;
+  color: #F4F1DE;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+footer h4 {
+  font-size: 20px;
+  text-shadow: 
+    2px 1px 0px #3D405B, 
+    5px 4px 0px rgba(167, 157, 107, 0.2);
+}
+footer a img {
+  max-width: 100%;
+  padding: 5px;
+}
+footer a {
+  color: #F4F1DE;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer a:hover {
+  opacity: 0.75;
 }

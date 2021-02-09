@@ -12,7 +12,7 @@
     }
 
 /******* Navigation *******/
-    button {
+    button#hamburger {
         display: none;
     }
     nav li {
@@ -38,7 +38,7 @@
     }
     .navigation a:hover {
         border: none;
-        color: #3D405B;
+        color: #E07A5F;
         background-color: #F4F1DE;
         -webkit-transform: rotate(-11deg);
         -moz-transform: rotate(-11deg);
@@ -86,4 +86,33 @@
         font-size: 18px;
         max-width: 500px;
     }
+
+    /***************Call to action***************/
+  div.buttonContainer h3 {
+    font-size: 22px;
+  }
+  section button.callAct {
+    background-color: #F2CC8F;
+    color: #3D405B;
+    font-size: 22px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+  }
+  section button.callAct:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  
+  /***************Footer***************/
+.footerBox {
+    display: flex;
+    }
+footer p {
+    text-align: right;
+}
 }
