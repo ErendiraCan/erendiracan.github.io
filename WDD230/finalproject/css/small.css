@@ -5,7 +5,7 @@ body {
 }
 header {
     display: flex;
-	align-items:center;
+	  align-items:center;
     justify-content:center;
     padding: 10px;
 }
@@ -198,6 +198,14 @@ nav ul {
       font-size: smaller;
       text-align: center;
       color: #3D405B;
+  }
+  div.ourInfo a {
+      color: #3D405B;
+      font-family: 'Raleway', sans-serif;
+      font-size: smaller;
+      margin: 15px;
+      text-decoration: none;
+      font-weight: bold;
   }
   div.ourInfo img {
     width: 100%;
