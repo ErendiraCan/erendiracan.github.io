@@ -55,13 +55,13 @@ nav ul {
 	display: none;
 }
 .navigation a {
-    color: #f8f4eb;
+  color: #f8f4eb;
 	display: block;
 	text-align: center;
 	padding: 0.75rem;
 	text-decoration: none;
-    font-size: 1rem;
-    font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
 }
 .active a {
     border-top: 5px solid #3D405B;
@@ -84,7 +84,6 @@ nav ul {
 }
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
     position: relative;
     margin: auto;
   }
@@ -190,8 +189,7 @@ nav ul {
 
   /*************Our information Section***************/
   div.ourInfo {
-      background-color: #F2CC8F;
-      max-width: 900px;
+      background-image: url(https://1.bp.blogspot.com/-ptDwYJNyb9g/YCLoG8AeKsI/AAAAAAAAS8Y/nqOfgF1Q4yQTUI_xKwSLEqY1eU6QPU-egCLcBGAsYHQ/s2048/leaves.jpg);
       margin: 0 auto;
       padding: 30px;
       font-family: 'Raleway', sans-serif;
@@ -199,18 +197,19 @@ nav ul {
       text-align: center;
       color: #3D405B;
   }
-  div.ourInfo a {
-      color: #3D405B;
-      font-family: 'Raleway', sans-serif;
-      font-size: smaller;
-      margin: 15px;
-      text-decoration: none;
-      font-weight: bold;
+  div.ourInfo section {
+    background-color: #F2CC8F;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
   }
-  div.ourInfo img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
+  div.ourInfo a {
+    color: #3D405B;
+    font-family: 'Raleway', sans-serif;
+    font-size: smaller;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
   }
 
   /***************Client Review Section***************/
