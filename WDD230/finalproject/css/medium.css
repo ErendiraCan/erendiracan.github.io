@@ -67,7 +67,23 @@
     div.ourInfo p {
         font-size: 20px;
     }
-    div.ourInfo img {
-    width: 900px;
+    div.ourInfo a {
+        font-size: 20px;
+    }
+
+    /***************Client Review Section***************/
+    #reviewContainer {
+        flex-flow: nowrap;
+    }
+    .name {
+        font-size: 20px;
+        max-width: 500px;
+    }
+    .photo:hover {
+        opacity: 0.75;
+    }
+    .feedback {
+        font-size: 18px;
+        max-width: 500px;
     }
 }

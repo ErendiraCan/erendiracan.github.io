@@ -2,6 +2,7 @@
 body {
     background-color: #F4F1DE;
     margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
 }
 header {
     display: flex;
@@ -16,7 +17,6 @@ header img {
     margin-left: 20px;
 }
 h1 {
-    font-family: 'Raleway', sans-serif;
     font-size: 2.5rem;
     color: #3D405B;
     text-shadow: 
@@ -61,7 +61,6 @@ nav ul {
 	padding: 0.75rem;
 	text-decoration: none;
   font-size: 1rem;
-  font-family: 'Raleway', sans-serif;
 }
 .active a {
     border-top: 5px solid #3D405B;
@@ -115,7 +114,6 @@ nav ul {
 .text {
     color: #ffff;
     background-color: #81B29A;
-    font-family: 'Raleway', sans-serif;
     font-size: 11px;
     padding: 8px 12px;
     position: absolute;
@@ -164,20 +162,17 @@ nav ul {
     text-align: center;
   }
   h2 {
-    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     color: #3D405B;
     text-align: center;
   }
   .textSlide p {
-      font-family: 'Raleway', sans-serif;
       font-size: smaller;
       text-align: center;
       padding: 15px;
   }
   .textSlide a {
       color: #E07A5F;
-      font-family: 'Raleway', sans-serif;
       font-size: smaller;
       padding: 15px;
       text-decoration: none;
@@ -192,7 +187,6 @@ nav ul {
       background-image: url(https://1.bp.blogspot.com/-ptDwYJNyb9g/YCLoG8AeKsI/AAAAAAAAS8Y/nqOfgF1Q4yQTUI_xKwSLEqY1eU6QPU-egCLcBGAsYHQ/s2048/leaves.jpg);
       margin: 0 auto;
       padding: 30px;
-      font-family: 'Raleway', sans-serif;
       font-size: smaller;
       text-align: center;
       color: #3D405B;
@@ -205,11 +199,48 @@ nav ul {
   }
   div.ourInfo a {
     color: #3D405B;
-    font-family: 'Raleway', sans-serif;
     font-size: smaller;
-    margin: 15px;
     text-decoration: none;
     font-weight: bold;
   }
+  div.ourInfo a:hover {
+    text-decoration: underline;
+}
 
   /***************Client Review Section***************/
+h3 {
+  color: #3D405B;
+  text-align: center;
+  margin: 40px 30px 5px 30px;
+  padding: 15px 15px 5px 15px;
+  font-size: smaller;
+}
+
+#reviewContainer {
+    display: flex;
+    flex-flow: wrap;
+    margin: 20px auto;
+}
+.reviewBox {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 20px;
+}
+.name {
+    display: block;
+    padding: 20px 15px 5px 15px;
+    font-weight: bold;
+    color: #E07A5F;
+    font-size: smaller;
+}
+.photo {
+    padding: 20px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+.feedback {
+  display: block;
+  padding: 5px 15px 20px 15px;
+  color: #3D405B;
+  font-size: smaller;
+}
