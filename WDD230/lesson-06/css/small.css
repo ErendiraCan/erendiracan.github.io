@@ -341,6 +341,15 @@ form label input:focus {
 }
 
 /********Town Cards Section**********/
+#preston {
+    order: 1;
+}
+#sodasprings {
+    order: 2;
+}
+#fishhaven {
+    order: 3;
+}
 div.towncard {
     margin: 0 auto;
     max-width: 1088px;

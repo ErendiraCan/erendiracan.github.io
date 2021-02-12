@@ -23,6 +23,7 @@ fetch(requestURL)
             let image = document.createElement('img');
 
             //Adding data to the HTML elements
+            card.id = towns[i].photo.replace(".jpg","");
             h3.textContent = towns[i].name;
             h4.textContent = towns[i].motto;
             p1.textContent = "Year Founded: " + towns[i].yearFounded;
