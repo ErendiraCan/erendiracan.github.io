@@ -24,20 +24,36 @@
             <li><a href="#">Rental</a></li>
             <li><a href="reservations.html">Reservations</a></li>
             <li><a href="#">Tours</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <main>
         <div class="ourInfo">
             <section>
-            <h3>Thanks for choose us!</h3>
-            <p>Your reservation was succesfully recieved, you will recieved the confirmation page with all your preferences and comments in 
-                the email you provided, we will contact you soon!
-                <br>
-                <a href="index.html">Back home!</a>
+            <h3>Met Us!</h3>
+            <p>We love the beach! And our principal purpose is let you have the best experience in our beautiful beaches. 
+                We are a company compromised to guarantee you security in our vehicles and lots of fun! We have 15 years 
+                of experience, our services are the best in all Cozumel. Let us give you the best experice ever in our 
+                little paradise!
             </p>
             </section>
         </div>
+        <h2 class="ReservationTitle">Contact Us!</h2>
+        <form action= "thankscomments.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">Full Name*<input type="text" name="fname" pattern="[a-zA-Z0-9]+[a-zA-Z0-9 ]+" minlength="5" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@email.com" required></label>    
+                <label class="top">Phone Number<input type="tel" name="phone" placeholder="355-234-4567"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>How can we help you?</legend>
+                <label class="comments"><textarea rows="10" cols="40" placeholder="Questions and comments"></textarea></label>
+            </fieldset>
+    
+            <input class="sbutton" type="submit" value="Send Message">
+        </form>
     </main>
     <footer>
         <div class="footerBox">
