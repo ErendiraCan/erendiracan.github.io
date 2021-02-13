@@ -30,15 +30,40 @@
     <main>
         <div class="ourInfo">
             <section>
-            <h3>Met Us!</h3>
-            <p>We love the beach! And our principal purpose is let you have the best experience in our beautiful beaches. 
-                We are a company compromised to guarantee you security in our vehicles and lots of fun! We have 15 years 
-                of experience, our services are the best in all Cozumel. Let us give you the best experice ever in our 
-                little paradise!
+            <h2 class="ReservationTitle">Contact Us!</h2>
+            <p>Scoots is a company with 15 years of experience. Its principal service is the rental of motor scooters, ATV and Jeeps in the island of Cozumel. 
+                We provide the best equipment, all the vehicles that are on rent are in the best conditions to provide the best service and the safest as well. 
+                Our principal mission is let you enjoy and get the best time visiting our beautiful island.
             </p>
+            <p><b>Our contact Information</b></p>
+                <div class="contacticons">
+                    <img src="images/mail.png" alt="Email Icon">
+                    <p>ourcontact@scoots.com</p>
+                    <img src="images/phone.png" alt="Phone Icon">
+                    <p>+52 (481) 106-3230</p>
+                    <img src="images/phone.png" alt="Phone Icon 2">
+                    <p>01 800-839-1688</p>
+                </div>
+                <div class="socialmedia">
+                    <p><b>Our Social Media</b></p>
+                    <a href="facebook.com" target="_blank"><img class="social" src="images/facebook.png" alt="Facebook Icon Image"></a>
+                    <a href="instagram.com" target="_blank"><img class="social" src="images/instagram.png" alt="Instagram Icon Image"></a>
+                    <a href="youtube.com" target="_blank"><img class="social" src="images/youtube.png" alt="Youtube Icon Image"></a>
+                    <a href="twitter.com" target="_blank"><img class="social" src="images/twitter.png" alt="Twitter Icon Image"></a>
+                </div>
             </section>
         </div>
-        <h2 class="ReservationTitle">Contact Us!</h2>
+        <h2 class="ReservationTitle">Our Locations</h2>
+        <section class="locations">
+            <p>One is near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel, 
+                exactly in the Lic Benito Juárez Avenue Number 99-9 Centro 77600 San Miguel de Cozumel, Q.R.</p>
+            <p>The other is near the Terminal Puerta Maya further south along the coast which caters to the cruise lines and patrons.</p>
+        </section>
+        <div class="map" id="googleMap" style="width:100%;height:400px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.8935642467195!2d-86.94836226195072!3d20.51058901439669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDMwJzM4LjciTiA4NsKwNTYnNTcuNiJX!5e0!3m2!1sen!2smx!4v1613195073490!5m2!1sen!2smx" 
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <h2 class="contactTitle">Send Us a Message!</h2>
         <form action= "thankscomments.html">
             <fieldset>
                 <legend>Personal Information</legend>
@@ -70,5 +95,6 @@
         <p>&copy;Scoots <span id="currentyear"></span> | Attributions: <a href="https://openweathermap.org/">OpenWeather</a> | Erendira Can</p>
     </footer>
     <script src="js/index.js"></script>
+    <script src="js/map.js"></script>
 </body>
 </html>

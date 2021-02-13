@@ -112,6 +112,21 @@
 h2.ReservationTitle {
     font-size: 3.5rem;
   }
+
+  /**************Contact-Map****************/
+div.contacticons {
+    display: flex;
+    justify-content: center;
+  }
+div.contacticons img {
+      padding: 8px;
+  }
+section.locations {
+    font-size: 20px;
+}
+h2.contactTitle {
+    font-size: 3.5rem;
+  }
   
   /***************Footer***************/
 .footerBox {

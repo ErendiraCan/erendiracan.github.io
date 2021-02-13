@@ -314,7 +314,6 @@ footer a:hover {
   opacity: 0.75;
 }
 
-
 /**************Form****************/
 form {
   text-align: center;
@@ -387,4 +386,21 @@ label#agreement a {
 }
 label#agreement a:hover {
   text-decoration: underline;
+}
+
+/**************Contact-Map****************/
+div.contacticons img{
+  max-width: 100%;
+}
+section.locations {
+  background-color: #81B29A;
+  padding: 50px;
+  text-align: center;
+  color: #3D405B;
+}
+form.contactform {
+  margin-top: 120px;
+}
+h2.contactTitle {
+  margin-top: 120px;
 }
