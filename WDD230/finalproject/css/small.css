@@ -313,3 +313,78 @@ footer a {
 footer a:hover {
   opacity: 0.75;
 }
+
+
+/**************Form****************/
+form {
+  text-align: center;
+  margin-bottom: 50px;
+}
+form fieldset {
+  margin: 10px;
+  border: 1px solid #E07A5F;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+form legend {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+form label.top,
+label.comments,
+form div {
+  display: block;
+  font-size: 1.1rem;
+  padding: 10px;
+  margin: 5px;
+}
+form label.top input,
+form label.top select,
+textarea {
+  background-color: #ffff;
+  border: solid 1px #E07A5F;
+  color: #3D405B;
+  border-radius: 4px;
+  padding: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.sbutton {
+  border: none;
+  background-color: #E07A5F;
+  color: #ffff;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  max-width: 20rem;
+}
+form label.sd {
+  display: block;
+  padding: 8px;
+}
+form div{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+form label.top {
+  padding-top: 0;
+}
+form label input:invalid {
+background-color: #FFCAD4;
+}
+form label input:focus {
+  background-color: #F2CC8F;
+  border: 1px solid #F2CC8F;
+}
+label#agreement a {
+  color: #3D405B;
+  text-decoration: none;
+  font-weight: bold;
+}
+label#agreement a:hover {
+  text-decoration: underline;
+}

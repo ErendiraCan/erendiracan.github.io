@@ -107,6 +107,11 @@
     -ms-transform: scale(1.3);
     transform: scale(1.3);
   }
+
+  /**************Form****************/
+h2.ReservationTitle {
+    font-size: 3.5rem;
+  }
   
   /***************Footer***************/
 .footerBox {
