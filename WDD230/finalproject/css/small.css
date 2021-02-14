@@ -422,6 +422,7 @@ section.toursText p {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  font-size: smaller;
 }
 div.tours img {
   max-width: 100%;
