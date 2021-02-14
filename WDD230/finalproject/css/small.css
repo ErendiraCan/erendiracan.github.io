@@ -404,3 +404,25 @@ form.contactform {
 h2.contactTitle {
   margin-top: 120px;
 }
+
+/**************Tours Sections****************/
+div.tours {
+  margin: 0 0 120px 0;
+}
+section.toursText {
+  background-color: #F2CC8F;
+  padding: 50px 0;
+}
+section.toursText h3 {
+  margin: 0;
+  padding: 5px;
+}
+section.toursText p {
+  padding: 5px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+div.tours img {
+  max-width: 100%;
+}
