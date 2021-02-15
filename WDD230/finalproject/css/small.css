@@ -497,3 +497,59 @@ div.rentalBox img:hover {
       transform: scale(1.3);
 }
 
+/***************Current weather Information****************/
+div.tempContainer {
+  background-image: url(https://1.bp.blogspot.com/-xldx9_bPOWQ/YCnCgpOPY9I/AAAAAAAAS_c/FAfuoCVxTTs2jc1l2m1H7Xwv2DYMR0TvQCLcBGAsYHQ/s1920/fishes.jpg);
+  margin: 50px auto;
+  padding: 50px;
+  font-size: smaller;
+  text-align: center;
+  color: #ffff;
+}
+div.tempContainer section {
+background-color: #3D405B;
+opacity: 0.8;
+max-width: 900px;
+margin: 20px auto;
+padding: 30px;
+}
+div.tempContainer h3 {
+  color: #ffff;
+  padding: 5px;
+  margin: 5px;
+}
+
+/***************5 Days Forecast Section****************/
+div.forecastbox{
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 auto 80px auto;
+  max-width: 1088px;
+  border-right: 1px solid #F4F1DE;
+}
+.forecastbox div {
+  flex: 1 1 auto;
+  text-align: center;
+  color: #3D405B;
+  background-color: #F2CC8F;
+  border-bottom: 1px solid #F4F1DE;
+  border-left: 1px solid #F4F1DE;
+}
+.forecastbox div span {
+  display: block;
+  background-color: #F2CC8F;
+  border-top: 1px solid #F4F1DE;
+  padding: 5px;
+  font-weight: bold;
+}
+.forecastbox div img {
+  padding: .25rem;
+}
+.forecastbox div span:last-child {
+  display: block;
+  padding: 0 5px 5px;
+  font-size: 1rem;
+  background-color: #F2CC8F;
+  border-top: none;
+}
+
