@@ -152,6 +152,10 @@ h2.contactTitle {
         font-size: 20px;
       }
 
+    /*************Rental Information Section ***************/
+    div#rentInfo {
+        font-size: 20px;
+    }
     /*************Rental Prices Table ***************/
     table {
         font-size: 20px;
@@ -159,6 +163,13 @@ h2.contactTitle {
     /*************Rental Prices Table ***************/
     div.rentalTypes {
         font-size: 20px;
+        padding: 20px 50px 50px 50px;
+    }
+    div.rentalBox ul {
+        margin: 50px;
+      }
+    div.rentalBox ul.alone li {
+        margin: 85px 0;
     }
     div.rentalBox img {
         max-width: 300px;

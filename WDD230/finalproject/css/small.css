@@ -474,7 +474,7 @@ caption, th, td {
 div.rentalTypes {
   display: flex;
   flex-flow: wrap;
-  padding: 20px 50px 50px 50px;
+  padding: 10px;
   font-size: smaller;
 }
 div.rentalBox {
@@ -485,10 +485,7 @@ div.rentalBox {
 }
 div.rentalBox ul {
   text-align: left;
-  margin: 50px;
-}
-div.rentalBox ul.alone li {
-  margin: 85px 0;
+  margin: 10px;
 }
 div.rentalBox img {
   max-width: 100%;
