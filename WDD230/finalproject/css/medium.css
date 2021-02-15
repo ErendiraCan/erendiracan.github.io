@@ -151,4 +151,9 @@ h2.contactTitle {
     section.toursText p {
         font-size: 20px;
       }
+
+    /*************Rental Prices Table ***************/
+    table {
+        font-size: 20px;
+    }
 }

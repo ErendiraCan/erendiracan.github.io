@@ -184,7 +184,7 @@ nav ul {
 
   /*************Our information Section***************/
   div.ourInfo {
-      background-image: url(https://1.bp.blogspot.com/-ptDwYJNyb9g/YCLoG8AeKsI/AAAAAAAAS8Y/nqOfgF1Q4yQTUI_xKwSLEqY1eU6QPU-egCLcBGAsYHQ/s2048/leaves.jpg);
+      background-image: url(https://1.bp.blogspot.com/-JHgzi_oVoTw/YCnCgig7FGI/AAAAAAAAS_g/CexGoh2IC70a6A6vwFL2mNkSF_9_P2VCACLcBGAsYHQ/s1920/leaves.jpg);
       margin: 0 auto;
       padding: 30px;
       font-size: smaller;
@@ -250,7 +250,7 @@ h3 {
 }
 /***************Call to action***************/
 div.buttonContainer {
-  background-image: url(https://1.bp.blogspot.com/-4Fr0dQ57iiM/YCL6G6LUa6I/AAAAAAAAS8o/77_l4z_fdLYXKw9gG4g52unOj9H03sTUACLcBGAsYHQ/s2048/guacamayas.jpg);
+  background-image: url(https://1.bp.blogspot.com/-1CkJC9Yapuw/YCnDb19hBfI/AAAAAAAATAE/03SLGjDADZUytpxSnr4cOQOPu8Iy2SsJwCLcBGAsYHQ/s1920/guacamayas.jpg);
   margin: 30px auto;
   padding: 30px;
   text-align: center;
@@ -426,4 +426,39 @@ section.toursText p {
 }
 div.tours img {
   max-width: 100%;
+}
+
+/*************Rental Information Section ***************/
+div#rentInfo {
+  background-image: url(https://1.bp.blogspot.com/-kZjzQVWAz80/YCnCgqiniAI/AAAAAAAAS_k/-DxsuVNwXCwiUSJvdh0gbJaNJQp1pqDGgCLcBGAsYHQ/s1839/flowers.jpg);
+  margin: 0 auto;
+  padding: 30px;
+  font-size: smaller;
+  text-align: center;
+  color: #ffff;
+}
+div#rentInfo section {
+background-color: #E07A5F;
+max-width: 900px;
+margin: 20px auto;
+padding: 30px;
+}
+div#rentInfo h3 {
+  padding: 5px;
+  margin: 5px;
+}
+div#rentInfo ul {
+  text-align: left;
+}
+
+/*************Rental Prices Table ***************/
+table {
+  margin: 0 auto;
+  text-align: center;
+  color: #3D405B;
+  max-width: 1200px;
+  font-size: smaller;
+}
+caption, th, td {
+  padding: 10px;
 }

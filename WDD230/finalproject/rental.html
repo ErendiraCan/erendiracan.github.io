@@ -46,7 +46,33 @@
             </ul>
             </section>
         </div>
-        <div></div>
+        <!-------- How I made the table: I tried to create all the table in JSON but it was so difficult and now I can't receive help from anyone 
+            so I decided to make a part in HTML and the other part do it in JSON, hopefully my effort is enough for this Final Project------->
+        <h3>Rental Prices</h3>
+        <table>
+            <caption>Max Persons and Price Chart (includes Tax)</caption>
+            <thead>
+                <tr>
+                    <th colspan="2"></th>
+                    <th colspan="2">Reservation</th>
+                    <th colspan="2">Walk-In</th>
+                </tr>
+            </thead>
+            <tbody class="rentalTable">
+                <tr id="toptitles">
+                    <td><i>Rental Type</i></td>
+                    <td><i>Max. Persons</i></td>
+                    <td><i>Half Day (3 hrs)</i></td>
+                    <td><i>Full Day</i></td>
+                    <td><i>Half Day (3 hrs)</i></td>
+                    <td><i>Full Day</i></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="6"><b>Prices will be mantained upon reservation.</b></td></tr>
+            </tfoot>
+        </table>
+       </section>
         <h3>Our latest clients reviews</h3>
         <div id="reviewContainer">
             <div class="reviewBox">
@@ -89,6 +115,6 @@
         <p>&copy;Scoots <span id="currentyear"></span> | Attributions: <a href="https://openweathermap.org/">OpenWeather</a> | Erendira Can</p>
     </footer>
     <script src="js/index.js"></script>
-    <script src="js/sliders.js"></script>
+    <script src="js/rentaltable.js"></script>
 </body>
 </html>
