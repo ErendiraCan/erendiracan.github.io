@@ -156,4 +156,11 @@ h2.contactTitle {
     table {
         font-size: 20px;
     }
+    /*************Rental Prices Table ***************/
+    div.rentalTypes {
+        font-size: 20px;
+    }
+    div.rentalBox img {
+        max-width: 300px;
+  }
 }
