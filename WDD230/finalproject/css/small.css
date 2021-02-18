@@ -463,7 +463,7 @@ caption, th, td {
   padding: 10px;
 }
 
-/*************Rental Prices Table ***************/
+/*************Rental Types ***************/
 #rentalContainer {
   background-color: #ffc583;
   color: #3D405B;
@@ -553,3 +553,18 @@ div.forecastbox{
   border-top: none;
 }
 
+/*********************Rental Index*******************/
+#sumrental {
+  color: #3D405B;
+}
+#sumrental a {
+  color: #3D405B;
+  font-size: smaller;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#sumrental a:hover {
+  text-decoration: underline;
+}

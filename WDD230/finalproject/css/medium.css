@@ -131,6 +131,7 @@ h2.contactTitle {
   /***************Footer***************/
 .footerBox {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
