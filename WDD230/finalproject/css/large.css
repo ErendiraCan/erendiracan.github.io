@@ -6,4 +6,9 @@
         width: 180px;
         height: auto;
     }
+    
+    /**************Contact-Map****************/
+    div#googleMap iframe {
+        width: 1520px;
+    }
 }
