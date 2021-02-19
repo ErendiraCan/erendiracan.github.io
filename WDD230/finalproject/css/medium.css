@@ -164,7 +164,7 @@ h2.contactTitle {
     /*************Rental Prices Table ***************/
     div.rentalTypes {
         font-size: 20px;
-        padding: 20px 50px 5px 50px;
+        padding: 20px 50px 50px 50px;
     }
     div.rentalBox ul {
         margin: 50px;
@@ -173,7 +173,7 @@ h2.contactTitle {
         max-width: 300px;
     }
 
-    /***************5 Days Forecast Section****************/
+    /***************Forecast Section****************/
     h3 {
         font-size: 22px;
     }
