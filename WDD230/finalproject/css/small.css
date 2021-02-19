@@ -527,40 +527,6 @@ div.tempContainer h3 {
   margin: 5px;
 }
 
-/***************5 Days Forecast Section****************/
-div.forecastbox{
-  display: flex;
-  flex-flow: wrap;
-  margin: 0 auto 80px auto;
-  max-width: 1088px;
-  border-right: 1px solid #F4F1DE;
-}
-.forecastbox div {
-  flex: 1 1 auto;
-  text-align: center;
-  color: #3D405B;
-  background-color: #F2CC8F;
-  border-bottom: 1px solid #F4F1DE;
-  border-left: 1px solid #F4F1DE;
-}
-.forecastbox div span {
-  display: block;
-  background-color: #F2CC8F;
-  border-top: 1px solid #F4F1DE;
-  padding: 5px;
-  font-weight: bold;
-}
-.forecastbox div img {
-  padding: .25rem;
-}
-.forecastbox div span:last-child {
-  display: block;
-  padding: 0 5px 5px;
-  font-size: 1rem;
-  background-color: #F2CC8F;
-  border-top: none;
-}
-
 /*********************Rental Index*******************/
 #sumrental {
   color: #3D405B;
