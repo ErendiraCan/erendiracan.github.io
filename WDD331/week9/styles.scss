@@ -12,8 +12,8 @@ $byui-blue: #056cb6;
 
 // Utility classes
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -30,4 +30,13 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.site-banner__left {
+  background-color: $byui-blue;
+}
+
+h1 {
+  background-color: $med-gray;
+  font-family: 'BYUI Open Sans';
 }
