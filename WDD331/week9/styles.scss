@@ -1,7 +1,6 @@
 @import 'typography';
 @import 'icons';
 
-$sm-break: 48em;
 // colors
 $dark-gray: #727272;
 $med-gray: #b4b3b5;
@@ -9,6 +8,28 @@ $light-gray: #eaeaea;
 $body-font: #020202;
 $link-blue: #0076b6; //why do we have both of these blues?
 $byui-blue: #056cb6;
+$basic-white: #ffff;
+$diferent-white: #f8f9fa;
+
+// Variables
+$sm-break: 48em;
+$flex-display: flex;
+$allpercent: 100%;
+$mainpadin: 15px;
+$automargin: auto;
+$right-alignment: right;
+$center-alignment: center;
+$news-border: 1px solid #B4B3B5;
+$bloking-element: block;
+$no-elements: none;
+$cero: 0;
+$grid: grid;
+$value20: 20px;
+$sixvalue: 6px;
+$weight700: 700;
+$weight600: 600;
+$tenvalue: 10px;
+
 
 // Utility classes
 *,
@@ -19,15 +40,271 @@ $byui-blue: #056cb6;
   box-sizing: border-box;
 }
 img {
-  max-width: 100%;
+  max-width: $allpercent;
 }
 .sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
-  padding: 0;
+  padding: $cero;
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  border: 0;
+  border: $cero;
+}
+
+// Principal style
+body {
+  color: $basic-white;
+  margin: $cero;
+  font-family: 'BYUI Open Sans';
+}
+a {text-decoration: $no-elements;}
+header .white-text {
+  font-size: 30px;
+  color: $basic-white;
+}
+
+/* Header Icons*/
+.icon-byui-logo::before {
+  color: $basic-white;
+  background-color: $body-font;
+  padding: 0 10px;
+  display: $flex-display;
+  height: $allpercent;
+  width: $allpercent;
+  align-items: $center-alignment;
+}
+.icon-menu::before {color: $basic-white;}
+.icon-search:before {color: $basic-white;}
+.icon-audience:before {color: $basic-white;}
+
+/* Header Banner */
+.site-banner {
+  background-color: $byui-blue;
+  height: 60px;
+  width: $allpercent;
+  padding-right: $mainpadin;
+  padding-left: $mainpadin;
+  margin-right: $automargin;
+  margin-left: $automargin;
+  max-width: 720px;
+  display: $flex-display;
+}
+header form {display: $no-elements;}
+header .site-banner__right {
+  margin-left: calc(100% - 210px);
+  margin-top: $automargin;
+  margin-bottom: $automargin;
+  display: $flex-display;
+}
+span.mobile-header-icon {
+  padding: 0 5px;
+  margin: auto 0;
+}
+.float-right {float: $right-alignment;}
+
+/* Home principal tilte */
+h1 {
+  font-family: 'BYUI Open Sans';
+  background-color: $light-gray;
+  color: $body-font;
+  margin: $cero;
+  padding: $value20;
+  text-align: $right-alignment;
+  font-size: $value20;
+  font-weight: 300;
+}
+
+/* Main Icons */
+.icon-angle-right::before {
+  color: $link-blue;
+  font-size: 21px;
+}
+
+/* Main Section principal styles */
+main .main-padding {
+  padding-right: $mainpadin;
+  padding-left: $mainpadin;
+}
+main .img-responsive {
+  max-width: $allpercent;
+  max-height: $allpercent;
+  width: $allpercent;
+}
+.main-margin-botton {margin-bottom: 36px;}
+
+//Interest Boxes
+main .main-figure {
+  margin: $cero;
+  border: $news-border;
+}
+main .main-caption {
+  padding: 6px 12px;
+  color: $link-blue;
+  font-family: 'BYUI Open Sans';
+}
+
+//Get information Button
+main .main-button-info {
+  border: $news-border;
+  display: $bloking-element;
+  padding: 10px 18px;
+  text-align: left;
+  width: $allpercent;
+}
+
+//List of Links
+.main-resources-link {
+  background-color: $diferent-white;
+  border-bottom: $news-border;
+  border-left: $news-border;
+  border-right: $news-border;
+  color: $link-blue;
+  padding: 8px 20px;
+  display: $bloking-element;
+}
+.font-weight-bold {font-weight: $weight700;}
+.color-black {color: $body-font;}
+.border-botton-gray {border-bottom: $news-border;}
+.border-top-gray {border-top: $news-border;}
+main .main-resources-title {
+  border: $news-border;
+  background-color: $dark-gray;
+  margin: $cero;
+  padding: 10px 20px;
+}
+main .main-impdates-container {
+  display: $grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: $cero;
+  grid-row-gap: $cero;
+  text-align: center;
+}
+main .main-dates-title {
+  border: 1px solid $link-blue;
+  background: $link-blue;
+  font-size: 22px;
+  margin: $cero;
+  padding: 8px 20px;
+  grid-area: 1 / 1 / 2 / 4;
+}
+main .date-column-1 {
+  grid-area: 2 / 1 / 3 / 2;
+  padding: $value20;
+}
+main .date-column-2 {
+  grid-area: 2 / 2 / 3 / 3;
+  padding: 30px;
+}
+main .date-column-3 {grid-area: 2 / 3 / 3 / 4;}
+
+// News Room
+h4 {
+  font-size: 17px;
+  font-weight: $weight600;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  color: $link-blue;
+}
+p {color: $body-font;}
+.article-date {
+  font-size: 11px;
+  font-weight: $weight700;
+  margin-bottom: $sixvalue;
+  text-transform: uppercase;
+  color: $body-font;
+}
+main .main-news-article {padding: $value20;}
+main .hiden-img {display: $no-elements;}
+
+//Covid Box
+.main-covid-container img {
+  max-width: $allpercent;
+  border-top-right-radius: $sixvalue;
+  border-top-left-radius: $sixvalue;
+}
+.covid-text {padding: $mainpadin;}
+main .main-covid-container {
+  border: $news-border;
+  border-radius: $sixvalue;
+  padding-bottom: $value20;
+  margin: 0px 10px;
+  transition: .25s opacity;
+  vertical-align: top;
+}
+div .message-title {
+  color: $byui-blue;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: $tenvalue;
+}
+div .link-message-a {
+  margin-left: $value20;
+  background-color: $byui-blue;
+  color: $basic-white;
+  font-size: 13px;
+  text-align: $center-alignment;
+  padding: 6px 24px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+//Footer Temple Image
+footer .footer-temple-image {
+  background: url(https://www.byui.edu/prebuilt/stylenew/images/foot/taylor_graphic_fixed.png) bottom no-repeat;
+  content: "";
+  display: $bloking-element;
+  height: 146px;
+  padding: $cero;
+}
+
+@media only screen and (min-width: 106vh) {
+  .site-banner {max-width: $allpercent;}
+  main {
+      max-width: 1140px;
+      margin-right: $automargin;
+      margin-left: $automargin;
+  }
+  h1 {
+      text-align: left;
+      font-size: 30px;
+  }
+  main .main-news-article {display: $flex-display;}
+  main .article-row {margin-left: $value20;}
+  main .hiden-img {
+      display: inline;
+      max-width: 165px;
+      margin: auto 0;
+  }
+
+  /* Grid */
+  main .main-principal-container {
+      display: $grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 0.5fr repeat(3, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 0;
+      max-height: 1250px;
+      margin-top: $value20;
+  }
+  main .orange-image {grid-area: 1 / 1 / 3 / 2;}
+  main .main-secondary-container {
+      display: $flex-display;
+      justify-items: $center-alignment;
+      align-items: $center-alignment;
+      grid-area: 3 / 1 / 4 / 2;
+  }
+  main .main-secondary-container div {
+      max-width: 228px;
+      padding-right: $tenvalue;
+      padding-left: $tenvalue;
+  }
+  main .main-news-container {grid-area: 4 / 1 / 5 / 2;}
+  main .get-info-container {grid-area: 1 / 2 / 2 / 3;}
+  main .main-resources-title {grid-area: 2 / 2 / 3 / 3;}
+  main .main-impdates-container {grid-area: 3 / 2 / 4 / 3;}
+  main .main-covid-container {max-height: 350px;}
+
 }
