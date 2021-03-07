@@ -266,9 +266,10 @@ div .message-title {
     font-weight: bold;
     margin-bottom: 10px;
 }
-div .covid-message-a {
+div .link-message-a {
     margin-left: 20px;
     background-color: #0076c6;
+    color: #ffff;
     font-size: 13px;
     text-align: center;
     padding: 6px 24px;
