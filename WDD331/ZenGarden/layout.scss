@@ -1,0 +1,74 @@
+$small-lateral-padding: 0 12px;
+$large-lateral-padding: 0 20px;
+
+$columns: 12; 
+
+
+//COLORS
+$box-background-color: gray;
+$p-color: white;
+
+
+.intro header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    h1, h2{
+        text-align: center;
+    }
+}
+
+.summary{
+    background-color: $box-background-color;
+    padding: 3%;
+    color: $p-color;
+}
+
+.preamble, .explanation, .participation,
+.benefits{
+    background-color: $box-background-color;
+    margin: 5vh 10vw;
+    padding: 3%;
+}
+
+.requirements{
+    background-color: $box-background-color;
+    padding: 3%;
+}
+
+.sidebar{
+    display: none;
+    padding: $small-lateral-padding;
+}
+
+footer{
+    margin: 10% auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 650px){
+    .page-wrapper{
+        display: grid;
+        grid-template-columns: repeat($columns, 1fr);
+        grid-template-rows: 1vh, auto auto;
+    }
+    
+    #zen-intro{
+        grid-column: 1 / 13;
+        grid-row: 1/2;
+    }
+    
+    .sidebar{
+        display: block;
+        grid-column: 1 / 4;
+        grid-row: 2 / 5;
+        padding: $large-lateral-padding;
+    } 
+    
+    .main{
+        grid-column: 4 / 13;
+        grid-row: 2;
+}
+}
