@@ -1,0 +1,87 @@
+.intro header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.intro header h1, .intro header h2 {
+  text-align: center;
+}
+
+.summary {
+  background-color: gray;
+  padding: 3%;
+  color: white;
+}
+
+.preamble, .explanation, .participation,
+.benefits {
+  background-color: gray;
+  margin: 5vh 10vw;
+  padding: 3%;
+}
+
+.requirements {
+  background-color: gray;
+  padding: 3%;
+}
+
+.sidebar {
+  display: none;
+  padding: 0 12px;
+}
+
+footer {
+  margin: 10% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 650px) {
+  .page-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: 1vh, auto auto;
+        grid-template-rows: 1vh, auto auto;
+  }
+  #zen-intro {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .sidebar {
+    display: block;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2 / 5;
+    padding: 0 20px;
+  }
+  .main {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 9;
+    grid-column: 4 / 13;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
+/*# sourceMappingURL=layout.css.map */
