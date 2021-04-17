@@ -64,7 +64,8 @@ img.elephant {
     }
   }
 
-/* Elephants 2*/
+/* Elephants 2 --------------------------------------------> */
+
 img.elephant1 {
     z-index: 1;
     width: 150px;
@@ -188,11 +189,15 @@ img.lion1 {
     animation-duration: 10s;
 }
 @keyframes lion1 {
-    from {
+    0% {
         bottom: 0;
         right: 200px;
     }
-    to {
+    50% {
+      bottom: 0;
+      right: 200px;
+    }
+    100% {
         bottom: 0px;
         right: 600px;
     }
@@ -207,11 +212,15 @@ img.lion1 {
     animation-duration: 25s;
 }
 @keyframes lion2 {
-    from {
+    0% {
         bottom: 250px;
         right: 650px;
     }
-    to {
+    50% {
+      bottom: 250px;
+      right: 650px;
+    }
+    100% {
         bottom: 250px;
         right: 550px;
     }
@@ -223,14 +232,26 @@ img.lion1 {
     bottom: 250px;
     right: 900px;
     animation-name: cheetah2;
-    animation-duration: 35s;
+    animation-duration: 25s;
 }
 @keyframes cheetah2 {
-    from {
+    0% {
         bottom: 400px;
         right: 900px;
     }
-    to {
+    25% {
+      bottom: 400px;
+      right: 900px;
+    }
+    50% {
+      bottom: 400px;
+      right: 900px;
+    }
+    75% {
+      bottom: 400px;
+      right: 900px;
+    }
+    100% {
         bottom: 250px;
         right: 900px;
     }
