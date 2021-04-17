@@ -1,0 +1,237 @@
+h1 {
+    text-align: center;
+}
+
+img.map {
+    width: 1500px;
+    z-index: -2;
+}
+
+img.elephant {
+    width: 150px;
+    position: absolute;
+    bottom: 0px;
+    right: 500px;
+    animation-name: elph;
+    animation-duration: 25s;
+}
+@keyframes elph {
+    from {
+        bottom: -400px;
+        right: 650px;
+    }
+    to {
+        bottom: 0px;
+        right: 500px;
+    }
+  }
+
+  img.lion {
+      width: 80px;
+      position: absolute;
+      bottom: 0px;
+      right: 550px;
+      animation-name: liond;
+      animation-duration: 10s;
+  }
+  @keyframes liond {
+    from {
+        bottom: 0px;
+        right: 0px;
+    }
+    to {
+        bottom: 0px;
+        right: 550px;
+    }
+  }
+
+  img.cheetah {
+      width: 90px;
+      position: absolute;
+      bottom: 0px;
+      left: 820px;
+      animation-name: cheetahd;
+      animation-duration: 10s;
+  }
+  @keyframes cheetahd {
+    from {
+        bottom: 0px;
+        left: 550px;
+    }
+    to {
+        bottom: 0px;
+        left: 820px;
+    }
+  }
+
+/* Elephants 2*/
+img.elephant1 {
+    z-index: 1;
+    width: 150px;
+    position: absolute;
+    bottom: 400px;
+    right: 900px;
+    animation-name: e1;
+    animation-duration: 25s;
+  }
+  @keyframes e1 {
+      0% {
+        bottom: -400px;
+        right: 650px;
+      }
+      25% {
+        bottom: -200px;
+        right: 650px;
+      }
+      50% {
+        bottom: 0px;
+        right: 550px;
+      }
+      75% {
+        bottom: 250px;
+        right: 550px;
+      }
+      100% {
+        bottom: 400px;
+        right: 900px;
+      }
+  }
+
+img.elephant2 {
+    z-index: 2;
+    width: 150px;
+    position: absolute;
+    bottom: 400px;
+    right: 1000px;
+    animation-name: e2;
+    animation-duration: 23s;
+  }
+  @keyframes e2 {
+    0% {
+      bottom: -350px;
+      right: 700px;
+    }
+    25% {
+      bottom: -200px;
+      right: 700px;
+    }
+    50% {
+      bottom: 0px;
+      right: 600px;
+    }
+    75% {
+      bottom: 250px;
+      right: 600px;
+    }
+    100% {
+      bottom: 400px;
+      right: 1000px;
+    }
+}
+
+img.elephant3 {
+    width: 150px;
+    position: absolute;
+    bottom: 400px;
+    right: 800px;
+    animation-name: e3;
+    animation-duration: 24s;
+}
+@keyframes e3 {
+    0% {
+      bottom: -400px;
+      right: 550px;
+    }
+    25% {
+      bottom: -200px;
+      right: 550px;
+    }
+    50% {
+      bottom: 0px;
+      right: 450px;
+    }
+    75% {
+      bottom: 250px;
+      right: 450px;
+    }
+    100% {
+      bottom: 400px;
+      right: 800px;
+    }
+}
+
+img.cheetah1 {
+    width: 90px;
+    position: absolute;
+    bottom: -200px;
+    right: 650px;
+    animation-name: cheetah1;
+    animation-duration: 5s;
+}
+@keyframes cheetah1 {
+    from {
+        bottom: 0;
+        right: 650px;
+    }
+    to {
+        bottom: -200px;
+        right: 650px;
+    }
+  }
+
+img.lion1 {
+    width: 90px;
+    position: absolute;
+    bottom: 0px;
+    right: 600px;
+    animation-name: lion1;
+    animation-duration: 10s;
+}
+@keyframes lion1 {
+    from {
+        bottom: 0;
+        right: 200px;
+    }
+    to {
+        bottom: 0px;
+        right: 600px;
+    }
+  }
+
+  img.lion2 {
+    width: 90px;
+    position: absolute;
+    bottom: 250px;
+    right: 550px;
+    animation-name: lion2;
+    animation-duration: 25s;
+}
+@keyframes lion2 {
+    from {
+        bottom: 250px;
+        right: 650px;
+    }
+    to {
+        bottom: 250px;
+        right: 550px;
+    }
+  }
+
+  img.cheetah2 {
+    width: 90px;
+    position: absolute;
+    bottom: 250px;
+    right: 900px;
+    animation-name: cheetah2;
+    animation-duration: 35s;
+}
+@keyframes cheetah2 {
+    from {
+        bottom: 400px;
+        right: 900px;
+    }
+    to {
+        bottom: 250px;
+        right: 900px;
+    }
+  }
