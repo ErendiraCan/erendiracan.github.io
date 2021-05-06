@@ -16,32 +16,33 @@
     let table = document.createElement("table");
     //I understood the [0] is because is referring to an index in the object
     //And the method key is to grab or select the data type (information)
-    let rows = Object.keys(data[0]);
-    let headRow = document.createElement("tr");
-    //This is calling the function to create the 
-    rows.forEach(function(field) {
-      let headCell = document.createElement("th");
+    //This is creating the titles of each column tr is the row and th is the column.
+    let fieldRows = Object.keys(data[0]);
+    let titleColumn = document.createElement("tr");
+    fieldRows.forEach(function(field) {
+      let titleRow = document.createElement("th");
       //AppendChild is to make all the elements created take their places inside of or after the new elements created
-      headCell.appendChild(document.createTextNode(field));
-      headRow.appendChild(headCell);
+      titleRow.appendChild(document.createTextNode(field));
+      titleColumn.appendChild(titleRow);
     });
-    table.appendChild(headRow);
-
+    table.appendChild(titleColumn);
+  
+    //This creates the columns and rows for the string information.
     data.forEach(function(object) {
-      let row = document.createElement("tr");
-      rows.forEach(function(field) {
-        let cell = document.createElement("td");
-        cell.appendChild(document.createTextNode(object[field]));
+      let column = document.createElement("tr");
+      fieldRows.forEach(function(field) {
+        let infoRow = document.createElement("td");
+        infoRow.appendChild(document.createTextNode(object[field]));
         if (typeof object[field] == "number") {
-          cell.style.textAlign = "right";
+          infoRow.style.textAlign = "center";
         }
-        row.appendChild(cell);
+        column.appendChild(infoRow);
       });
-      table.appendChild(row);
+      table.appendChild(column);
     });
 
     return table;
   }
-
+  //This is to display the table in the HTML file
   document.querySelector("#tableOutput")
     .appendChild(createTable(MOUNTAINS));
