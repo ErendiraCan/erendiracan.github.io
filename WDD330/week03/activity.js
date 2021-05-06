@@ -1,4 +1,5 @@
-
+ 
+  //This is the string (object)
   const MOUNTAINS = [
     {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
     {name: "Everest", height: 8848, place: "Nepal"},
@@ -8,14 +9,19 @@
     {name: "Popocatepetl", height: 5465, place: "Mexico"},
     {name: "Mont Blanc", height: 4808, place: "Italy/France"}
   ];
-
-  function buildTable(data) {
+ 
+  //This function creates a table and each element inside of it
+  //The data inside the () is referring about the information in the object
+  function createTable(data) {
     let table = document.createElement("table");
-  
-    let fields = Object.keys(data[0]);
+    //I understood the [0] is because is referring to an index in the object
+    //And the method key is to grab or select the data type (information)
+    let rows = Object.keys(data[0]);
     let headRow = document.createElement("tr");
-    fields.forEach(function(field) {
+    //This is calling the function to create the 
+    rows.forEach(function(field) {
       let headCell = document.createElement("th");
+      //AppendChild is to make all the elements created take their places inside of or after the new elements created
       headCell.appendChild(document.createTextNode(field));
       headRow.appendChild(headCell);
     });
@@ -23,7 +29,7 @@
 
     data.forEach(function(object) {
       let row = document.createElement("tr");
-      fields.forEach(function(field) {
+      rows.forEach(function(field) {
         let cell = document.createElement("td");
         cell.appendChild(document.createTextNode(object[field]));
         if (typeof object[field] == "number") {
@@ -37,5 +43,5 @@
     return table;
   }
 
-  document.querySelector("#mountains")
-    .appendChild(buildTable(MOUNTAINS));
+  document.querySelector("#tableOutput")
+    .appendChild(createTable(MOUNTAINS));
