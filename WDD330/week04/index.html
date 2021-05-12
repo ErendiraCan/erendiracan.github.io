@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 03</title>
+    <link rel="Stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Week 04</h1>
+    </header>
+    <main>
+        <h2>Notes about the reading</h2>
+        <p><u>Reading: JavaScript-Novice to Ninja Chapters: 8 and 12, and part of Ch15</u><br></p>
+        <p>These are the two different index notation we can use to return the first form object:<br>
+            const form = document.forms[0];<br>
+            const form = document.getElementsByTagname('form')[0];
+        </p>
+        <p>Instead of a numerical Index we can use the name attribute:<br>
+            const form = document.forms.search;
+        </p>
+        <p>This returns all the HTML collections of a form:<br>
+            const [input,button] = form.elements;
+        </p>
+        <p>The different form properties and methods:<br>
+            The form.submit() method will submit the form automatically or it can be submitted manually by the user with a button or input element with a type attribute of submit.<br>
+            The form.reset() method will reset all the form controls back to their initial values specified in the HTML. But this is sometimes poor in usability and not recommended.<br>
+            The event.preventDefault() method can stop the form from being submitted in case there is an empty default value or other.
+        </p>
+        <p>The JSON.stringify() can convert an object into a JSON string.</p>
+        <p>Input fields can be text, password, checkbox, radio, hidden, file and other inputs like color, telephone, number, etc.</p>
+        <p>There are different kinds of buttons: the most common the submit.</p>
+        <p>Object-oriented programming is often used to model representations of objects in the real world.<br>
+            There are three main concepts in OOP: encapsulation, polymorphism, and inheritance.<br>
+            Encapsulation: we can’t see how the object works because just the basic is exposed to the user.<br>
+            Polymorphism: We can use different objects in the same process.<br>
+            Inheritance: We can add new features to a new object from another previously created.<br>
+            I’m taking a Java class, it’s my first time with it and it’s so interesting the similarities with both languages.
+        </p>
+        <p>In a constructor function the keyword THIS is used to represent the object name.</p>
+        <p>The Object.getPrototypeOf() method can takes an object as a parameter.</p>
+        <p>The prototype can be used to add any new properties and methods after the class has been declared. It should be used to define any properties that will remain the same for every instance of the class.</p>
+        <p>We can add properties to an object using the Object.defineProperty() method and we can see this values with the Object.getOwnPropertyDescriptor() method.</p>
+        <p>We can use the get() method to return anything we like.</p>
+        <p>We can create a new object that is the exact copy from another with the same name.</p>
+        <p>A mixin is a way of adding properties and methods of some objects to another object without using inheritance.</p>
+        <p>A module is a self-contained piece of code that provides functions and methods that can then be used in other files and by other modules.</p>
+        <p>Default exports refer to a single variable, function or class in a module that can be imported without having to be explicitly named.
+            So it can be use it in another .js file.</p>
+        <h2>Code excersise:</h2>
+        <p>I got the exercises from the <a href="https://eloquentjavascript.net/code/">Sandbox code website</a>. I wrote comments in the JS files.</p>
+        <a href="activity1.html">Activity 1: A robot</a><br>
+        <a href="activity2.html">Activity 2: A robot</a><br>
+        <a href="activity3.html">Activity 3: A robot</a><br>
+        <h2>Question:</h2>
+        <p>What could be the use of the Prototype Chain? I didn’t understand where I can use it.</p>
+    </main>
+    <footer>
+        <a href="../index.html"><img src="../images/home.png"></a>
+    </footer>
+</body>
+</html>
