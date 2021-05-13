@@ -40,3 +40,15 @@ footer {
     text-align: right;
     padding: 25px;
 }
+
+/* Ninja Quizzes Section*/
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #ff0479;
+    color: #ffff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
