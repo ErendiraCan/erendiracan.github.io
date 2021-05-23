@@ -1,0 +1,410 @@
+// ============ BASE ============ //
+
+body {
+    overflow: hidden; // to prevent scrollbar
+    background-color: #f1f1f1;
+  }
+  .wrapper {
+    height: 80vh;
+    width: calc(100vw - 20px);
+    margin: 10vh 10px 0;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  // ============ HEADER ============ //
+  
+  .title {
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 1.2;
+    margin: 0.25em auto;
+    text-align: center;
+    width: 90%;
+  
+  }
+  .subtitle {
+    font-weight: 300;
+    font-size: 1.5em;
+    line-height: 1.2;
+    margin: 0.25em auto 2em;
+    text-align: center;
+    width: 90%;
+    small {
+      font-size: 50%;
+      color: #bbb;
+    }
+  }
+  
+  // ============ HEART ============ //
+  
+  .heart {
+    position: relative;
+  
+    &__left path,
+    &__right path {
+      fill: #BE1E2D;
+    }
+    &__left {
+      width: 248.5px;
+      position: absolute;
+      left: 0;
+      //margin-top: 50px;
+      @media screen and (max-width: 515px) {
+        width: 50.2%;
+      }
+    }
+    &__right {
+      width: 287px;
+      position: absolute;
+      right: 0;
+      //margin-top: 50px;
+      @media screen and (max-width: 515px) {
+        width: 58%;
+      }
+    }
+  }
+  
+  // ============ SMILEY ============ //
+  
+  .smiley {
+    width: 90vw;
+    left: 5vw;
+    height: 430px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    z-index:-1;
+    position: absolute;
+  
+    &__face {
+      background-color: #ffc40f;
+      background: radial-gradient(#ffc40f 45%, #F5AB35 85%);
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      position: relative;
+    }
+    &__eye--left {
+      @extend %eye;
+      @extend %eye--left;
+    }
+    &__eye--right {
+      @extend %eye;
+      @extend %eye--right;
+    }
+    &__mouth {
+      @extend %mouth;
+    }
+    
+    &__speech {
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+  
+  // ============ EYES ============ //
+  
+  %eye {
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    transition: all 0.15s ease-out;
+  
+    &--left {
+      left: 30px;
+  
+      // LOOK LEFT
+      @media screen and (min-width: 1101px) and (max-width: 1200px) {
+        top: 30px;
+        left: 20px;
+      }
+      
+      // LOOK RIGHT
+      @media screen and (min-width: 1201px) and (max-width: 1300px) {
+        top: 35px;
+        left: 50px;
+      }
+      
+      // CLOSED
+      @media screen and (min-width: 1340px) and (max-width: 1350px) {
+        height: 3px;
+        width: 12px;
+      }
+      @media screen and (min-width: 1390px) and (max-width: 1400px) {
+        height: 3px;
+        width: 12px;
+      }
+      
+      // SHOCK
+      @media screen and (min-width: 1451px) and (max-width: 1650px) {
+        height: 13px;
+        width: 13px;
+      }
+      
+      // CRYING
+      @media screen and (min-width: 1651px) {
+        height: 3px;
+        width: 15px;
+        transform: rotate(10deg);
+      }
+    }
+  
+    &--right {
+      right: 30px;
+  
+      // LOOK LEFT
+      @media screen and (min-width: 1101px) and (max-width: 1200px) {
+        top: 35px;
+        right: 50px;
+      }
+      
+      // LOOK RIGHT
+      @media screen and (min-width: 1201px) and (max-width: 1300px) {
+        top: 30px;
+        right: 20px;
+      }
+      
+      // CLOSED
+      @media screen and (min-width: 1340px) and (max-width: 1350px) {
+        height: 3px;
+        width: 12px;
+      }
+      @media screen and (min-width: 1390px) and (max-width: 1400px) {
+        height: 3px;
+        width: 12px;
+      }
+      
+      // SHOCK
+      @media screen and (min-width: 1451px) and (max-width: 1650px) {
+        height: 13px;
+        width: 13px;
+      }
+      
+      // CRYING
+      @media screen and (min-width: 1651px) {
+        height: 3px;
+        width: 15px;
+        transform: rotate(-10deg);
+      }
+    }
+  
+  }
+  
+  // ============ MOUTH ============ //
+  
+  %mouth {
+    width: 40px;
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    border-bottom: 3px solid black;
+    border-radius: 0 0 50% 50%;
+    
+    @media screen and (min-width: 850px) {
+      transition: all 0.15s ease-out;
+      border-radius: 50%;
+    }
+    
+    // GRIN
+    @media screen and (max-width: 800px) {
+      height: 15px;
+      background-color: #000;
+      bottom: 20px;
+      width: 30px;
+      left: 35px;
+  
+      &:before {
+        content: '';
+        height: 0;
+        width: 0;
+        position: absolute;
+        border-right: 10px solid black;
+        border-bottom: 12px solid transparent;
+        top: 0;
+        left: -9px;
+      }
+      &:after {
+        content: '';
+        height: 0;
+        width: 0;
+        position: absolute;
+        border-left: 10px solid black;
+        border-bottom: 12px solid transparent;
+        top: 0;
+        right: -9px;
+      }
+    }
+    
+    // SMILE
+    @media screen and (min-width: 801px) and (max-width: 1000px) {
+      height: 15px;
+    }
+    
+    // LOOK LEFT
+    @media screen and (min-width: 1100px) and (max-width: 1200px) {
+      left: 20px;
+      transform: rotate(10deg);
+      width: 30px;
+    }
+    
+    // LOOK RIGHT
+    @media screen and (min-width: 1201px) and (max-width: 1300px) {
+      left: 50px;
+      transform: rotate(-10deg);
+      width: 30px;
+    }
+    
+    // OPEN
+    @media screen and (min-width: 1401px) {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      left: 40px;
+      bottom: 20px;
+      background-color: #000;
+    }
+    
+    @media screen and (min-width: 2001px) {
+      width: 30px;
+      height: 25px;
+      left: 35px;
+    }
+    
+  }
+  
+  // ============ TEARS ============ //
+  
+  .tear {
+    height: 8px;
+    width: 8px;
+    background-color: rgba(25, 181, 254, 0.75);
+    position: absolute;
+    top: 45px;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 100;
+    
+    &:before {
+      content: '';
+      height: 0;
+      width: 0;
+      border-bottom: 10px solid rgba(25, 181, 254, 0.75);
+      border-left: 4px solid transparent;
+      position: absolute;
+      top: -6px;
+      left: 0px;
+    }
+    &:after {
+      content: '';
+      height: 0;
+      width: 0;
+      border-bottom: 10px solid rgba(25, 181, 254, 0.75);
+      border-right: 4px solid transparent;
+      position: absolute;
+      top: -6px;
+      right: 0px;
+    }
+    
+    // CRY
+    @for $i from 1 through 3 {
+      &#{$i} {
+        @media screen and (min-width: 1700px) {
+          left: #{random(15) + 20}px;
+          animation: cry #{random(4)/2}s #{random(5)/10}s infinite;
+        }
+      }
+    }
+    @for $i from 4 through 6 {
+      &#{$i} {
+        @media screen and (min-width: 1700px) {
+          left: #{random(15) + 55}px;
+          animation: cry #{random(6)/2}s #{random(5)/10}s infinite;
+        }
+      }
+    }
+    
+    
+    // CRY HARDER
+    @for $i from 7 through 13 {
+      &#{$i} {
+        @media screen and (min-width: 1801px) {
+          left: #{random(15) + 20}px;
+          animation: cryharder #{random(4)/2}s #{random(5)/10}s infinite;
+        }
+      }
+    }
+    
+    @for $i from 14 through 19 {
+      &#{$i} {
+        @media screen and (min-width: 1801px) {
+          left: #{random(15) + 55}px;
+          animation: cryharder #{random(6)/2}s #{random(5)/10}s infinite;
+        }
+      }
+    }
+    
+    
+    // CRY HARDEST  
+    @for $i from 21 through 35 {
+      &#{$i} {
+        @media screen and (min-width: 2001px) {
+          left: #{random(15) + 20}px;
+          animation: cryhardest #{random(4)/2}s #{random(5)/10}s infinite;
+        }
+      }
+    }
+    @for $i from 36 through 50 {
+      &#{$i} {
+        @media screen and (min-width: 2001px) {
+          left: #{random(15) + 55}px;
+          animation: cryhardest #{random(4)/2}s #{random(5)/10}s infinite;
+        }
+      }
+    }
+  }
+  
+  @keyframes cry {
+    0% {
+     opacity: 0; 
+    }
+    10% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(60px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes cryharder {
+    0% {
+     opacity: 0; 
+    }
+    10% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(150px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes cryhardest {
+    0% {
+     opacity: 0; 
+    }
+    10% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(400px);
+      opacity: 0;
+    }
+  }
