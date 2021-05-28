@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-    <link rel="Stylesheet" href="css/list.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="Stylesheet" href="css/todo.css">
 </head>
 <body>
-    <main>
-        <div id="myDIV" class="header">
-          <h2>To-Do List</h2>
-          <input type="text" id="myInput" placeholder="Write your activity" autofocus>
-          <span onclick="newElement()" class="addBtn">Add</span>
+  <header>
+    <h1>My To-Do List</h1>
+  </header>
+  <main>
+    <div class="container">
+      <form class="todo-form">
+        <div class="form-wrapper">
+          <input type="text" id="myInput" name="name" autofocus>
         </div>
-        
-        <ul id="myUL">
-          <div id="displayStorage">
-        </ul>
-    </main>
-      <footer>
-        <span onclick="all()" class="filBton">All</span>
-        <span onclick="active()" class="filBton">Active</span>
-        <span onclick="complete()" class="filBton">Completed</span>
-    </footer>
-    <script src="js/list.js"></script>
+        <div class="form-wrapper">
+          <button type="submit" class="addBtn">Add</button>
+        </div>
+      </form>
+      <div class="todo-stats">
+        <div class="total-tasks">
+          Total Tasks: <span>0</span>
+        </div>
+        <div class="completed-tasks">
+          Completed Tasks: <span>0</span>
+        </div>
+        <div class="remaining-tasks">
+          Tasks Left: <span>0</span>
+        </div>
+      </div>
+      <ul class="todo-list"></ul>
+    </div>
+  </main>
+  <script src="js/todo.js"></script>
 </body>
 </html>
