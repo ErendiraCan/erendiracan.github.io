@@ -9,24 +9,18 @@
 </head>
 <body>
     <main>
-        <div id="myDIV" class="header">
-            <h2>To-Do List</h2>
-            <input type="text" id="myInput" placeholder="Title...">
-            <span onclick="newElement()" class="addBtn">Add</span>
-          </div>
-          
-          <ul id="myUL">
-            <li class="checked">Pay bills</li>
-            <li>Buy Milk</li>
-            <li>Finish the To-Do List</li>
-            <li>Pick up Linda</li>
-          </ul>
+      <div id="myDIV" class="header">
+        <h2>To-Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      <ul id="myUL"></ul>
     </main>
-      <footer>
-        <span onclick="all()" class="filBton">All</span>
-        <span onclick="active()" class="filBton">Active</span>
-        <span onclick="complete()" class="filBton">Completed</span>
+    <footer>
+      <span onclick="all()" class="filBton">All</span>
+      <span onclick="active()" class="filBton">Active</span>
+      <span onclick="complete()" class="filBton">Completed</span>
     </footer>
-    <script src="js/list.js"></script>
+    <script src="js/ToDos.js"></script>
 </body>
 </html>

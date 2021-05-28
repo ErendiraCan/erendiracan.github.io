@@ -1,84 +1,55 @@
-//Variables
-const todoInput = document.querySelector('.todo_input');
-const todoButton = document.querySelector('.todo_button');
-const todoList = document.querySelector('.todo_list');
-const filterOption = document.querySelector('.filter_todo');
-
-//event listeners
-todoButton.addEventListener("click", addTodo)
-todoList.addEventListener("click", deleteCheck)
-filterOption.addEventListener("click", filterTodo)
-//functions
-
-function addTodo(event) {
-    event.preventDefault();
-    //todo DIV
-    const todoDiv = document.createElement('div');
-    todoDiv.classList.add('todo');
-    //todo LI 
-    const newTodo = document.createElement('li');
-    newTodo.innerText = todoInput.value;
-    newTodo.classList.add('todo_item');
-    todoDiv.appendChild(newTodo);
-    if(todoInput.value === ""){
-        return null
-    }
-    //check mark BUTTON
-    const completedButton = document.createElement('button');
-    completedButton.innerHTML = '<i class="fas fa-check"></i>';
-    completedButton.classList.add('complete_btn')
-    todoDiv.appendChild(completedButton);
-    //delete BUTTON
-    const deleteButton = document.createElement('button');
-    deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
-    deleteButton.classList.add('delete_btn')
-    todoDiv.appendChild(deleteButton);
-    //Append to Actual LIST
-    todoList.appendChild(todoDiv);
-    //Clear todo input VALUE
-    todoInput.value = ""
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
 }
 
-//DELETE & CHECK
-function deleteCheck(e) {
-    const item = e.target;
-    //DELETE ITEM
-    if (item.classList[0] === "delete_btn") {
-        const todo = item.parentElement;
-        //ANIMATION TRANSITION
-        todo.classList.add("fall")
-        todo.addEventListener('transitionend', function () {
-            todo.remove()
-        })
-    }
-    //COMPLETE ITEM
-    if (item.classList[0] === "complete_btn") {
-        const todo = item.parentElement;
-        todo.classList.toggle("completedItem")
-    }
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
 }
-//FILTERING THE TASKS ACCORDING THE OPTION
-function filterTodo(e) {
-    const todos = todoList.childNodes;
-    for(let i = 1; i<todos.length; i++ ){
-        switch (e.target.value) {
-            case "all":
-                todos[i].style.display = "flex";
-                break;
-            case "completed":
-                if (todos[i].classList.contains('completedItem')) {
-                    todos[i].style.display = "flex";
-                } else {
-                    todos[i].style.display = "none";
-                }
-                break;
-            case "uncompleted":
-                if (!todos[i].classList.contains('completedItem')) {
-                    todos[i].style.display = "flex";
-                } else {
-                    todos[i].style.display = "none";
-                }
-                break;
-        }
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
     }
-} 
+  }
+}
