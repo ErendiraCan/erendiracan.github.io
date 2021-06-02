@@ -19,9 +19,17 @@
             The apply() method works in the same way: functionName.apply()</p>
         <p>If a function takes some time to compute a return value, we can save the result in a cache property: functionName.cache = functionName.cache || {};</p>
         <p>An Immediately Invoked Function Expression – or IIFE (pronounced “iffy”) – is an anonymous function that, as the name suggests, is invoked as soon as it’s defined.<br>
-
+            I can use strict mode but I have to place all the code inside the IIFE to avoid problems.</p>
+        <p>The dynamic nature of JavaScript means that a function is able to not only call itself, but define itself, and even redefine itself; assigning an
+            anonymous function to a variable that has the same name as the function.</p>
+        <p>Callbacks can be used to facilitate event-driven asynchronous programming. This means that the code is able to run out of order.<br>
+            Using more and more callbacks in the same function can result in messy and confusing “spaghetti code”, this is a large number of nested blocks that are difficult to
+            comprehend. Callback hell is the term used to refer to this tangled mess of code. A promise represents the future result of an asynchronous operation.<br>
+            The Promise Life Cycle: First is created, it calls an asynchronous operation:is pending, the operation take its place:is unsettled, the operation is completed:is settled and finally can
+            result in resolved or rejected.
         </p>
-        
+        <p>A closure is formed when the inner function is returned by the outer function, maintaining access to any variables declared inside the enclosing function.</p>
+        <p>Currying is a process that involves the partial application of functions. Currying allows us to turn a single function into a series of functions instead.</p>
         <p><u>Reading: JavaScript-Novice to Ninja Chapter: 13 AJAX</u></p>
         <h2>Code excersise:</h2>
         <p>Ninja Quiz. I wrote comments in the JS files.</p>
