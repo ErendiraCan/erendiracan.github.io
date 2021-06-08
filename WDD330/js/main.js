@@ -27,6 +27,10 @@ const links = [
     {
       label: "Week7: Notes and Codes",
       url: "week07/index.html"
+    },
+    {
+      label: "Week8: Notes and Codes",
+      url: "week08/index.html"
     }
   ]
 //Creating the ol tag element

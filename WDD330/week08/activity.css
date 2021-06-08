@@ -1,0 +1,78 @@
+.text-activity, #container p {
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#container div {
+    margin: 10px;
+}
+
+div img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Zoom Hover */
+div #zoon img {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+div #zoon img:hover {
+    -webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+/* Rotate Hover */
+div #rotate img {
+    -webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+div #rotate img:hover {
+    -webkit-transform: rotate(8deg) scale(1.2);
+	transform: rotate(8deg) scale(1.2);
+}
+
+/*Blur hover: I found this effect on the internet, it's so cool for an stylish hover*/
+div #blur img {
+    -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+div #blur img:hover {
+    -webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+/* Zoon Out Hover */
+div #out img {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+div #out img:hover {
+    -webkit-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+/* Up Hover */
+div #up img {
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+div #up img:hover {
+    -webkit-transform: translate(0, -50px);
+	transform: translate(0, -50px);
+}

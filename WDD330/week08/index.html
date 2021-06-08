@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 08</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="Stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Week 08</h1>
+    </header>
+    <main>
+        <h2>Notes about the reading</h2>
+        <p><u>Reading: HTML5 & CSS3 For the Real World Chapter 8 - CSS3 Transforms and Transitions</u></p>
+        <p>The CSS3 transform property lets us translate, rotate, scale, and/or skew any element on the page. 
+            The order of transform functions does matter, we need to be careful about the order.</p>
+        <p>The translate(x,y) function moves an element x from the left, and y from the top: transform: translate(45px, -45px);<br>
+            To mimic translation we can use position: relative;, and top and left values.
+        </p>
+        <p>The scale(x,y) function scales an elementbythe defined factors horizontally then vertically: transform: scale(1.5, 0.25);<br>
+            We can also mimic the scale function by altering the width and height, or changing the font-size of an element but this can change the layout.
+        </p>
+        <p>The rotate() function rotates an element around the point of origin by a specified angle value.</p>
+        <p>The skew(x,y) function specifies a skew along the x and y axes: transform: skew(15deg, 4deg);</p>
+        <p>We can control the origin from which our transforms are applied using the transform-origin property: transform-origin: 10% 10%; (top or center).</p>
+        <p>The transition-duration property sets how long the transition will take: transition-duration: 0.2s;</p>
+        <p>The transition-timing-function lets us control the pace of the transition in even more granular detail. It can be slower or faster graduality:<br>
+            transition-timing-function: ease; (linear, ease-in, ease-out, or ease-in-out.)
+        </p>
+        <p>We can combine all the values of the transition properties in a single declaration: transition: transform 0.2s ease-out 50ms;</p>
+        <p>We can use a keyframe to include the properties we want to animate, along with the animated values.</p>
+        <p>Animation properties: animation-name, animation-duration, animation-timing-function, animation-iteration-count, animation-direction, 
+            animation-delay, animation-fill-mode and animation-play-state.<br>
+            Like the transition properties there is a shorthand for animation properties too: animation: 300ms ease-in alternate 5s backwards appearDisappear;
+        </p>
+
+        <p><u>Reading: HTML5 & CSS3 For the Real World Chapter 12 - Canvas, SVG, and Drag and Drop</u></p>
+        <p></p>
+
+        <h2>Code excersise:</h2>
+        <a href="activity.html">Chapter8: CSS3 Transforms and Transitions</a><br>
+        <a href="activity2.html">Chapter12: Canvas, SVG, and Drag and Drop</a><br>
+    </main>
+    <footer>
+        <a href="../index.html"><img src="../images/home.png" alt="Home Icon"></a>
+    </footer>
+</body>
+</html>
