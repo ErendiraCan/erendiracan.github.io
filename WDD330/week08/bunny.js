@@ -23,6 +23,7 @@ bunny.addEventListener("dragover", function(event) {
 
 // What the bunny will say when a carrot is dropped on it
 bunny.addEventListener("drop", function(event) {
+    event.preventDefault();
     var bunnyHash = {
         carrot1: 'Yummy Yummy!',
         carrot2: 'Yummy in my tummy!',
@@ -33,5 +34,4 @@ bunny.addEventListener("drop", function(event) {
     bunnyHeading.innerHTML = bunnyHash[bunnyID];
     var carrotEaten = document.getElementById("item");
     carrotEaten.parentNode.removeChild(carrotEaten);
-    event.preventDefault();
 })
