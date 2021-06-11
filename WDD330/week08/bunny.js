@@ -35,3 +35,19 @@ bunny.addEventListener("drop", function(event) {
     var carrotEaten = document.getElementById("item");
     carrotEaten.parentNode.removeChild(carrotEaten);
 })
+
+
+/*  <h2 class="center">Feeding the WAI-ARIA Bunny</h2>
+    <article id="ac3">
+     <h3 class="center">Wai-Aria, the cutie bunny</h3>
+            <h4 class="center" id="bunnyHeading">Drag and drop example!</h4>
+            <img src="images/bunny.png" id="bunny" alt="WAI-ARIA Bunny" width="350" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="content">
+                <p id="carrotsContainer">
+                    <img src="images/carrot-file.svg" width="100" alt="bunny treat" id="carrot1" draggable="true" ondragstart="drag(event)">
+                    <img src="images/carrot-file.svg" width="100" alt="bunny treat" id="carrot2" draggable="true" ondragstart="drag(event)">
+                    <img src="images/carrot-file.svg" width="100" alt="bunny treat" id="carrot3" draggable="true" ondragstart="drag(event)">
+                </p>
+            </div>
+    </article>
+*/
