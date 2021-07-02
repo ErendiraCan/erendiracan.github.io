@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
   
+/********** phone or baseline views **************************/
+
   * {
     box-sizing: border-box;
   }
@@ -14,56 +16,48 @@
     font-family: 'Roboto', sans-serif;
   }
   
-  .container {
-    margin: 30px auto;
-  }
-  
   h1 {
     font-family: 'Pacifico', cursive;
-    font-size: 65px;
+    font-size: 40px;
     color: #ea526f;
     background-color: #fceade;
     text-shadow: 
-      3px 3px 0px #fceade, 
-      6px 6px 0px #ff8a5b;
+      1.5px 1.5px 0px #fceade, 
+      4px 4px 0px #ff8a5b;
   }
 
   h2 {
     letter-spacing: 1px;
     margin: 0;
     color: #7678ed;
-    font-size: 35px;
+    font-size: 20px;
   }
   
   h3 {
     font-family: 'Pacifico', cursive;
-    font-size: 38px;
+    font-size: 20px;
     color: #ea526f;
-    background-color: #fceade;
     border-bottom: 1px solid #bbb;
     padding-bottom: 10px;
-    margin: 40px 0 10px;
+    padding-left: 20px;
+    margin: 40px 10px;
   }
   
   h4 {
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     color: #ff8a5b;
-    font-size: 20px;
-  }
-
-  .inc-dec-container p {
-      font-size: 30px;
+    font-size: 15px;
   }
   
   .inc-dec-container {
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 20px 20px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
-    width: 100%;
+    width: 90%;
   }
   
   .inc-dec-container > div {
@@ -80,7 +74,7 @@
   }
   
   .money {
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1px;
     margin: 5px 0;
   }
@@ -108,15 +102,15 @@
     display: inline-block;
     margin: 10px 0;
     color: #7678ed;
-    font-size: 20px;
+    font-size: 15px;
   }
   
   input[type='text'],
   input[type='number'] {
     border: 1px solid #dedede;
-    border-radius: 2px;
+    border-radius: 5px;
     display: block;
-    font-size: 16px;
+    font-size: 12px;
     padding: 10px;
     width: 100%;
   }
@@ -130,9 +124,9 @@
     color: #fff;
     border: 0;
     display: block;
-    font-size: 30px;
+    font-size: 17px;
     margin: 50px 0 20px;
-    padding: 15px;
+    padding: 12px;
     width: 100%;
   }
   
@@ -149,7 +143,7 @@
   
   .list li {
     background-color: #fff;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
     color: #333;
     display: flex;
     justify-content: space-between;
@@ -159,16 +153,16 @@
   }
   
   .list li.plus {
-    border-right: 5px solid #2ecc71;
+    border-right: 5px solid #06d6a0;
   }
   
   .list li.minus {
-    border-right: 5px solid #c0392b;
+    border-right: 5px solid #ea526f;
   }
   
   .delete-btn {
     cursor: pointer;
-    background-color: #e74c3c;
+    background-color: #ea526f;
     border: 0;
     color: #fff;
     font-size: 20px;
@@ -184,4 +178,67 @@
   
   .list li:hover .delete-btn {
     opacity: 1;
+  }
+
+  /* Tablet Views ******************************/
+  @media only screen and (min-width: 37.5em) {
+    h1 {
+      font-size: 60px;
+      text-shadow: 
+        2px 2px 0px #fceade, 
+        5px 5px 0px #ff8a5b;
+    }
+
+    .container {
+      margin: 30px auto;
+    }
+
+    h2 {
+      font-size: 35px;
+    }
+
+    h3 {
+      font-size: 38px;
+      padding-bottom: 10px;
+      padding-left: 0;
+      margin: 40px 0 10px;
+    }
+
+    h4 {
+      padding: 20px;
+      font-size: 20px;
+    }
+
+    .inc-dec-container {
+      padding: 20px;
+      margin: 20px 0;
+      width: 100%;
+    }
+    .money {
+      font-size: 30px;
+    }
+    label {
+      font-size: 20px;
+    }
+    .btn {
+      border-radius: 10px;
+      font-size: 30px;
+      margin: 50px 0 20px;
+      padding: 15px;
+    }
+    input[type='text'],
+    input[type='number'] {
+      font-size: 15px;
+    }
+  }
+
+  /* Desktop Views ******************************/
+  @media only screen and (min-width: 72em) {
+    h1 {
+      font-size: 80px;
+      text-shadow: 
+        3px 3px 0px #fceade, 
+        6px 6px 0px #ff8a5b;
+    }
+
   }
