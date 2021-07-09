@@ -15,7 +15,43 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
   }
-  
+
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+  }
+  @-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+  }
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+  }
+  .animatedFadeInUp {
+    opacity: 0
+  }
+  .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+  }
+
   h1 {
     font-family: 'Pacifico', cursive;
     font-size: 40px;
@@ -25,14 +61,12 @@
       1.5px 1.5px 0px #fceade, 
       4px 4px 0px #ff8a5b;
   }
-
   h2 {
     letter-spacing: 1px;
     margin: 0;
     color: #7678ed;
     font-size: 20px;
   }
-  
   h3 {
     font-family: 'Pacifico', cursive;
     font-size: 20px;
@@ -42,14 +76,23 @@
     padding-left: 20px;
     margin: 40px 10px;
   }
-  
   h4 {
     margin: 0;
     padding: 10px;
     color: #ff8a5b;
     font-size: 15px;
   }
-  
+  h2, p {
+    cursor: pointer;
+    -webkit-transform: rotate(0) scale(1);
+	  transform: rotate(0) scale(1);
+	  -webkit-transition: .3s ease-in-out;
+	  transition: .3s ease-in-out;
+  }
+  h2:hover, p:hover {
+    -webkit-transform: rotate(-8deg) scale(1.2);
+	  transform: rotate(-8deg) scale(1.2);
+  }
   .inc-dec-container {
     background-color: #fff;
     padding: 10px;
@@ -59,26 +102,21 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
     width: 90%;
   }
-  
   .inc-dec-container > div {
     flex: 1;
     text-align: center;
   }
-  
   .inc-dec-container > div:first-of-type {
     border-right: 1px solid #dedede;
   }
-
   .inc-dec-container > div:last-of-type {
     border-left: 1px solid #dedede;
   }
-  
   .money {
     font-size: 15px;
     letter-spacing: 1px;
     margin: 5px 0;
   }
-  
   .money.plus {
     color: #06d6a0;
   }
@@ -86,25 +124,21 @@
   .money.minus {
     color: #ea526f;
   }
-
   form {
       display: flex;
       padding: 10px;
       align-items: center;
       justify-content: center;
   }
-
   form > div {
       padding: 15px;
   }
-  
   label {
     display: inline-block;
     margin: 10px 0;
     color: #7678ed;
     font-size: 15px;
   }
-  
   input[type='text'],
   input[type='number'] {
     border: 1px solid #dedede;
@@ -114,13 +148,12 @@
     padding: 10px;
     width: 100%;
   }
-  
   .btn {
     cursor: pointer;
     background-color: #25ced1;
     font-family: 'Pacifico', cursive;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 10px;
+    border-radius: 50%;
     color: #fff;
     border: 0;
     display: block;
@@ -129,55 +162,47 @@
     padding: 12px;
     width: 100%;
   }
-  
   .btn:focus,
   .delete-btn:focus {
     outline: 0;
   }
-  
   .list {
     list-style-type: none;
     padding: 0;
     margin-bottom: 40px;
   }
-  
   .list li {
     background-color: #fff;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
     color: #333;
+    font-size: 12px;
     display: flex;
     justify-content: space-between;
     position: relative;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px 30px;
+    border-radius: 5px;
   }
-  
   .list li.plus {
     border-right: 5px solid #06d6a0;
   }
-  
   .list li.minus {
     border-right: 5px solid #ea526f;
   }
-  
   .delete-btn {
     cursor: pointer;
     background-color: #ea526f;
     border: 0;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 20px;
     padding: 2px 5px;
     position: absolute;
     top: 50%;
     left: 0;
     transform: translate(-100%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .list li:hover .delete-btn {
     opacity: 1;
+    transition: opacity 0.5s ease;
   }
 
   /* Tablet Views ******************************/
@@ -188,27 +213,22 @@
         2px 2px 0px #fceade, 
         5px 5px 0px #ff8a5b;
     }
-
     .container {
       margin: 30px auto;
     }
-
     h2 {
       font-size: 35px;
     }
-
     h3 {
       font-size: 38px;
       padding-bottom: 10px;
       padding-left: 0;
       margin: 40px 0 10px;
     }
-
     h4 {
       padding: 20px;
       font-size: 20px;
     }
-
     .inc-dec-container {
       padding: 20px;
       margin: 20px 0;
@@ -221,14 +241,47 @@
       font-size: 20px;
     }
     .btn {
-      border-radius: 10px;
       font-size: 30px;
       margin: 50px 0 20px;
-      padding: 15px;
+      padding: 25px;
+      -webkit-transform: scale(1);
+	    transform: scale(1);
+	    -webkit-transition: .3s ease-in-out;
+	    transition: .3s ease-in-out;
+    }
+    .btn:hover {
+      -webkit-transform: scale(1.2);
+	    transform: scale(1.2);
     }
     input[type='text'],
     input[type='number'] {
       font-size: 15px;
+    }
+    .list li {
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    .delete-btn {
+      cursor: pointer;
+      border: 0;
+      font-size: 20px;
+      line-height: 20px;
+      padding: 2px 5px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-100%, -50%);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    
+    .list li:hover .delete-btn {
+      opacity: 1;
     }
   }
 
@@ -240,5 +293,7 @@
         3px 3px 0px #fceade, 
         6px 6px 0px #ff8a5b;
     }
-
+    .list li {
+      font-size: 20px;
+    }
   }
