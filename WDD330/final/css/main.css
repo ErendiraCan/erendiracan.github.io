@@ -205,6 +205,25 @@
     transition: opacity 0.5s ease;
   }
 
+  /* Finance Table */
+  table {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+  }
+
+  th {
+    color: #ff8a5b;
+    font-size: 15px;
+  }
+
+  tbody {
+    color: #7678ed;
+  }
+
   /* Tablet Views ******************************/
   @media only screen and (min-width: 37.5em) {
     h1 {
@@ -282,6 +301,10 @@
     
     .list li:hover .delete-btn {
       opacity: 1;
+    }
+
+    th {
+      font-size: 25px;
     }
   }
 
