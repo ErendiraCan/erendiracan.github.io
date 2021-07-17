@@ -74,7 +74,7 @@
     border-bottom: 1px solid #bbb;
     padding-bottom: 10px;
     padding-left: 20px;
-    margin: 40px 10px;
+    margin: 20px 10px;
   }
   h4 {
     margin: 0;
@@ -163,7 +163,8 @@
     width: 100%;
   }
   .btn:focus,
-  .delete-btn:focus {
+  .delete-btn:focus,
+  .invest-btn:focus {
     outline: 0;
   }
   .list {
@@ -206,22 +207,39 @@
   }
 
   /* Finance Table */
+  #stock {
+    text-align: center;
+    color: #7678ed;
+    font-size: 18px;
+  }
+  .button-container {
+    display: grid;
+  }
+  .invest-btn {
+    cursor: pointer;
+    background-color: #ea526f;
+    border: 0;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    margin: auto; 
+  }
   table {
     background-color: #fff;
     border-radius: 15px;
     width: 100%;
     text-align: center;
-    margin: 50px 0;
+    margin: 20px 0 50px 0;
     padding: 20px;
   }
-
   th {
     color: #ff8a5b;
-    font-size: 15px;
+    font-size: 16px;
   }
-
   tbody {
     color: #7678ed;
+    font-size: 13px;
   }
 
   /* Tablet Views ******************************/
@@ -284,7 +302,6 @@
       padding: 10px;
       margin: 10px 0;
     }
-
     .delete-btn {
       cursor: pointer;
       border: 0;
@@ -298,14 +315,41 @@
       opacity: 0;
       transition: opacity 0.5s ease;
     }
-    
     .list li:hover .delete-btn {
       opacity: 1;
     }
-
+    .invest-btn {
+      font-size: 25px;
+      padding: 20px;
+      -webkit-transform: scale(1);
+	    transform: scale(1);
+	    -webkit-transition: .3s ease-in-out;
+	    transition: .3s ease-in-out;
+    }
+    .invest-btn:hover {
+      -webkit-transform: scale(1.2);
+	    transform: scale(1.2);
+      background-color: #f194b4;
+    }
     th {
       font-size: 25px;
     }
+    tbody {
+      font-size: 18px;
+    }
+    #stock {
+      font-size: 24px;
+      -webkit-transform: scale(1);
+	    transform: scale(1);
+	    -webkit-transition: .3s ease-in-out;
+	    transition: .3s ease-in-out;
+    }
+    #stock:hover {
+      -webkit-transform: scale(1.2);
+	    transform: scale(1.2);
+      color: #25ced1;
+    }
+    
   }
 
   /* Desktop Views ******************************/

@@ -1,76 +1,34 @@
 {
-    "rentals": [
+    "investments": [
         {
-            "rentalType": "Honda Metro Scooter",
-            "MaxPersons": 1,
-            "reservation": {
-                "halfDay": 20,
-                "fullDay": 30
-            },
-            "walkIn": {
-                "halfDay": 25,
-                "fullDay": 35
-            }
+            "investType": "Stocks",
+            "description": "When you invest in a stock, you become one of the owners of a corporation.",
+            "link": "Read more!",
+            "url": "https://www.finra.org/investors/learn-to-invest/types-investments/stocks"
         },
         {
-            "rentalType": "Honda Dio Scooter",
-            "MaxPersons": 2,
-            "reservation": {
-                "halfDay": 30,
-                "fullDay": 40
-            },
-            "walkIn": {
-                "halfDay": 35,
-                "fullDay": 45
-            }
+            "investType": "Bank Products",
+            "description": "Banks and credit unions can provide a safe and convenient way to accumulate savings.",
+            "link": "Read more!",
+            "url": "https://www.finra.org/investors/learn-to-invest/types-investments/bank-products"
         },
         {
-            "rentalType": "Honda PCX150 Scooter",
-            "MaxPersons": 2,
-            "reservation": {
-                "halfDay": 40,
-                "fullDay": 50
-            },
-            "walkIn": {
-                "halfDay": 45,
-                "fullDay": 55
-            }
+            "investType": "Retirement",
+            "description": "Saving for retirement, and managing income once you retire, are two important aspects of personal financial management. ",
+            "link": "Read more!",
+            "url": "https://www.finra.org/investors/learn-to-invest/types-investments/retirement"
         },
         {
-            "rentalType": "Honda Pioneer ATV",
-            "MaxPersons": 4,
-            "reservation": {
-                "halfDay": 50,
-                "fullDay": 70
-            },
-            "walkIn": {
-                "halfDay": 60,
-                "fullDay": 80
-            }
+            "investType": "Saving for Education",
+            "description": "Education funding begins with saving. Learn tax-advantaged ways to save for education.",
+            "link": "Read more!",
+            "url": "https://www.finra.org/investors/learn-to-invest/types-investments/saving-for-education"
         },
         {
-            "rentalType": "Jeep Wrangler 4 Door with a/c",
-            "MaxPersons": 5,
-            "reservation": {
-                "halfDay": 70,
-                "fullDay": 100
-            },
-            "walkIn": {
-                "halfDay": 85,
-                "fullDay": 125
-            }
-        },
-        {
-            "rentalType": "Jeep Wrangler 2 door",
-            "MaxPersons": 4,
-            "reservation": {
-                "halfDay": 60,
-                "fullDay": 85
-            },
-            "walkIn": {
-                "halfDay": 70,
-                "fullDay": 90
-            }
+            "investType": "Insurance",
+            "description": "Life insurance products are often a part of an overall financial plan.",
+            "link": "Read more!",
+            "url": "https://www.finra.org/investors/learn-to-invest/types-investments/insurance"
         }
     ]
 }
