@@ -213,7 +213,10 @@
     font-size: 18px;
   }
   .button-container {
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
   }
   .invest-btn {
     cursor: pointer;
@@ -223,14 +226,13 @@
     color: #fff;
     font-size: 18px;
     padding: 10px;
-    margin: auto; 
   }
   table {
     background-color: #fff;
     border-radius: 15px;
     width: 100%;
     text-align: center;
-    margin: 20px 0 50px 0;
+    margin: 15px;
     padding: 20px;
   }
   th {
@@ -242,8 +244,31 @@
     font-size: 13px;
   }
 
+  /* Finance Table */
+  .invest-table {
+    margin: 20px;
+  }
+  .invest-table tr {
+    padding: 15px;
+    font-size: 12px;
+  }
+  .invest-table td {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .invest-table a {
+    text-decoration: none;
+    color: #ea526f;
+  }
+  .invest-table a:hover{
+    color: #25ced1;
+  }
+
   /* Tablet Views ******************************/
   @media only screen and (min-width: 37.5em) {
+    body {
+      margin: 20px;
+    }
     h1 {
       font-size: 60px;
       text-shadow: 
@@ -300,7 +325,8 @@
       justify-content: space-between;
       position: relative;
       padding: 10px;
-      margin: 10px 0;
+      margin: 10px auto;
+      width: 80%;
     }
     .delete-btn {
       cursor: pointer;
@@ -349,7 +375,17 @@
 	    transform: scale(1.2);
       color: #25ced1;
     }
-    
+    /* Finance Table */
+    .invest-table {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .invest-table tr {
+      font-size: 18px;
+   }
+   .invest-table td {
+     padding: 10px;
+   }
   }
 
   /* Desktop Views ******************************/
@@ -359,6 +395,13 @@
       text-shadow: 
         3px 3px 0px #fceade, 
         6px 6px 0px #ff8a5b;
+    }
+    h4 {
+      font-size: 25px;
+    }
+    .inc-dec-container {
+      width: 80%;
+      margin: 0 auto;
     }
     .list li {
       font-size: 20px;

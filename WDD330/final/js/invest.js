@@ -1,5 +1,5 @@
 //The URL of the JSON file like a const variable
-const requestURL = 'https://erendiracan.github.io//WDD230/finalproject/data/rental.json';
+const requestURL = 'https://erendiracan.github.io//WDD330/final/data/finances.json';
 
 //Usign fetch to feed the argument 
 fetch(requestURL)
@@ -8,38 +8,29 @@ fetch(requestURL)
       })
       .then(function (jsonObject) {
         console.table(jsonObject);  //Temporary checking for valid response and data parsing: Check the console to see if it's working.
-        const rentals = jsonObject['rentals'];
+        const investments = jsonObject['investments'];
 
-        for (let i = 0; i < rentals.length; i++) {
+        for (let i = 0; i < investments.length; i++) {
 
     //Creating the HTML elements
     let box = document.createElement('tr');
-    let vehicle = document.createElement('td');
-    let persons = document.createElement('td');
-    let half = document.createElement('td');
-    let full = document.createElement('td');
-    let half1 = document.createElement('td');
-    let full1 = document.createElement('td');
+    let name = document.createElement('td');
+    let desc = document.createElement('td');
+    let link = document.createElement('td');
 
     //Adding data to the HTML elements
-    vehicle.textContent = rentals[i].rentalType;
-    persons.textContent = rentals[i].MaxPersons;
-    half.textContent = '$' + rentals[i].reservation.halfDay;
-    full.textContent = '$' + rentals[i].reservation.fullDay;
-    half1.textContent = '$' + rentals[i].walkIn.halfDay;
-    full1.textContent = '$' + rentals[i].walkIn.fullDay;
+    name.textContent = investments[i].investType;
+    desc.textContent = investments[i].description;
+    link.innerHTML = `<a href="${investments[i].url}">${investments[i].link}</a>`;
 
 
     //The appendChild() method: It appends the new items created to the HTML elements
     //https://www.javascripttutorial.net/javascript-dom/javascript-appendchild/
-    box.appendChild(vehicle);
-    box.appendChild(persons);
-    box.appendChild(half);
-    box.appendChild(full);
-    box.appendChild(half1);
-    box.appendChild(full1);
+    box.appendChild(name);
+    box.appendChild(desc);
+    box.appendChild(link);
 
     //Calling the JS in the HTML
-    document.querySelector('.rentalTable').appendChild(box);
+    document.querySelector('.invest-table').appendChild(box);
     }
 });
